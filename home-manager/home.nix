@@ -34,7 +34,6 @@
 			{
 				plugin = nvim-web-devicons;
 				config = toLuaFile ./nvim/plugins/web_devicons.lua;
-				priority = 9999;
 			}
 			{
 				plugin = oil-nvim;
