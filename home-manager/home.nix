@@ -96,7 +96,8 @@
 
 			mini-nvim
 			indent-blankline-nvim
-
+			nui-nvim
+			nvim-notify
 			{
 				plugin = noice-nvim;
 				config = toLuaFile ./nvim/plugins/noice.lua;
