@@ -1,10 +1,15 @@
 require("fidget").setup({
-	display = {
-		progress_icon =
-			{ pattern = "dots_snake", period = 1 },
+	progress = {
+		display = {
+			progress_icon =
+				{ pattern = "dots_snake", period = 1 },
+		},
 	},
-	window = {
-		winblend = 0,
-		--border = "rounded",
+
+	notification = {
+		window = {
+			winblend = 0,
+			--border = "rounded",
+		},
 	},
 })
