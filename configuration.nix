@@ -117,7 +117,6 @@
   environment.systemPackages = with pkgs; [
     xclip
     wget
-    neofetch
     pfetch-rs
     wezterm
     starship
@@ -174,11 +173,15 @@
 		python3Packages.iwlib
 		pipx
 		brightnessctl
+		
 		# JetBrains
 		jetbrains.idea-ultimate
     jetbrains.jdk
     jetbrains.clion
 		jetbrains.pycharm-professional
+
+		zoxide
+		eza
   ];
 
 
