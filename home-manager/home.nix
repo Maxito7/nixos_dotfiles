@@ -95,17 +95,7 @@
 			vim-smoothie
 
 			mini-nvim
-			indent-blankline-nvim
-			nui-nvim
-			nvim-notify
-			{
-				plugin = noice-nvim;
-				config = toLuaFile ./nvim/plugins/noice.lua;
-			}
-			{
-				plugin = fidget-nvim;
-				config = toLuaFile ./nvim/plugins/fidget.lua;
-			}
+			indent-blankline-nvim	
 		];
   };
 
