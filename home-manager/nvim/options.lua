@@ -17,5 +17,3 @@ vim.o.termguicolors = true
 vim.o.mouse = "a"
 
 vim.opt.laststatus = 3
-
-vim.opt.conceallevel = 2
