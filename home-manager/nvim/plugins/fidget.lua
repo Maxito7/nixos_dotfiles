@@ -1,9 +1,10 @@
 require("fidget").setup({
-	text = {
-		spinner = "dots_snake",
+	display = {
+		progress_icon =
+			{ pattern = "dots_snake", period = 1 },
 	},
 	window = {
-		blend = 0,
+		winblend = 0,
 		--border = "rounded",
 	},
 })
