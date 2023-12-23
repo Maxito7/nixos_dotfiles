@@ -8,7 +8,6 @@
         alias flake_update="cd ~/.config/nixfiles ; nix flake update ; sudo nixos-rebuild switch --flake .#lucky"
         alias project_devenv="nix flake init --template github:cachix/devenv && direnv allow"
         direnv hook fish | source
-				zoxide init fish | source
     '';
   };
 }

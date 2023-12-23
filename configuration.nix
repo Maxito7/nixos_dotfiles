@@ -193,6 +193,7 @@
   # Fish
   programs.fish.enable = true;
   users.users.lucky.shell = pkgs.fish;
+	programs.zoxide.enableFishIntegration = true;
 
 	# Zsh
 	#environment.shells = [pkgs.zsh];
