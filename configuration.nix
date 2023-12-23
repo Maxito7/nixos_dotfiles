@@ -184,12 +184,17 @@
 
   # Nix experimental settings
   nix.settings.experimental-features = ["nix-command" "flakes"];
+	
+	programs.direnv.enable = true; 
 
   # Fish
   #programs.fish.enable = true;
-  programs.direnv.enable = true; 
-
   #users.users.lucky.shell = pkgs.fish;
+
+	# Zsh
+	environment.shells = [pkgs.zsh];
+	users.defaultUserShell = pkgs.zsh;
+	programs.zsh.enable = true;
 
   fonts = {
     fontconfig.enable = true;
