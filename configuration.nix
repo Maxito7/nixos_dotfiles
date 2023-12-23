@@ -188,13 +188,13 @@
 	programs.direnv.enable = true; 
 
   # Fish
-  #programs.fish.enable = true;
-  #users.users.lucky.shell = pkgs.fish;
+  programs.fish.enable = true;
+  users.users.lucky.shell = pkgs.fish;
 
 	# Zsh
-	environment.shells = [pkgs.zsh];
-	users.defaultUserShell = pkgs.zsh;
-	programs.zsh.enable = true;
+	#environment.shells = [pkgs.zsh];
+	#users.defaultUserShell = pkgs.zsh;
+	#programs.zsh.enable = true;
 
   fonts = {
     fontconfig.enable = true;
