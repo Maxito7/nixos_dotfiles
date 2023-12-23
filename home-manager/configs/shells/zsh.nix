@@ -1,6 +1,6 @@
 {
 	programs.zsh = {
-		enable = true;
+		enable = false;
 		syntaxHighlighting.enavle = true;
 		enableAutosuggestions = true;
 		history.path = "/home/lucky/.config/zsh/zsh_history";
