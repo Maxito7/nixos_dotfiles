@@ -4,7 +4,7 @@ require("conform").setup({
 		lua = { "stylua" },
 		-- Conform will run multiple formatters sequentially
 		python = { "ruff" },
-		go = { "gci", "gofumpt" },
+		go = { "gofumpt" },
 		-- Use a sub-list to run only the first available formatter
 		--javascript = { { "prettierd", "prettier" } },
 	},

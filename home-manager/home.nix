@@ -102,6 +102,10 @@
 				plugin = noice-nvim;
 				config = toLuaFile ./nvim/plugins/noice.lua;
 			}
+			{
+				plugin = fidget-nvim;
+				config = toLuaFile ./nvim/plugins/fidget.lua;
+			}
 		];
   };
 

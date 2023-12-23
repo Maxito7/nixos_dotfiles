@@ -155,7 +155,6 @@
     lutgen
     #jdt-language-server
     gopls
-    gci
     zls
     gofumpt
     stylua
