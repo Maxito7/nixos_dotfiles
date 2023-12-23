@@ -1,0 +1,6 @@
+{config, pks, ...}:
+{
+  imports = [
+    ./shells
+  ];
+}
