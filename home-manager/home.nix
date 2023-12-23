@@ -16,88 +16,90 @@
 			${builtins.readFile ./nvim/plugins/other.lua}
     '';
 
-	extraPackages = with pkgs; [
-      lua-language-server
-      rnix-lsp
+		extraPackages = with pkgs; [
+				lua-language-server
+				rnix-lsp
 
-      xclip
-      wl-clipboard
-    ];
+				xclip
+				wl-clipboard
+			];
 
-	plugins = with pkgs.vimPlugins; [
-		{
-			plugin = nvim-lspconfig;
-			config = toLuaFile ./nvim/plugins/lsp.lua;
-		}
-		neodev-nvim
-		lualine-nvim
-		{
-			plugin = nvim-web-devicons;
-			config = toLuaFile ./nvim/plugins/web_devicons.lua;
-			priority = 9999;
-		}
-		{
-			plugin = oil-nvim;
-			config = toLuaFile ./nvim/plugins/oil.lua;
-		}
-		tokyonight-nvim
-		{
-			plugin = telescope-nvim;
-			config = toLuaFile ./nvim/plugins/telescope.lua;
-		}
+		plugins = with pkgs.vimPlugins; [
+			{
+				plugin = nvim-lspconfig;
+				config = toLuaFile ./nvim/plugins/lsp.lua;
+			}
+			neodev-nvim
+			lualine-nvim
+			{
+				plugin = nvim-web-devicons;
+				config = toLuaFile ./nvim/plugins/web_devicons.lua;
+				priority = 9999;
+			}
+			{
+				plugin = oil-nvim;
+				config = toLuaFile ./nvim/plugins/oil.lua;
+			}
+			tokyonight-nvim
+			{
+				plugin = telescope-nvim;
+				config = toLuaFile ./nvim/plugins/telescope.lua;
+			}
 
-		telescope-fzf-native-nvim
-		cmp_luasnip
-		cmp-nvim-lsp
-		cmp-path
-		lspkind-nvim
-		barbecue-nvim
+			telescope-fzf-native-nvim
+			cmp_luasnip
+			cmp-nvim-lsp
+			cmp-path
+			lspkind-nvim
+			barbecue-nvim
 
-		luasnip
-		friendly-snippets
-		{
-			plugin = nvim-cmp;
-			config = toLuaFile ./nvim/plugins/cmp.lua;
-		}
-		no-neck-pain-nvim
-		colorizer
-		nvim-autopairs
-		{
-			plugin = conform-nvim;
-			config = toLuaFile ./nvim/plugins/conform.lua;
-		}
-		{
-			plugin = neorg;
-			config = toLuaFile ./nvim/plugins/neorg.lua;
-		}
-		neorg-telescope
-		{
-			plugin = image-nvim;
-			config = toLuaFile ./nvim/plugins/image.lua;
-		}
-		vimtex
-	
-		{
-			plugin = (nvim-treesitter.withPlugins (p: [
-				p.tree-sitter-nix
-				p.tree-sitter-vim
-				p.tree-sitter-bash
-				p.tree-sitter-lua
-				p.tree-sitter-python
-				p.tree-sitter-json
-				p.tree-sitter-go
-				p.tree-sitter-c
-				p.tree-sitter-rust
-				p.tree-sitter-norg
-			]));
-			config = toLuaFile ./nvim/plugins/treesitter.lua;
-		}
+			luasnip
+			friendly-snippets
+			{
+				plugin = nvim-cmp;
+				config = toLuaFile ./nvim/plugins/cmp.lua;
+			}
+			no-neck-pain-nvim
+			colorizer
+			nvim-autopairs
+			{
+				plugin = conform-nvim;
+				config = toLuaFile ./nvim/plugins/conform.lua;
+			}
+			{
+				plugin = neorg;
+				config = toLuaFile ./nvim/plugins/neorg.lua;
+			}
+			neorg-telescope
+			{
+				plugin = image-nvim;
+				config = toLuaFile ./nvim/plugins/image.lua;
+			}
+			vimtex
+			
+			{
+				plugin = (nvim-treesitter.withPlugins (p: [
+					p.tree-sitter-nix
+					p.tree-sitter-vim
+					p.tree-sitter-bash
+					p.tree-sitter-lua
+					p.tree-sitter-python
+					p.tree-sitter-json
+					p.tree-sitter-go
+					p.tree-sitter-c
+					p.tree-sitter-rust
+					p.tree-sitter-norg
+				]));
+				config = toLuaFile ./nvim/plugins/treesitter.lua;
+			}
 
-		vim-smoothie
+			vim-smoothie
 
-		mini-nvim
-		indent-blankline-nvim
-	];
+			mini-nvim
+			indent-blankline-nvim
+
+			noice-nvim
+		];
   };
 
   imports = [
