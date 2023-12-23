@@ -97,7 +97,10 @@
 			mini-nvim
 			indent-blankline-nvim
 
-			noice-nvim
+			{
+				plugin = noice-nvim;
+				config = toLuaFile ./nvim/plugins/noice.lua;
+			}
 		];
   };
 
