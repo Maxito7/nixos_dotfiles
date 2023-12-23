@@ -106,6 +106,9 @@
   home.username = "lucky";
   home.homeDirectory = "/home/lucky";
   home.stateVersion = "22.05";
+	
+	#programs.fish.enable = true;
+	#users.users.lucky.shell = pkgs.fish;	
 
-  programs.home-manager.enable = true;
+  programs.home-manager.enable = true;	
 }

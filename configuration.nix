@@ -186,10 +186,10 @@
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # Fish
-  programs.fish.enable = true;
+  #programs.fish.enable = true;
   programs.direnv.enable = true; 
 
-  users.users.lucky.shell = pkgs.fish;
+  #users.users.lucky.shell = pkgs.fish;
 
   fonts = {
     fontconfig.enable = true;

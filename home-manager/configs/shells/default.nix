@@ -6,5 +6,6 @@
   imports = [
     ./starship.nix
     ./fish.nix
+		./zsh.nix
   ];
 }
