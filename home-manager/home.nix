@@ -31,10 +31,7 @@
         }
         neodev-nvim
         lualine-nvim
-        {
-          plugin = nvim-web-devicons;
-          config = toLuaFile ./nvim/plugins/web_devicons.lua;
-        }
+
         {
           plugin = oil-nvim;
           config = toLuaFile ./nvim/plugins/oil.lua;
@@ -97,6 +94,11 @@
 
         mini-nvim
         indent-blankline-nvim
+
+        {
+          plugin = nvim-web-devicons;
+          config = toLuaFile ./nvim/plugins/web_devicons.lua;
+        }
       ];
     };
 
