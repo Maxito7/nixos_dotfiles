@@ -264,11 +264,11 @@
         "parts": "parts"
       },
       "locked": {
-        "lastModified": 1703385035,
-        "narHash": "sha256-fiIzkg4I/s+xXAzNwj4QompNnSguVPqspMpHi45QO78=",
+        "lastModified": 1703433556,
+        "narHash": "sha256-QH2+zO9Rabsg4QhcnbEz6KpTk8Rry0JFQRfQjyyHzh4=",
         "owner": "moni-dz",
         "repo": "nixpkgs-f2k",
-        "rev": "d8d7d008c82b8ce636c6e32a7ec1a1eed5781ac4",
+        "rev": "4544f83d6555b9801a9a3396ff7b502cb4b416f7",
         "type": "github"
       },
       "original": {
@@ -384,11 +384,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1703393074,
-        "narHash": "sha256-FOf2/5pHrBN/AM0JQVkGZ4JYEZSF3dZXlat5xDKzyAQ=",
+        "lastModified": 1703457699,
+        "narHash": "sha256-9t6VB6JbVEeGuxNTsQPHxnfmGN/O0JjAR+LcjR7QsJI=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "f361a813dad1da89fcc4b8296e6fdc9fe4d94981",
+        "rev": "6897f1bcf8dcccc980554939f0808c37a0d45113",
         "type": "github"
       },
       "original": {
