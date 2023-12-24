@@ -25,27 +25,29 @@
       ];
 
       plugins = with pkgs.vimPlugins; [
-        {
+        nvim-web-devicons
+        /*{
           plugin = nvim-web-devicons;
           config = toLuaFile ./nvim/plugins/web_devicons.lua;
-        }
-
-        {
+          }*/
+        nvim-lspconfig
+        /*{
           plugin = nvim-lspconfig;
           config = toLuaFile ./nvim/plugins/lsp.lua;
-        }
+          }*/
         neodev-nvim
         lualine-nvim
-
-        {
+        oil-nvim
+        /*{
           plugin = oil-nvim;
           config = toLuaFile ./nvim/plugins/oil.lua;
-        }
+          }*/
         tokyonight-nvim
-        {
+        telescope-nvim
+        /*{
           plugin = telescope-nvim;
           config = toLuaFile ./nvim/plugins/telescope.lua;
-        }
+          }*/
 
         telescope-fzf-native-nvim
         cmp_luasnip
@@ -56,26 +58,30 @@
 
         luasnip
         friendly-snippets
-        {
+        nvim-cmp
+        /*{
           plugin = nvim-cmp;
           config = toLuaFile ./nvim/plugins/cmp.lua;
-        }
+          }*/
         no-neck-pain-nvim
         colorizer
         nvim-autopairs
-        {
+        conform-nvim
+        /*{
           plugin = conform-nvim;
           config = toLuaFile ./nvim/plugins/conform.lua;
-        }
-        {
+          }*/
+        neorg
+        /*{
           plugin = neorg;
           config = toLuaFile ./nvim/plugins/neorg.lua;
-        }
+          }*/
         neorg-telescope
-        {
+        image-nvim
+        /*{
           plugin = image-nvim;
           config = toLuaFile ./nvim/plugins/image.lua;
-        }
+          }*/
         vimtex
 
         {

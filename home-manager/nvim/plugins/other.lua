@@ -65,6 +65,12 @@ require("nvim-web-devicons").setup({
 	color_icons = true,
 })
 
+--[[
+-------------------------------------
+THIS IS THE EQUIVALENT TO 'other.lua'
+-------------------------------------
+]]
+
 -- Lualine
 require("lualine").setup({
 	icons_enabled = true,
