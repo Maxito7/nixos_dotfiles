@@ -6,10 +6,11 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
-  
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -57,14 +58,15 @@
   # Enable the Cinnamon Desktop Environment.
   services.xserver.displayManager.lightdm.enable = true;
   services.xserver.desktopManager.cinnamon.enable = true;
-  
+
   services.xserver.windowManager.qtile = {
     enable = true;
     extraPackages = python3Packages: with python3Packages; [
-        (qtile-extras.overridePythonAttrs(old: { disabledTestPaths = [ "test/widget/test_strava.py" ]; }))
+      #(qtile-extras.overridePythonAttrs(old: { disabledTestPaths = [ "test/widget/test_strava.py" ]; }))
+      qtile-extras
     ];
   };
-  
+
   services.picom.enable = true;
 
   # Configure keymap in X11
@@ -144,7 +146,7 @@
     gnumake
     nil
     onlyoffice-bin
-    
+
     lua-language-server
     imagemagick
     luajit
@@ -167,44 +169,44 @@
     ripgrep
     fzf
     fd
-		python3Packages.pip
-		python3Packages.jedi-language-server
-		python3Packages.iwlib
-		pipx
-		brightnessctl
-		
-		# JetBrains
-		jetbrains.idea-ultimate
+    python3Packages.pip
+    python3Packages.jedi-language-server
+    python3Packages.iwlib
+    pipx
+    brightnessctl
+
+    # JetBrains
+    jetbrains.idea-ultimate
     jetbrains.jdk
     jetbrains.clion
-		jetbrains.pycharm-professional
+    jetbrains.pycharm-professional
 
-		zoxide
-		eza
+    zoxide
+    eza
   ];
 
 
   # Nix experimental settings
-  nix.settings.experimental-features = ["nix-command" "flakes"];
-	
-	programs.direnv.enable = true; 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  programs.direnv.enable = true;
 
   # Fish
   programs.fish.enable = true;
-  users.users.lucky.shell = pkgs.fish;	
+  users.users.lucky.shell = pkgs.fish;
 
-	# Zsh
-	#environment.shells = [pkgs.zsh];
-	#users.defaultUserShell = pkgs.zsh;
-	#programs.zsh.enable = true;
+  # Zsh
+  #environment.shells = [pkgs.zsh];
+  #users.defaultUserShell = pkgs.zsh;
+  #programs.zsh.enable = true;
 
   fonts = {
     fontconfig.enable = true;
     fontDir.enable = true;
     packages = with pkgs; [
-    (nerdfonts.override {fonts = ["JetBrainsMono"];})
+      (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     ];
   };
-  
-	system.stateVersion = "23.05";
+
+  system.stateVersion = "23.05";
 } 
