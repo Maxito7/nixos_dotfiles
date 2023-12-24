@@ -90,8 +90,6 @@
           config = toLuaFile ./nvim/plugins/treesitter.lua;
         }
 
-        vim-smoothie
-
         mini-nvim
         indent-blankline-nvim
 

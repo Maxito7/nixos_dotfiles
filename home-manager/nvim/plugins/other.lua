@@ -1,6 +1,6 @@
 -- Web-Devicons
 require("nvim-web-devicons").setup({
-	default = false;
+	default = false,
 	override = {
 		rs = {
 			icon = "",
@@ -46,8 +46,8 @@ require("nvim-web-devicons").setup({
 			icon = "",
 			color = "#7bd88f",
 			name = "Vue",
-		}
-	};
+		},
+	},
 	override_by_extension = {
 		["norg"] = {
 			icon = "",
@@ -59,33 +59,33 @@ require("nvim-web-devicons").setup({
 			color = "#7bd88f",
 			name = "Python",
 		},
-	};
+	},
 	-- globally enable different highlight colors per icon (default to true)
 	-- if set to false all icons will have the default icon's color
-	color_icons = true;
+	color_icons = true,
 })
 
 -- Lualine
 require("lualine").setup({
-    icons_enabled = true,
-    --theme = 'onedark',
+	icons_enabled = true,
+	--theme = 'onedark',
 })
 
 -- Tokyonight
 require("tokyonight").setup({
-		style = "night",
-		transparent = true,
-		terminal_colors = true,
-		on_colors = function(colors)
-			colors.green = "#7BD88F"
-			colors.comment = "#86a1db"
-			--colors.bg_dark = "#7aabdf"
-			--colors.fg_gutter = "#4d5b78"
-		end,
-		styles = {
-			floats = "transparent",
-			sidebars = "transparent",
-		},
+	style = "night",
+	transparent = true,
+	terminal_colors = true,
+	on_colors = function(colors)
+		colors.green = "#7BD88F"
+		colors.comment = "#86a1db"
+		--colors.bg_dark = "#7aabdf"
+		--colors.fg_gutter = "#4d5b78"
+	end,
+	styles = {
+		floats = "transparent",
+		sidebars = "transparent",
+	},
 })
 -- Setting up Tokyonight
 vim.cmd("colorscheme tokyonight")
@@ -232,3 +232,5 @@ vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", {
 	bg = vim.api.nvim_get_hl(0, { name = "IblScope" }).bg,
 	fg = vim.api.nvim_get_hl(0, { name = "Function" }).fg,
 })
+
+require("mini.animate").setup()
