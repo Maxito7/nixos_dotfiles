@@ -12,9 +12,9 @@
 
       extraLuaPackages = ps: [ ps.magick ];
       extraLuaConfig = ''
-            	${builtins.readFile ./nvim/options.lua}
-        			${builtins.readFile ./nvim/plugins/other.lua}
+        	${builtins.readFile ./nvim/options.lua}
       '';
+      /*${builtins.readFile ./nvim/plugins/other.lua}*/
 
       extraPackages = with pkgs; [
         lua-language-server
