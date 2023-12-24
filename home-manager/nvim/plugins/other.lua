@@ -233,4 +233,14 @@ vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", {
 	fg = vim.api.nvim_get_hl(0, { name = "Function" }).fg,
 })
 
-require("mini.animate").setup()
+require("mini.animate").setup({
+	resize = {
+		enable = false,
+	},
+	open = {
+		enable = false,
+	},
+	close = {
+		enable = false,
+	},
+})
