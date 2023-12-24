@@ -26,6 +26,11 @@
 
       plugins = with pkgs.vimPlugins; [
         {
+          plugin = nvim-web-devicons;
+          config = toLuaFile ./nvim/plugins/web_devicons.lua;
+        }
+
+        {
           plugin = nvim-lspconfig;
           config = toLuaFile ./nvim/plugins/lsp.lua;
         }
@@ -92,11 +97,6 @@
 
         mini-nvim
         indent-blankline-nvim
-
-        {
-          plugin = nvim-web-devicons;
-          config = toLuaFile ./nvim/plugins/web_devicons.lua;
-        }
       ];
     };
 
