@@ -31,13 +31,7 @@ vim.opt.laststatus = 3
 =======================================================
 ]]
 
--- DEL. THE COMMENTED CODE HERE IF NTH. WORKS! I DON'T KNOW WHAT THE FUCK I'M DOING! :D
--- Lualine
-require("lualine").setup({
-	icons_enabled = true,
-	--theme = 'onedark',
-})
-
+-- DEL THE COMMENTED CODE HERE IF NTH. WORKS! I DON'T KNOW WHAT THE FUCK I'M DOING! :D
 -- Tokyonight
 require("tokyonight").setup({
 	style = "night",
