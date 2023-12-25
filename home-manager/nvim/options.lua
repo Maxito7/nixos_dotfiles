@@ -114,6 +114,49 @@ require("lazy").setup({
 			color_icons = true,
 		},
 	},
+	{
+		-- Set lualine as statusline
+		"nvim-lualine/lualine.nvim",
+		-- See `:help lualine.txt`
+		opts = {
+			options = {
+				icons_enabled = true,
+			},
+		},
+		config = function(_, opts)
+			require("lualine").setup(opts)
+		end,
+		dependencies = {
+			"nvim-tree/nvim-web-devicons",
+		},
+	},
+	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {
+			style = "night",
+			transparent = true,
+			on_colors = function(colors)
+				colors.green = "#7BD88F"
+				colors.comment = "#86a1db"
+				--colors.bg_dark = "#7aabdf"
+				--colors.fg_gutter = "#4d5b78"
+			end,
+			styles = {
+				floats = "transparent",
+				sidebars = "transparent",
+			},
+		},
+		config = function(_, opts) --(_, opts)
+			--local tokyonight = require("tokyonight")
+			--require("lualine").setup(opts)
+			require("tokyonight").setup(opts)
+			--tokyonight.setup(opts)
+			--tokyonight.load()
+			require("tokyonight").load()
+		end,
+	},
 })
 
 -- Web-Devicons
