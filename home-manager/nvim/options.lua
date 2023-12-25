@@ -770,4 +770,12 @@ require("nvim-web-devicons").setup({
 	},
 })
 
+require("nvim-web-devicons").set_icon({
+	py = {
+		icon = "",
+		color = "#7bd88f",
+		name = "Python",
+	},
+})
+
 require("nvim-web-devicons").refresh()
