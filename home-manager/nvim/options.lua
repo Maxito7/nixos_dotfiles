@@ -159,6 +159,7 @@ require("lazy").setup({
 	},
 })
 
+-- DEL. THE COMMENTED CODE HERE IF NTH. WORKS! I DON'T KNOW WHAT THE FUCK I'M DOING! :D
 -- Web-Devicons
 --[[
 require("nvim-web-devicons").setup({
@@ -226,7 +227,7 @@ require("nvim-web-devicons").setup({
 	-- if set to false all icons will have the default icon's color
 	color_icons = true,
 })
-]]
+
 
 -- Lualine
 require("lualine").setup({
@@ -900,3 +901,4 @@ require("nvim-treesitter.configs").setup({
 		end,
 	},
 })
+]]
