@@ -49,7 +49,6 @@ require("lazy").setup({
 	{
 		"nvim-tree/nvim-web-devicons",
 		lazy = false,
-		priority = 1000,
 		opts = {
 			override = {
 				rs = {
