@@ -772,4 +772,10 @@ require("nvim-web-devicons").set_icon({
 	},
 })
 
+-- Lualine
+require("lualine").setup({
+	icons_enabled = true,
+	--theme = 'onedark',
+})
+
 require("nvim-web-devicons").refresh()
