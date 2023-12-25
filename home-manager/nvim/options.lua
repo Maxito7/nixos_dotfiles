@@ -707,8 +707,6 @@ require("nvim-treesitter.configs").setup({
 
 -- Web-Devicons
 require("nvim-web-devicons").setup({
-	color_icons = true,
-	strict = true,
 	override = {
 		rs = {
 			icon = "",
@@ -756,6 +754,8 @@ require("nvim-web-devicons").setup({
 			name = "Vue",
 		},
 	},
+	color_icons = true,
+	strict = true,
 	override_by_extension = {
 		["norg"] = {
 			icon = "",
@@ -768,8 +768,6 @@ require("nvim-web-devicons").setup({
 			name = "Python",
 		},
 	},
-	-- globally enable different highlight colors per icon (default to true)
-	-- if set to false all icons will have the default icon's color
 })
 
 require("nvim-web-devicons").refresh()
