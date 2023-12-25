@@ -31,6 +31,8 @@ vim.opt.laststatus = 3
 =======================================================
 ]]
 
+-- UNCOMMENT THE LAZY PART IF A SOLUTION IS FOUND, OTHERWISE, FUCK IT! :D
+--[[
 -- Lazy for priority control
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -158,10 +160,10 @@ require("lazy").setup({
 		end,
 	},
 })
+]]
 
 -- DEL. THE COMMENTED CODE HERE IF NTH. WORKS! I DON'T KNOW WHAT THE FUCK I'M DOING! :D
 -- Web-Devicons
---[[
 require("nvim-web-devicons").setup({
 	default = false,
 	override = {
@@ -901,4 +903,3 @@ require("nvim-treesitter.configs").setup({
 		end,
 	},
 })
-]]
