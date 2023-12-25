@@ -31,7 +31,93 @@ vim.opt.laststatus = 3
 =======================================================
 ]]
 
+-- Lazy for priority control
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+	vim.fn.system({
+		"git",
+		"clone",
+		"--filter=blob:none",
+		"https://github.com/folke/lazy.nvim.git",
+		"--branch=stable", -- latest stable release
+		lazypath,
+	})
+end
+vim.opt.rtp:prepend(lazypath)
+
+require("lazy").setup({
+	{
+		"nvim-tree/nvim-web-devicons",
+		priority = 1000,
+		opts = {
+			override = {
+				rs = {
+					icon = "",
+					color = "#ff9e64",
+					name = "Rust",
+				},
+				lua = {
+					icon = "󰢱",
+					color = "#7DCFFF",
+					name = "Lua",
+				},
+				py = {
+					icon = "",
+					color = "#7bd88f",
+					name = "Python",
+				},
+				go = {
+					icon = "",
+					color = "#7dcfff",
+					name = "Go",
+				},
+				cpp = {
+					icon = "",
+					color = "#7aa2f7",
+					name = "CPP",
+				},
+				c = {
+					icon = "",
+					color = "#BB9AF7",
+					name = "C",
+				},
+				tex = {
+					icon = "",
+					color = "#9AA5CE",
+					name = "LaTeX",
+				},
+				vim = {
+					icon = "",
+					color = "#7BD88F",
+					name = "Vim",
+				},
+				vue = {
+					icon = "",
+					color = "#7bd88f",
+					name = "Vue",
+				},
+			},
+			override_by_extension = {
+				["norg"] = {
+					icon = "",
+					color = "#4878BE",
+					name = "Neorg",
+				},
+				["py"] = {
+					icon = "",
+					color = "#7bd88f",
+					name = "Python",
+				},
+			},
+			-- globally enable different highlight colors per icon (default to true)
+			-- if set to false all icons will have the default icon's color
+			color_icons = true,
+		},
+	},
+})
+
 -- Web-Devicons
+--[[
 require("nvim-web-devicons").setup({
 	default = false,
 	override = {
@@ -97,6 +183,7 @@ require("nvim-web-devicons").setup({
 	-- if set to false all icons will have the default icon's color
 	color_icons = true,
 })
+]]
 
 -- Lualine
 require("lualine").setup({
