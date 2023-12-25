@@ -714,7 +714,7 @@ require("nvim-web-devicons").setup({
 			color = "#ff9e64",
 			name = "Rust",
 		},
-		Lua = {
+		lua = {
 			icon = "󰢱",
 			color = "#7DCFFF",
 			name = "Lua",
@@ -771,3 +771,5 @@ require("nvim-web-devicons").setup({
 	-- if set to false all icons will have the default icon's color
 	color_icons = true,
 })
+
+require("nvim-web-devicons").refresh()
