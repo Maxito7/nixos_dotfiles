@@ -35,8 +35,8 @@ in
     fd
     lua-language-server
     rust-analyzer-unwrapped
-		rnix-lsp
-		fzf
+    rnix-lsp
+    fzf
   ];
 
   programs.neovim = {
@@ -46,6 +46,15 @@ in
 
     plugins = [
       treesitterWithGrammars
+    ];
+
+    extraPackages = with pkgs; [
+      fzf
+      lua-language-server
+      rnix-lsp
+
+      xclip
+      wl-clipboard
     ];
   };
 
