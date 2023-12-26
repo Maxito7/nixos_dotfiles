@@ -63,4 +63,5 @@ return {
 			},
 		})
 	end,
+	lazy = true,
 }
