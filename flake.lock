@@ -264,11 +264,11 @@
         "parts": "parts"
       },
       "locked": {
-        "lastModified": 1703557618,
-        "narHash": "sha256-jRlgN112OsIRi0ssgkqMPJUQLDmUgTuc2V2hOR6/N+M=",
+        "lastModified": 1703599952,
+        "narHash": "sha256-FbkAfqGkrkK5E/zH7FKeCYc5cjX+a4WZVilquLLPQd0=",
         "owner": "moni-dz",
         "repo": "nixpkgs-f2k",
-        "rev": "baaf385e80712fcae035f6319502f85c93943a09",
+        "rev": "4da6b2fc8b6cf2dd3392b14905df19a02bb8b7d9",
         "type": "github"
       },
       "original": {
