@@ -3,6 +3,7 @@ return {
 	lazy = false,
 	priority = 1000,
 	opts = {
+		--[[
 		style = "night",
 		transparent = true,
 		on_colors = function(colors)
@@ -25,4 +26,6 @@ return {
 		--require("tokyonight").load()
 		vim.cmd("colorscheme tokyonight")
 	end,
+	]]
+	},
 }
