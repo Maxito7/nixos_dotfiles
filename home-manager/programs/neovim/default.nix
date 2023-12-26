@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 let
 
   treesitterWithGrammars = (pkgs.vimPlugins.nvim-treesitter.withPlugins (p: [
@@ -39,7 +39,7 @@ in
 
   programs.neovim = {
     enable = true;
-    package = pkgs.neovim-nightly;
+    package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
     extraLuaPackages = ps: [ ps.magick ];
 
     plugins = [
@@ -95,7 +95,6 @@ in
   in
   {
   enable = true;
-  package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
 
   extraLuaConfig = ''
   	${builtins.readFile ./nvim/init.lua}
