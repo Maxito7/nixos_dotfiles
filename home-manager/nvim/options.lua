@@ -1,20 +1,21 @@
 vim.g.mapleader = " "
 
-vim.o.clipboard = "unnamedplus"
+vim.opt.clipboard = "unnamedplus"
 
-vim.o.number = true
-vim.o.relativenumber = true
+vim.opt.number = true
+vim.opt.relativenumber = true
 
-vim.o.signcolumn = "yes"
+vim.opt.signcolumn = "yes"
+vim.opt.cursorline = true
 
-vim.o.tabstop = 2
-vim.o.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
 
-vim.o.updatetime = 300
+--vim.o.updatetime = 300
 
-vim.o.termguicolors = true
+vim.opt.termguicolors = true
 
-vim.o.mouse = "a"
+vim.opt.mouse = "a"
 
 vim.opt.laststatus = 3
 
