@@ -1,6 +1,7 @@
 -- Web-Devicons
 require("nvim-web-devicons").setup({
-	default = false;
+	default = true,
+	color_icons = true,
 	override = {
 		rs = {
 			icon = "",
@@ -46,8 +47,9 @@ require("nvim-web-devicons").setup({
 			icon = "",
 			color = "#7bd88f",
 			name = "Vue",
-		}
-	};
+		},
+	},
+	strict = true,
 	override_by_extension = {
 		["norg"] = {
 			icon = "",
@@ -59,8 +61,5 @@ require("nvim-web-devicons").setup({
 			color = "#7bd88f",
 			name = "Python",
 		},
-	};
-	-- globally enable different highlight colors per icon (default to true)
-	-- if set to false all icons will have the default icon's color
-	color_icons = true;
+	},
 })
