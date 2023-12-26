@@ -76,7 +76,7 @@
         }
 
         {
-          plugin = colorizer;
+          plugin = nvim-colorizer-lua;
           config = toLuaFile ./nvim/plugins/colorizer.lua;
         }
 
