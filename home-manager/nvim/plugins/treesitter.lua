@@ -1,21 +1,27 @@
-require('nvim-treesitter.configs').setup {
-    ensure_installed = {},
+require("nvim-treesitter.configs").setup({
+	ensure_installed = {},
 
-    auto_install = false,
+	auto_install = false,
 
-    highlight = { enable = true },
+	highlight = { enable = true },
 
-    indent = { enable = true },
+	indent = { enable = true },
 
-		use = {
-			"nvim-neorg/neorg",
-			run = ":Neorg sync-parsers", -- This is the important bit!
-			config = function()
-				require("neorg").setup({
-					load = {
-						["core.defaults"] = {},
+	use = {
+		"nvim-neorg/neorg",
+		run = ":Neorg sync-parsers", -- This is the important bit!
+		config = function()
+			require("neorg").setup({
+				load = {
+					["core.defaults"] = {},
+					["core.concealer"] = {},
+					["core.completion"] = {
+						config = {
+							engine = "nvim-cmp",
+						},
 					},
-				})
-			end,
-		},
-}
+				},
+			})
+		end,
+	},
+})

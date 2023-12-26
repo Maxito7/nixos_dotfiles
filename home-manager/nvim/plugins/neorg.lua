@@ -1,11 +1,11 @@
-require("neorg").setup {
+require("neorg").setup({
 	load = {
 		["core.defaults"] = {},
 		["core.concealer"] = {},
 		["core.completion"] = {
 			config = {
-				engine = "nvim-cmp"
-			}
+				engine = "nvim-cmp",
+			},
 		},
 		["core.dirman"] = {
 			config = {
@@ -16,7 +16,6 @@ require("neorg").setup {
 			},
 		},
 	},
-}
-
---vim.wo.foldlevel = 99
---vim.wo.conceallevel = 2
+})
+vim.wo.foldlevel = 99
+vim.wo.conceallevel = 2

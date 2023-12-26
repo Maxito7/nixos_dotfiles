@@ -12,9 +12,9 @@
 
       extraLuaPackages = ps: [ ps.magick ];
       extraLuaConfig = ''
-        	${builtins.readFile ./nvim/options.lua}
+                	${builtins.readFile ./nvim/options.lua}
+        					${builtins.readFile ./nvim/plugins/other.lua}
       '';
-      /*${builtins.readFile ./nvim/plugins/other.lua}*/
 
       extraPackages = with pkgs; [
         lua-language-server
@@ -25,63 +25,82 @@
       ];
 
       plugins = with pkgs.vimPlugins; [
-        nvim-web-devicons
-        /*{
-          plugin = nvim-web-devicons;
-          config = toLuaFile ./nvim/plugins/web_devicons.lua;
-          }*/
-        nvim-lspconfig
-        /*{
+        {
           plugin = nvim-lspconfig;
           config = toLuaFile ./nvim/plugins/lsp.lua;
-          }*/
+        }
+
         neodev-nvim
-        lualine-nvim
-        oil-nvim
-        /*{
+
+        {
+          plugin = lualine-nvim;
+          config = toLuaFile ./nvim/plugins/lualine.lua;
+        }
+
+        {
           plugin = oil-nvim;
           config = toLuaFile ./nvim/plugins/oil.lua;
-          }*/
-        tokyonight-nvim
-        telescope-nvim
-        /*{
-          plugin = telescope-nvim;
-          config = toLuaFile ./nvim/plugins/telescope.lua;
-          }*/
+        }
+
+        {
+          plugin = tokyonight-nvim;
+          config = toLuaFile ./nvim/plugins/tokyonight.lua;
+        }
 
         telescope-fzf-native-nvim
+        {
+          plugin = telescope-nvim;
+          config = toLuaFile ./nvim/plugins/telescope.lua;
+        }
+
         cmp_luasnip
         cmp-nvim-lsp
         cmp-path
         lspkind-nvim
-        barbecue-nvim
-
         luasnip
         friendly-snippets
-        nvim-cmp
-        /*{
+        {
           plugin = nvim-cmp;
           config = toLuaFile ./nvim/plugins/cmp.lua;
-          }*/
-        no-neck-pain-nvim
-        colorizer
-        nvim-autopairs
-        conform-nvim
-        /*{
+        }
+
+        nvim-navic
+        {
+          plugin = barbecue-nvim;
+          config = toLuaFile ./nvim/plugins/barbecue.lua;
+        }
+
+        {
+          plugin = no-neck-pain-nvim;
+          config = toLuaFile ./nvim/plugins/neck_pain.lua;
+        }
+
+        {
+          plugin = colorizer;
+          config = toLuaFile ./nvim/plugins/colorizer.lua;
+        }
+
+        {
+          plugin = nvim-autopairs;
+          config = toLuaFile ./nvim/plugins/autopairs.lua;
+        }
+
+        {
           plugin = conform-nvim;
           config = toLuaFile ./nvim/plugins/conform.lua;
-          }*/
-        neorg
-        /*{
+        }
+
+        neorg-telescope
+        {
           plugin = neorg;
           config = toLuaFile ./nvim/plugins/neorg.lua;
-          }*/
-        neorg-telescope
-        image-nvim
-        /*{
+        }
+
+        {
           plugin = image-nvim;
           config = toLuaFile ./nvim/plugins/image.lua;
-          }*/
+        }
+
         vimtex
 
         {
@@ -101,8 +120,20 @@
           config = toLuaFile ./nvim/plugins/treesitter.lua;
         }
 
-        mini-nvim
-        indent-blankline-nvim
+        {
+          plugin = indent-blankline-nvim;
+          config = toLuaFile ./nvim/plugins/indent_blankline.lua;
+        }
+
+        {
+          plugin = mini-nvim;
+          config = toLuaFile ./nvim/plugins/mini.lua;
+        }
+
+        {
+          plugin = nvim-web-devicons;
+          config = toLuaFile ./nvim/plugins/web_devicons.lua;
+        }
       ];
     };
 
