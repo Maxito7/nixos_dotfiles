@@ -22,6 +22,7 @@ return {
 		require("tokyonight").setup(opts)
 		--tokyonight.setup(opts)
 		--tokyonight.load()
-		require("tokyonight").load()
+		--require("tokyonight").load()
+		vim.cmd("colorscheme tokyonight")
 	end,
 }
