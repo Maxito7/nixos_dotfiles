@@ -1,10 +1,36 @@
 { pkgs, inputs, ... }:
 {
-
   programs.neovim =
     let
       toLua = str: "lua << EOF\n${str}\nEOF\n";
       toLuaFile = file: "lua << EOF\n${builtins.readFile file}\nEOF\n";
+      treesitterWithGrammars = (pkgs.vimPlugins.nvim-treesitter.withPlugins (p: [
+        p.bash
+        p.comment
+        p.css
+        p.dockerfile
+        p.fish
+        p.gitattributes
+        p.gitignore
+        p.go
+        p.gomod
+        p.gowork
+        p.hcl
+        p.javascript
+        p.jq
+        p.json5
+        p.json
+        p.lua
+        p.make
+        p.markdown
+        p.nix
+        p.python
+        p.rust
+        p.toml
+        p.typescript
+        p.vue
+        p.yaml
+      ]));
     in
     {
       enable = true;
@@ -12,7 +38,7 @@
 
       extraLuaPackages = ps: [ ps.magick ];
       extraLuaConfig = ''
-        	${builtins.readFile ./nvim/options.lua}
+        	${builtins.readFile ./nvim/init.lua}
       '';
       /* ${builtins.readFile ./nvim/plugins/other.lua} */
       extraPackages = with pkgs; [
@@ -24,84 +50,6 @@
       ];
 
       plugins = with pkgs.vimPlugins; [
-        {
-          plugin = nvim-lspconfig;
-          config = toLuaFile ./nvim/plugins/lsp.lua;
-        }
-
-        neodev-nvim
-
-        {
-          plugin = lualine-nvim;
-          config = toLuaFile ./nvim/plugins/lualine.lua;
-        }
-
-        {
-          plugin = oil-nvim;
-          config = toLuaFile ./nvim/plugins/oil.lua;
-        }
-
-        {
-          plugin = tokyonight-nvim;
-          config = toLuaFile ./nvim/plugins/tokyonight.lua;
-        }
-
-        telescope-fzf-native-nvim
-        {
-          plugin = telescope-nvim;
-          config = toLuaFile ./nvim/plugins/telescope.lua;
-        }
-
-        cmp_luasnip
-        cmp-nvim-lsp
-        cmp-path
-        lspkind-nvim
-        luasnip
-        friendly-snippets
-        {
-          plugin = nvim-cmp;
-          config = toLuaFile ./nvim/plugins/cmp.lua;
-        }
-
-        nvim-navic
-        {
-          plugin = barbecue-nvim;
-          config = toLuaFile ./nvim/plugins/barbecue.lua;
-        }
-
-        {
-          plugin = no-neck-pain-nvim;
-          config = toLuaFile ./nvim/plugins/neck_pain.lua;
-        }
-
-        {
-          plugin = nvim-colorizer-lua;
-          config = toLuaFile ./nvim/plugins/colorizer.lua;
-        }
-
-        {
-          plugin = nvim-autopairs;
-          config = toLuaFile ./nvim/plugins/autopairs.lua;
-        }
-
-        {
-          plugin = conform-nvim;
-          config = toLuaFile ./nvim/plugins/conform.lua;
-        }
-
-        neorg-telescope
-        {
-          plugin = neorg;
-          config = toLuaFile ./nvim/plugins/neorg.lua;
-        }
-
-        {
-          plugin = image-nvim;
-          config = toLuaFile ./nvim/plugins/image.lua;
-        }
-
-        vimtex
-
         {
           plugin = (nvim-treesitter.withPlugins (p: [
             p.tree-sitter-nix
@@ -116,37 +64,34 @@
             p.tree-sitter-norg
             p.tree-sitter-markdown
           ]));
-          config = toLuaFile ./nvim/plugins/treesitter.lua;
-        }
-
-        {
-          plugin = indent-blankline-nvim;
-          config = toLuaFile ./nvim/plugins/indent_blankline.lua;
-        }
-
-        {
-          plugin = mini-nvim;
-          config = toLuaFile ./nvim/plugins/mini.lua;
-        }
-
-        {
-          plugin = nvim-web-devicons;
-          config = toLuaFile ./nvim/plugins/web_devicons.lua;
         }
       ];
+      home.file."./.config/nvim/" = {
+        source = ./nvim;
+        recursive = true;
+      };
+
+      # Treesitter is configured as a locally developed module in lazy.nvim
+      # we hardcode a symlink here so that we can refer to it in our lazy config
+      home.file."./.local/share/nvim/nix/nvim-treesitter/" = {
+        recursive = true;
+        source = treesitterWithGrammars;
+
+      };
+
+
+      imports = [
+        ./configs
+      ];
+
+      home.username = "lucky";
+      home.homeDirectory = "/home/lucky";
+      home.stateVersion = "22.05";
+
+      programs.home-manager.enable = true;
+      programs.zoxide = {
+        enable = true;
+        enableFishIntegration = true;
+      };
     };
-
-  imports = [
-    ./configs
-  ];
-
-  home.username = "lucky";
-  home.homeDirectory = "/home/lucky";
-  home.stateVersion = "22.05";
-
-  programs.home-manager.enable = true;
-  programs.zoxide = {
-    enable = true;
-    enableFishIntegration = true;
-  };
 }
