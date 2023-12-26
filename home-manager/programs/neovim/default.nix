@@ -35,6 +35,8 @@ in
     fd
     lua-language-server
     rust-analyzer-unwrapped
+		rnix-lsp
+		fzf
   ];
 
   programs.neovim = {

@@ -15,6 +15,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -198,11 +199,6 @@
   # Fish
   programs.fish.enable = true;
   users.users.lucky.shell = pkgs.fish;
-
-  # Zsh
-  #environment.shells = [pkgs.zsh];
-  #users.defaultUserShell = pkgs.zsh;
-  #programs.zsh.enable = true;
 
   fonts = {
     fontconfig.enable = true;
