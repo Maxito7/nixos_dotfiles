@@ -5,7 +5,6 @@ return {
 	opts = {
 		style = "night",
 		transparent = true,
-		terminal_colors = true,
 		on_colors = function(colors)
 			colors.green = "#7BD88F"
 			colors.comment = "#86a1db"
@@ -17,4 +16,12 @@ return {
 			sidebars = "transparent",
 		},
 	},
+	config = function(_, opts) --(_, opts)
+		--local tokyonight = require("tokyonight")
+		--require("lualine").setup(opts)
+		require("tokyonight").setup(opts)
+		--tokyonight.setup(opts)
+		--tokyonight.load()
+		require("tokyonight").load()
+	end,
 }

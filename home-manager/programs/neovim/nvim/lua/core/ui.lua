@@ -1,6 +1,3 @@
--- Setting up Tokyonight
-vim.cmd("colorscheme tokyonight")
-
 -- BORDER GROUPS AND COLORS
 vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = "#7AA2F7" })
 vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#5f74a1" })
