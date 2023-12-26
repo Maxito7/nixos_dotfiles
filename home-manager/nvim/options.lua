@@ -703,6 +703,8 @@ require("nvim-treesitter.configs").setup({
 
 -- Web-Devicons
 require("nvim-web-devicons").setup({
+	default = true,
+	color_icons = true,
 	override = {
 		rs = {
 			icon = "",
@@ -750,7 +752,6 @@ require("nvim-web-devicons").setup({
 			name = "Vue",
 		},
 	},
-	color_icons = true,
 	strict = true,
 	override_by_extension = {
 		["norg"] = {
