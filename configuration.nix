@@ -188,6 +188,11 @@
 
     zoxide
     eza
+
+    # WAYLAND ONLY
+    grim
+    slurp
+    wl-clipboard
   ];
 
 
@@ -206,6 +211,13 @@
     packages = with pkgs; [
       (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     ];
+  };
+
+  # Wayland + Hyprland
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+    enableNvidiaPatches = true;
   };
 
   system.stateVersion = "23.05";
