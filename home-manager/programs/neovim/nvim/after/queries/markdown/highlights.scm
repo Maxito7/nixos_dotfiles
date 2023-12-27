@@ -74,7 +74,7 @@
 (
   [(info_string (language))] @markdown_code_block_lang_bash
   (#eq? @markdown_code_block_lang_bash "rust")
-  (#set! conceal " ")
+  (#set! conceal "󱘗 ")
 )
 (
   [(info_string (language))] @markdown_code_block_lang_bash
@@ -89,7 +89,7 @@
 (
   [(info_string (language))] @markdown_code_block_lang_vim
   (#eq? @markdown_code_block_lang_vim "vim")
-  (#set! conceal " ")
+  (#set! conceal " ")
 )
 (
   [(info_string (language))] @markdown_code_block_lang_yaml
@@ -115,4 +115,14 @@
   [(info_string (language))] @markdown_code_block_lang_sql
   (#eq? @markdown_code_block_lang_sql "sql")
   (#set! conceal " ")
+)
+(
+  [(info_string (language))] @markdown_code_block_lang_go
+  (#eq? @markdown_code_block_lang_go "go")
+  (#set! conceal "󰟓 ")
+)
+(
+  [(info_string (language))] @markdown_code_block_lang_python
+  (#eq? @markdown_code_block_lang_python "python")
+  (#set! conceal "󰌠 ")
 )
