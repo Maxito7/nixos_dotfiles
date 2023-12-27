@@ -20,7 +20,6 @@ return {
 			},
 		},
 		"windwp/nvim-ts-autotag",
-		{ "David-Kunz/markid" },
 		{
 			"nvim-treesitter/nvim-treesitter-textobjects",
 			event = { "BufRead", "BufNewFile" },
@@ -73,7 +72,6 @@ return {
 			-- },
 			autotag = { enable = true },
 			autopairs = { enable = true },
-			markid = { enable = true },
 			use = {
 				"nvim-neorg/neorg",
 				run = ":Neorg sync-parsers", -- This is the important bit!
