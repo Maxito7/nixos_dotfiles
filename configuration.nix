@@ -217,7 +217,6 @@
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
-    enableNvidiaPatches = true;
   };
 
   system.stateVersion = "23.05";
