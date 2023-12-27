@@ -39,7 +39,7 @@
 ; Fenced codeblocks + devicons for the language
 (
   fenced_code_block (fenced_code_block_delimiter) @markdown_code_block_marker
-  (#set! conceal "")
+  (#set! conceal " ")
 )
 (
   [(info_string (language))] @markdown_code_block_lang_javascript
@@ -125,4 +125,14 @@
   [(info_string (language))] @markdown_code_block_lang_python
   (#eq? @markdown_code_block_lang_python "python")
   (#set! conceal "󰌠 ")
+)
+(
+  [(info_string (language))] @markdown_code_block_lang_c
+  (#eq? @markdown_code_block_lang_c "c")
+  (#set! conceal " ")
+)
+(
+  [(info_string (language))] @markdown_code_block_lang_cpp
+  (#eq? @markdown_code_block_lang_cpp "cpp")
+  (#set! conceal " ")
 )
