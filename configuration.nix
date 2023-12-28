@@ -58,7 +58,7 @@
 
   # Enable the Cinnamon Desktop Environment.
   services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.cinnamon.enable = true;
+  services.xserver.desktopManager.cinnamon.enable = false;
 
   services.xserver.windowManager.qtile = {
     enable = true;
@@ -248,6 +248,14 @@
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
+  };
+
+  programs.bash = {
+    loginShellInit = ''
+      if [ "$(tty)" = "/dev/tty1" ]; then
+          exec Hyprland &> /dev/null
+      fi
+    '';
   };
 
   system.stateVersion = "23.05";
