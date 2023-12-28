@@ -216,6 +216,8 @@
     zoxide
     eza
 
+    sdbus-cpp
+
     # WAYLAND ONLY
     grim
     slurp
