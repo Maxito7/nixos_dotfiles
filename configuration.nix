@@ -221,6 +221,7 @@
     slurp
     wl-clipboard
     waybar
+    swww
   ];
 
 
