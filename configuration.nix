@@ -216,6 +216,7 @@
     grim
     slurp
     wl-clipboard
+    waybar
   ];
 
 
