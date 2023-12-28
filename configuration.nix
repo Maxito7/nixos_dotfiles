@@ -119,6 +119,29 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  nixpkgs.overlays = [
+    (
+      final: prev: {
+        wezterm = prev.wezterm.overrideAttrs (o: rec {
+          src = pkgs.fetchFromGitHub {
+            owner = "wez";
+            repo = "wezterm";
+            rev = "e3cd2e93d0ee5f3af7f3fe0af86ffad0cf8c7ea8";
+            fetchSubmodules = true;
+            sha256 = "sha256-sj3S1fWC6j9Q/Yc+4IpLbKC3lttUWFk65ROyCdQt+Zc=";
+          };
+
+          # creating an overlay for buildRustPackage overlay
+          # https://discourse.nixos.org/t/is-it-possible-to-override-cargosha256-in-buildrustpackage/4393/3
+          cargoDeps = prev.rustPlatform.importCargoLock {
+            lockFile = src + "/Cargo.lock";
+            allowBuiltinFetchGit = true;
+          };
+        });
+      }
+    )
+  ];
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
