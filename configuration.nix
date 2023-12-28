@@ -234,7 +234,7 @@
 
   # Fish
   programs.fish.enable = true;
-  users.users.lucky.shell = pkgs.fish;
+  #users.users.lucky.shell = pkgs.fish;
 
   fonts = {
     fontconfig.enable = true;
