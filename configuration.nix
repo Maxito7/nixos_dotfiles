@@ -61,7 +61,7 @@
   services.xserver.desktopManager.cinnamon.enable = false;
 
   services.xserver.windowManager.qtile = {
-    enable = true;
+    enable = false;
     extraPackages = python3Packages: with python3Packages; [
       (qtile-extras.overridePythonAttrs (old: {
         disabledTestPaths = [
