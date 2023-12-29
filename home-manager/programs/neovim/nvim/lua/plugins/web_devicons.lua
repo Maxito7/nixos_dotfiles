@@ -1,13 +1,14 @@
 return {
 	"nvim-tree/nvim-web-devicons",
-	lazy = true,
-	event = "VeryLazy",
-	priority = 2000,
+	--lazy = false,
+	--event = "VeryLazy",
+	--priority = 2000,
+	--[[
 	config = function()
 		-- Web-Devicons
 		require("nvim-web-devicons").setup({
-			default = false,
-			color_icons = false,
+			default = true,
+			color_icons = true,
 			default_icon = {
 				icon = "",
 				name = "Default",
@@ -69,4 +70,5 @@ return {
 			},
 		})
 	end,
+	]]
 }

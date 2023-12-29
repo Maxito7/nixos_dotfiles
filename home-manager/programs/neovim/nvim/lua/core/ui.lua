@@ -1,7 +1,7 @@
 require("nvim-web-devicons").refresh()
 
 require("nvim-web-devicons").setup({
-	default = false,
+	default = true,
 	color_icons = true,
 	default_icon = {
 		icon = "",
