@@ -3,7 +3,7 @@ return {
 	config = function()
 		-- Web-Devicons
 		require("nvim-web-devicons").setup({
-			default = true,
+			default = false,
 			color_icons = false,
 			default_icon = {
 				icon = "",
