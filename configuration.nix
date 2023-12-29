@@ -219,6 +219,10 @@
 
     sdbus-cpp
 
+    # Qalculate
+    qalculate-qt
+    qalculate-gtk
+
     # WAYLAND ONLY
     grim
     slurp
