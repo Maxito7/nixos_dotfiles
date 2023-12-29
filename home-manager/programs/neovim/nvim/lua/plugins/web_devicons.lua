@@ -6,7 +6,7 @@ return {
 		-- Web-Devicons
 		require("nvim-web-devicons").setup({
 			default = false,
-			color_icons = true,
+			color_icons = false,
 			default_icon = {
 				icon = "",
 				name = "Default",
@@ -58,11 +58,11 @@ return {
 					name = "Vue",
 				},
 			},
-			strict = true,
 			override_by_extension = {
 				["norg"] = {
 					icon = "",
-					color = "#4878BE",
+					--color = "#4878BE",
+					color = "#7AA2F7",
 					name = "Neorg",
 				},
 			},
