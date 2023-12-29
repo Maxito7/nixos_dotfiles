@@ -10,7 +10,6 @@ return {
 		},
 	},
 	config = function(_, opts)
-		require("lualine").setup(opts)
 		require("nvim-web-devicons").setup({
 			default = false,
 			color_icons = true,
@@ -74,6 +73,7 @@ return {
 				},
 			},
 		})
+		require("lualine").setup(opts)
 	end,
 	dependencies = {
 		"nvim-tree/nvim-web-devicons",
