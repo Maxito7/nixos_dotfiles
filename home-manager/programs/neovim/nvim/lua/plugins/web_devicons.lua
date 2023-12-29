@@ -4,6 +4,7 @@ return {
 	priority = 1000,
 	config = function()
 		-- Web-Devicons
+		--[[
 		require("nvim-web-devicons").setup({
 			default = true,
 			color_icons = true,
@@ -61,6 +62,14 @@ return {
 					color = "#4878BE",
 					name = "Neorg",
 				},
+			},
+		})
+		]]
+		require("nvim-web-devicons").set_icon({
+			go = {
+				icon = "",
+				color = "#7dcfff",
+				name = "Go",
 			},
 		})
 	end,
