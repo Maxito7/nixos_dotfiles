@@ -13,7 +13,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins", {
-	checker = { enabled = true },
+	defaults = {
+		lazy = false,
+		version = "*",
+	},
 	dev = {
 		path = "~/.local/share/nvim/nix",
 		fallback = false,
