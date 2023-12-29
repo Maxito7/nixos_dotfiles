@@ -7,13 +7,6 @@ return {
 	end,
 	dependencies = {
 		{
-			"nvim-treesitter/nvim-treesitter-context",
-			keys = {
-				{ "<leader>tct", "<cmd>TSContextToggle<CR>", desc = "TS Context Toggle" },
-			},
-			opts = { mode = "cursor" },
-		},
-		{
 			"JoosepAlviste/nvim-ts-context-commentstring",
 			opts = {
 				enable_autocmd = false,
