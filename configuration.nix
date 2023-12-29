@@ -219,6 +219,8 @@
 
     sdbus-cpp
 
+    acpi
+
     # Qalculate
     qalculate-qt
     qalculate-gtk
