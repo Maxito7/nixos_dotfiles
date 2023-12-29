@@ -1,8 +1,8 @@
 return {
 	"nvim-tree/nvim-web-devicons",
-	lazy = false,
-	--event = "VeryLazy",
-	priority = 2000,
+	--lazy = false,
+	event = "VeryLazy",
+	--priority = 2000,
 	opts = {
 		default = true,
 		color_icons = true,
