@@ -1,8 +1,8 @@
 return {
 	"nvim-tree/nvim-web-devicons",
-	--lazy = false,
+	lazy = false,
 	--event = "VeryLazy",
-	--priority = 2000,
+	priority = 2000,
 	--[[
 	config = function()
 		-- Web-Devicons
