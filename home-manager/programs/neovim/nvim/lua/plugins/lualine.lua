@@ -1,7 +1,7 @@
 return {
 	-- Set lualine as statusline
 	"nvim-lualine/lualine.nvim",
-	--lazy = true,
+	lazy = false,
 	--event = "VimEnter",
 	-- See `:help lualine.txt`
 	opts = {

@@ -4,12 +4,6 @@ return {
 	--event = "VeryLazy",
 	--priority = 2000,
 	opts = {
-		default = false,
-		color_icons = true,
-		default_icon = {
-			icon = "",
-			name = "Default",
-		},
 		override = {
 			rs = {
 				icon = " ",
@@ -56,6 +50,12 @@ return {
 				color = "#7bd88f",
 				name = "Vue",
 			},
+		},
+		default = false,
+		color_icons = true,
+		default_icon = {
+			icon = "",
+			name = "Default",
 		},
 		override_by_extension = {
 			["norg"] = {
