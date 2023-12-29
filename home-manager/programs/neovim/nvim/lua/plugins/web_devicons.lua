@@ -4,16 +4,16 @@ return {
 		-- Web-Devicons
 		require("nvim-web-devicons").setup({
 			default = false,
-			color_icons = false,
+			color_icons = true,
 			default_icon = {
 				icon = "",
 				name = "Default",
 			},
 			override = {
 				rs = {
-					icon = "",
+					icon = " ",
 					color = "#ff9e64",
-					name = "Rs",
+					name = "Rust",
 				},
 				lua = {
 					icon = "󰢱",
