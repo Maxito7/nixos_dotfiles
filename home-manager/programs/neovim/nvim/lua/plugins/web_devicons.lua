@@ -67,6 +67,6 @@ return {
 		},
 	},
 	config = function(_, opts) --(_, opts)
-		require("nvim-web-devicon").setup(opts)
+		require("nvim-web-devicons").setup(opts)
 	end,
 }
