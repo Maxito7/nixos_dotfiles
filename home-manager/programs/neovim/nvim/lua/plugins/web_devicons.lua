@@ -1,10 +1,10 @@
 return {
 	"nvim-tree/nvim-web-devicons",
-	--lazy = false,
+	lazy = true,
 	event = "VeryLazy",
 	--priority = 2000,
 	opts = {
-		default = true,
+		default = false,
 		color_icons = true,
 		default_icon = {
 			icon = "",
