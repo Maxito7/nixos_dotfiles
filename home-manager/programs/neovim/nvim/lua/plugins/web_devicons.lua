@@ -15,7 +15,7 @@ return {
 				rs = {
 					icon = " ",
 					color = "#ff9e64",
-					name = "Rust",
+					name = "rs",
 				},
 				lua = {
 					icon = "󰢱",
