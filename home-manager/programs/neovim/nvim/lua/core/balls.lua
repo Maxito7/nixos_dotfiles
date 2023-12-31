@@ -39,7 +39,7 @@ _/        _/_/_/_/    _/_/      _/_/_/  _/_/_/  _/      _/  _/_/_/
 local plugins = {
 	-- Devicons
 	["nvim-tree/nvim-web-devicons"] = {
-		--lazy = true,
+		lazy = true,
 	},
 	-- Barbecue + dependencies
 	["SmiteshP/nvim-navic"] = {
@@ -64,13 +64,11 @@ local plugins = {
 	["nvim-telescope/telescope.nvim"] = {
 		lazy = true,
 		cmd = "Telescope",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-devicons",
-		},
 	},
 	-- Tokyonight
-	["folke/tokyonight.nvim"] = {},
+	["folke/tokyonight.nvim"] = {
+		lazy = true,
+	},
 	-- Oil
 	["stevearc/oil.nvim"] = {
 		lazy = true,
@@ -142,7 +140,7 @@ end
 ]]
 
 -- Devicons
---vim.cmd.packadd("nvim-web-devicons")
+vim.cmd.packadd("nvim-web-devicons")
 local devicons = require("nvim-web-devicons")
 
 devicons.setup({
@@ -212,6 +210,7 @@ devicons.setup({
 })
 
 -- Tokyonight
+vim.cmd.packadd("tokyonight.nvim")
 local tokyonight = require("tokyonight")
 tokyonight.setup({
 	style = "night",
