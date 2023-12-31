@@ -45,7 +45,7 @@ return {
 				"regex",
 				"rust",
 				"sql",
-				"ssh_config",
+				--"ssh_config",
 				"toml",
 				"tsx",
 				"typescript",
