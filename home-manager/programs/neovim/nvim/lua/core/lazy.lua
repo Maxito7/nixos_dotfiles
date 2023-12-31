@@ -55,19 +55,23 @@ if vim.uv.fs_stat(balls_path) == nil then
   end))
 end
 
---[[
 local Balls = require("balls")
 
 local plugins = {
-	["nvim-lualine/lualine.nvim"] = { 
-	},
+	["nvim-lualine/lualine.nvim"] = {},
 }
 
 for url, opts in pairs(plugins) do
 	Balls:register("https://github.com/" .. url, opts)
 end
-]]
 
+local lualine_installed, lualine = pcall(require, "lualine")
+
+if not lualine_installed then
+  return
+end
+
+lualine.setup({})
 --[[
 local plugins = {	
 	-- Lualine
