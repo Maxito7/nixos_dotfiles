@@ -97,6 +97,15 @@ local plugins = {
 	},
 	-- No-neck-pain
 	["shortcuts/no-neck-pain.nvim"] = {},
+	-- Colorizer
+	["NvChad/nvim-colorizer.lua"] = {},
+	-- Indent Blankline (indent-blankline + mini.indent)
+	["lukas-reineke/indent-blankline.nvim"] = {
+		event = { "BufReadPost", "BufNewFile" },
+	},
+	["echasnovski/mini.nvim"] = {
+		event = { "BufReadPost", "BufNewFile" },
+	},
 }
 
 for url, opts in pairs(plugins) do
@@ -748,3 +757,50 @@ NoNeckPain.bufferOptionsBo = {
 	--- @type boolean
 	swapfile = false,
 }
+
+-- Indent blanklines
+require("ibl").setup({
+	indent = {
+		char = "│",
+		tab_char = "│",
+	},
+	scope = { enabled = false },
+	exclude = {
+		filetypes = {
+			"help",
+			"neo-tree",
+			"Trouble",
+			"trouble",
+			"lazy",
+			"mason",
+			"toggleterm",
+		},
+	},
+})
+require("mini.indentscope").setup({
+	symbol = "│",
+	options = { try_as_border = true },
+	draw = {
+		delay = 0,
+		animation = require("mini.indentscope").gen_animation.none(),
+	},
+})
+-- Indent colors
+vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", {
+	bg = vim.api.nvim_get_hl(0, { name = "IblScope" }).bg,
+	fg = vim.api.nvim_get_hl(0, { name = "Function" }).fg,
+})
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = {
+		"help",
+		"neo-tree",
+		"Trouble",
+		"trouble",
+		"lazy",
+		"mason",
+		"toggleterm",
+	},
+	callback = function()
+		vim.b.miniindentscope_disable = true
+	end,
+})
