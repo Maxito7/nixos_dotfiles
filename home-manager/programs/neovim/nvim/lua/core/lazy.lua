@@ -77,12 +77,32 @@ local plugins = {
 			"nvim-lua/plenary.nvim",
 			"nvim-tree/nvim-web-devicons",
 		},
-	}
+	},
+	["folke/tokyonight.nvim"] = {},
 }
 
 for url, opts in pairs(plugins) do
 	Balls:register("https://github.com/" .. url, opts)
 end
+
+-- Tokyonight
+local tokyonight = require("tokyonight")
+tokyonight.setup({
+	style = "night",
+	transparent = true,
+	on_colors = function(colors)
+		colors.green = "#62d196"
+		colors.comment = "#86a1db"
+	end,
+	styles = {
+		floats = "transparent",
+		sidebars = "transparent",
+	},
+	config = function(_, opts)
+		require("tokyonight").setup(opts)
+		vim.cmd("colorscheme tokyonight")
+	end,
+})
 
 -- Devicons
 local devicons = require("nvim-web-devicons")
