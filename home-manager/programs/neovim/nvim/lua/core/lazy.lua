@@ -59,6 +59,7 @@ local Balls = require("balls")
 
 -- Setting up the PLUGINS
 local plugins = {
+	["nvim-tree/nvim-web-devicons"] = {},	
 	["nvim-lualine/lualine.nvim"] = {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
@@ -68,6 +69,18 @@ for url, opts in pairs(plugins) do
 	Balls:register("https://github.com/" .. url, opts)
 end
 
+-- Devicons
+
+local devicons_installed, devicons = pcall(require, "nvim-web-devicons")
+
+if not devicons_installed then
+  return
+end
+
+devicons.setup({
+})
+
+-- Lualine
 local lualine_installed, lualine = pcall(require, "lualine")
 
 if not lualine_installed then
@@ -79,6 +92,9 @@ lualine.setup({
 		icons_enabled = true,
 	},
 })
+
+
+
 --[[
 local plugins = {	
 	-- Lualine
