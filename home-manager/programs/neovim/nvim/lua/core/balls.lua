@@ -126,7 +126,6 @@ local plugins = {
 	},
 	["nvim-treesitter/nvim-treesitter-textobjects"] = {
 		event = { "BufRead", "BufNewFile" },
-		lazy = true,
 	},
 	["nvim-treesitter/nvim-treesitter"] = {
 		cmd = { "TSInstall", "TSUpdate" },
@@ -661,7 +660,7 @@ local cmp_auto = require("cmp")
 cmp_auto.event:on("confirm_done", cmp_autopairs.on_confirm_done())
 
 -- Treesitter
-vim.cmd.packadd("nvim-treesitter-textobjects")
+--vim.cmd.packadd("nvim-treesitter-textobjects")
 vim.cmd.packadd("nvim-treesitter")
 require("nvim-treesitter.configs").setup({
 	ensure_installed = {
