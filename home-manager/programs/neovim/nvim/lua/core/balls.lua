@@ -874,29 +874,3 @@ require("mini.animate").setup({
 --require("plenary.reload").reload_module("nvim-web-devicons")
 print("THE ICON RECEIVED IS:")
 print(devicons.get_icon("lua"))
-
-local icon, icon_highlight_group
-local ok, devicons_aux = pcall(require, "nvim-web-devicons")
-if ok then
-	icon, icon_highlight_group = devicons_aux.get_icon(vim.fn.expand("%:t"))
-	if icon == nil then
-		icon, icon_highlight_group = devicons_aux.get_icon_by_filetype(vim.bo.filetype)
-	end
-
-	if icon == nil and icon_highlight_group == nil then
-		icon = ""
-		icon_highlight_group = "DevIconDefault"
-	end
-
-	ok = vim.fn.exists("*WebDevIconsGetFileTypeSymbol")
-	if ok ~= 0 then
-		icon = vim.fn.WebDevIconsGetFileTypeSymbol()
-	end
-end
-
-if not icon then
-	return
-end
-
-print(ok)
-print(icon)
