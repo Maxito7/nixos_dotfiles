@@ -57,8 +57,11 @@ end
 
 local Balls = require("balls")
 
+-- Setting up the PLUGINS
 local plugins = {
-	["nvim-lualine/lualine.nvim"] = {},
+	["nvim-lualine/lualine.nvim"] = {
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+	},
 }
 
 for url, opts in pairs(plugins) do
@@ -71,7 +74,11 @@ if not lualine_installed then
   return
 end
 
-lualine.setup({})
+lualine.setup({
+	options = {
+		icons_enabled = true,
+	},
+})
 --[[
 local plugins = {	
 	-- Lualine
