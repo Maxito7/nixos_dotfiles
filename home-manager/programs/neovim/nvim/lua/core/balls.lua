@@ -862,4 +862,4 @@ require("mini.animate").setup({
 	},
 })
 
-require("plenary.reload").reload_module("nvim-web-devicons")
+--require("plenary.reload").reload_module("nvim-web-devicons")
