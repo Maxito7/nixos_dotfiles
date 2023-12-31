@@ -27,7 +27,9 @@ local Balls = require("balls")
 -- Setting up the PLUGINS
 local plugins = {
 	-- Devicons
-	["nvim-tree/nvim-web-devicons"] = {},
+	["nvim-tree/nvim-web-devicons"] = {
+		lazy = false,
+	},
 	-- Barbecue + dependencies
 	["SmiteshP/nvim-navic"] = {},
 	["utilyre/barbecue.nvim"] = {
