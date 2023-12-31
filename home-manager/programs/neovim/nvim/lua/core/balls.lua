@@ -136,7 +136,7 @@ local devicons = require("nvim-web-devicons")
 devicons.setup({
 	default = false,
 	color_icons = true,
-	overrides = {
+	override = {
 		lua = {
 			icon = "P",
 			color = "#7DCFFF",
