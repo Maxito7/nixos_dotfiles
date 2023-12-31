@@ -165,11 +165,13 @@ devicons.setup({
 			color = "#7bd88f",
 			name = "Python",
 		},
+		]]
 		go = {
 			icon = "",
 			color = "#7dcfff",
 			name = "Go",
 		},
+		--[[
 		cpp = {
 			icon = "",
 			color = "#7aa2f7",
