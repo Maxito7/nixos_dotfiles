@@ -795,7 +795,7 @@ local devicons = require("nvim-web-devicons")
 devicons.setup({
 	default = false,
 	color_icons = true,
-	override = {
+	overrides = {
 		rs = {
 			icon = " ",
 			color = "#ff9e64",
