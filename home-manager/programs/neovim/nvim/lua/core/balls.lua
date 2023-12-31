@@ -287,6 +287,7 @@ telescope.setup({
 telescope.load_extension("fzf")
 
 -- Barbecue
+vim.cmd.packadd("nvim-navic")
 vim.cmd.packadd("barbecue.nvim")
 local barbecue = require("barbecue")
 barbecue.setup({})
