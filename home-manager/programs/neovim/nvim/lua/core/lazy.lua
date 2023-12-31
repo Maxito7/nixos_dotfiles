@@ -1,3 +1,4 @@
+--[[
 -- Bootstrap Lazy Vim plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -13,7 +14,61 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local lazy = require("lazy")
+]]
+--[[
+local options = {
+	defaults = {
+		lazy = false,
+		version = "*",
+	},
+	dev = {
+		path = "~/.local/share/nvim/nix",
+		fallback = false,
+	},
+	lockfile = "~/.config/nvim/lazy-lock.json",
+}
 
+lazy.setup(plugins, options)
+]]
+
+local config_path = vim.fn.stdpath("config")
+local balls_path = vim.fs.joinpath(config_path, "pack", "balls", "start", "balls.nvim")
+
+if vim.uv.fs_stat(balls_path) == nil then
+  local command = {
+    "git",
+    "clone",
+    "--depth",
+    "1",
+    "https://github.com/TheBallsUp/balls.nvim",
+    balls_path,
+  }
+
+  vim.system(command, {}, vim.schedule_wrap(function(result)
+    if result.code ~= 0 then
+      error("Failed to install balls.nvim: " .. result.stderr)
+    end
+
+    vim.notify("Installed balls.nvim!")
+    vim.cmd.packloadall()
+    vim.cmd.helptags(vim.fs.joinpath(balls_path, "doc"))
+  end))
+end
+
+--[[
+local Balls = require("balls")
+
+local plugins = {
+	["nvim-lualine/lualine.nvim"] = { 
+	},
+}
+
+for url, opts in pairs(plugins) do
+	Balls:register("https://github.com/" .. url, opts)
+end
+]]
+
+--[[
 local plugins = {	
 	-- Lualine
 	{
@@ -38,17 +93,4 @@ local plugins = {
 		config = require("plugins.devicons").setup,
 	},
 }
-
-local options = {
-	defaults = {
-		lazy = false,
-		version = "*",
-	},
-	dev = {
-		path = "~/.local/share/nvim/nix",
-		fallback = false,
-	},
-	lockfile = "~/.config/nvim/lazy-lock.json",
-}
-
-lazy.setup(plugins, options)
+]]
