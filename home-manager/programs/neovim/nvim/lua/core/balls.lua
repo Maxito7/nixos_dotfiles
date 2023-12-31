@@ -43,7 +43,9 @@ local plugins = {
 	["SmiteshP/nvim-navic"] = {},
 	["utilyre/barbecue.nvim"] = {},
 	-- Lualine
-	["nvim-lualine/lualine.nvim"] = {},
+	["nvim-lualine/lualine.nvim"] = {
+		lazy = true,
+	},
 	-- Telescope + dependencies
 	["nvim-telescope/telescope-fzf-native.nvim"] = {
 		on_sync = function(plugin)
@@ -222,7 +224,7 @@ tokyonight.setup({
 vim.cmd("colorscheme tokyonight")
 
 -- Lualine
---vim.cmd.packadd("lualine.nvim")
+vim.cmd.packadd("lualine.nvim")
 local lualine = require("lualine")
 
 lualine.setup({
