@@ -70,6 +70,7 @@ local plugins = {
 			end)
 		end,
 	},
+	["nvim-lua/plenary.nvim"] = {},
 	["nvim-telescope/telescope.nvim"] = {
 		cmd = "Telescope",
 		dependencies = {
