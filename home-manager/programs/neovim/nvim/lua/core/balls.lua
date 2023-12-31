@@ -287,12 +287,12 @@ telescope.setup({
 telescope.load_extension("fzf")
 
 -- Barbecue
---vim.cmd.packadd("barbecue.nvim")
+vim.cmd.packadd("barbecue.nvim")
 local barbecue = require("barbecue")
 barbecue.setup({})
 
 -- Oil
---vim.cmd.packadd("oil.nvim")
+vim.cmd.packadd("oil.nvim")
 local oil = require("oil")
 oil.setup({
 	default_file_explorer = true,
