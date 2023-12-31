@@ -30,9 +30,13 @@ local plugins = {
 	["nvim-tree/nvim-web-devicons"] = {},
 	-- Barbecue + dependencies
 	["SmiteshP/nvim-navic"] = {},
-	["utilyre/barbecue.nvim"] = {},
+	["utilyre/barbecue.nvim"] = {
+		lazy = true,
+	},
 	-- Lualine
-	["nvim-lualine/lualine.nvim"] = {},
+	["nvim-lualine/lualine.nvim"] = {
+		lazy = true,
+	},
 	-- Telescope + dependencies
 	["nvim-telescope/telescope-fzf-native.nvim"] = {
 		on_sync = function(plugin)
@@ -48,11 +52,14 @@ local plugins = {
 			"nvim-lua/plenary.nvim",
 			"nvim-tree/nvim-web-devicons",
 		},
+		lazy = true,
 	},
 	-- Tokyonight
 	["folke/tokyonight.nvim"] = {},
 	-- Oil
-	["stevearc/oil.nvim"] = {},
+	["stevearc/oil.nvim"] = {
+		lazy = true,
+	},
 	-- LSP + dependencies
 	["folke/neodev.nvim"] = {},
 	["neovim/nvim-lspconfig"] = {
@@ -165,6 +172,7 @@ devicons.setup({
 })
 
 -- Lualine
+vim.cmd.packadd("lualine")
 local lualine = require("lualine")
 
 lualine.setup({
@@ -174,6 +182,7 @@ lualine.setup({
 })
 
 -- Telescope
+vim.cmd.packadd("telescope")
 local telescope = require("telescope")
 
 telescope.setup({
@@ -215,10 +224,12 @@ telescope.setup({
 telescope.load_extension("fzf")
 
 -- Barbecue
+vim.cmd.packadd("barbecue")
 local barbecue = require("barbecue")
 barbecue.setup({})
 
 -- Oil
+vim.cmd.packadd("oil")
 local oil = require("oil")
 oil.setup({
 		default_file_explorer = true,
