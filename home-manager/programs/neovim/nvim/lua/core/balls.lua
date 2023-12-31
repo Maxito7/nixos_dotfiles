@@ -146,8 +146,8 @@ end
 local devicons = require("nvim-web-devicons")
 
 devicons.setup({
-	default = false,
-	color_icons = true,
+	--default = false,
+	--color_icons = true,
 	override = {
 		lua = {
 			icon = "P",
@@ -197,10 +197,6 @@ devicons.setup({
 		]]
 	},
 	--[[
-	default_icon = {
-		icon = "",
-		name = "Default",
-	},
 	override_by_extension = {
 		["norg"] = {
 			icon = "",
