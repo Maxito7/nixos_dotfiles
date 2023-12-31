@@ -14,13 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local lazy = require("lazy")
 
-local plugins = {
-	-- Dev icons
-	{
-		"nvim-tree/nvim-web-devicons",
-		version = "*",
-		config = require("plugins.devicons").setup,
-	},
+local plugins = {	
 	-- Lualine
 	{
 		"nvim-lualine/lualine.nvim",
@@ -36,6 +30,12 @@ local plugins = {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		config = require("plugins.oil").setup,
 		vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" }),
+	},
+	-- Dev icons
+	{
+		"nvim-tree/nvim-web-devicons",
+		version = "*",
+		config = require("plugins.devicons").setup,
 	},
 }
 
