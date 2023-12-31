@@ -59,8 +59,11 @@ local plugins = {
 				print("compiled fzf!")
 			end)
 		end,
+		lazy = true,
 	},
-	["nvim-lua/plenary.nvim"] = {},
+	["nvim-lua/plenary.nvim"] = {
+		lazy = true,
+	},
 	["nvim-telescope/telescope.nvim"] = {
 		lazy = true,
 		cmd = "Telescope",
@@ -74,32 +77,56 @@ local plugins = {
 		lazy = true,
 	},
 	-- LSP + dependencies
-	["folke/neodev.nvim"] = {},
+	["folke/neodev.nvim"] = {
+		lazy = true,
+	},
 	["neovim/nvim-lspconfig"] = {
 		event = { "BufReadPre", "BufNewFile" },
+		lazy = true,
 	},
 	-- CMP + dependencies
-	["hrsh7th/cmp-path"] = {},
-	["hrsh7th/cmp-cmdline"] = {},
-	["L3MON4D3/LuaSnip"] = {},
-	["saadparwaiz1/cmp_luasnip"] = {},
-	["hrsh7th/cmp-nvim-lsp"] = {},
-	["rafamadriz/friendly-snippets"] = {},
-	["onsails/lspkind.nvim"] = {},
-	["hrsh7th/nvim-cmp"] = {},
+	["hrsh7th/cmp-path"] = {
+		lazy = true,
+	},
+	["hrsh7th/cmp-cmdline"] = {
+		lazy = true,
+	},
+	["L3MON4D3/LuaSnip"] = {
+		lazy = true,
+	},
+	["saadparwaiz1/cmp_luasnip"] = {
+		lazy = true,
+	},
+	["hrsh7th/cmp-nvim-lsp"] = {
+		lazy = true,
+	},
+	["rafamadriz/friendly-snippets"] = {
+		lazy = true,
+	},
+	["onsails/lspkind.nvim"] = {
+		lazy = true,
+	},
+	["hrsh7th/nvim-cmp"] = {
+		lazy = true,
+	},
 	-- Autopairs
 	["windwp/nvim-autopairs"] = {
 		event = "InsertEnter",
+		lazy = true,
 	},
 	-- Treesitter + dependencies
 	["JoosepAlviste/nvim-ts-context-commentstring"] = {
 		opts = {
 			enable_autocmd = false,
 		},
+		lazy = true,
 	},
-	["windwp/nvim-ts-autotag"] = {},
+	["windwp/nvim-ts-autotag"] = {
+		lazy = true,
+	},
 	["nvim-treesitter/nvim-treesitter-textobjects"] = {
 		event = { "BufRead", "BufNewFile" },
+		lazy = true,
 	},
 	["nvim-treesitter/nvim-treesitter"] = {
 		cmd = { "TSInstall", "TSUpdate" },
@@ -107,20 +134,28 @@ local plugins = {
 		build = function()
 			vim.cmd("TSUpdate")
 		end,
+		lazy = true,
 	},
 	-- No-neck-pain
-	["shortcuts/no-neck-pain.nvim"] = {},
+	["shortcuts/no-neck-pain.nvim"] = {
+		lazy = true,
+	},
 	-- Colorizer
-	["NvChad/nvim-colorizer.lua"] = {},
+	["NvChad/nvim-colorizer.lua"] = {
+		lazy = true,
+	},
 	-- Indent Blankline (indent-blankline + mini.indent)
 	["lukas-reineke/indent-blankline.nvim"] = {
 		event = { "BufReadPost", "BufNewFile" },
+		lazy = true,
 	},
 	["echasnovski/mini.nvim"] = {
 		event = { "BufReadPost", "BufNewFile" },
+		lazy = true,
 	},
 	["stevearc/conform.nvim"] = {
 		event = "BufReadPre",
+		lazy = true,
 	},
 }
 
@@ -241,6 +276,8 @@ lualine.setup({
 })
 
 -- Telescope
+vim.cmd.packadd("telescope-fzf-native.nvim")
+vim.cmd.packadd("plenary.nvim")
 vim.cmd.packadd("telescope.nvim")
 local telescope = require("telescope")
 
@@ -390,6 +427,16 @@ oil.setup({
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- LSP
+vim.cmd.packadd("neodev.nvim")
+vim.cmd.packadd("nvim-lspconfig")
+vim.cmd.packadd("cmp-path")
+vim.cmd.packadd("cmp-cmdline")
+vim.cmd.packadd("LuaSnip")
+vim.cmd.packadd("cmp_luasnip")
+vim.cmd.packadd("cmp-nvim-lsp")
+vim.cmd.packadd("friendly-snippets")
+vim.cmd.packadd("lspkind.nvim")
+vim.cmd.packadd("nvim-cmp")
 local lsp = vim.lsp
 
 local on_attach = function(_, bufnr)
@@ -534,6 +581,7 @@ vim.diagnostic.config({
 })
 
 -- Autopairs
+vim.cmd.packadd("nvim-autopairs")
 local autopairs = require("nvim-autopairs")
 autopairs.setup({})
 
@@ -613,6 +661,8 @@ local cmp_auto = require("cmp")
 cmp_auto.event:on("confirm_done", cmp_autopairs.on_confirm_done())
 
 -- Treesitter
+vim.cmd.packadd("nvim-treesitter-textobjects")
+vim.cmd.packadd("nvim-treesitter")
 require("nvim-treesitter.configs").setup({
 	ensure_installed = {
 		"astro",
@@ -730,6 +780,7 @@ require("nvim-treesitter.configs").setup({
 })
 
 -- NNP
+vim.cmd.packadd("no-neck-pain.nvim")
 local NoNeckPain = require("no-neck-pain")
 require("no-neck-pain").setup({
 	width = 140,
@@ -791,6 +842,8 @@ NoNeckPain.bufferOptionsBo = {
 }
 
 -- Indent blanklines
+vim.cmd.packadd("indent-blankline.nvim")
+vim.cmd.packadd("mini.nvim")
 require("ibl").setup({
 	indent = {
 		char = "│",
@@ -838,9 +891,11 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 -- Colorizer
+vim.cmd.packadd("nvim-colorizer.lua")
 require("colorizer").setup({})
 
 -- Conform setup
+vim.cmd.packadd("conform.nvim")
 require("conform").setup({
 	formatters_by_ft = {
 		lua = { "stylua" },
