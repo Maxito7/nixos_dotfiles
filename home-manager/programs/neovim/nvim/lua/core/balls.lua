@@ -42,8 +42,12 @@ local plugins = {
 		lazy = true,
 	},
 	-- Barbecue + dependencies
-	["SmiteshP/nvim-navic"] = {},
-	["utilyre/barbecue.nvim"] = {},
+	["SmiteshP/nvim-navic"] = {
+		lazy = true,
+	},
+	["utilyre/barbecue.nvim"] = {
+		lazy = true,
+	},
 	-- Lualine
 	["nvim-lualine/lualine.nvim"] = {
 		lazy = true,
@@ -58,6 +62,7 @@ local plugins = {
 	},
 	["nvim-lua/plenary.nvim"] = {},
 	["nvim-telescope/telescope.nvim"] = {
+		lazy = true,
 		cmd = "Telescope",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
@@ -67,7 +72,9 @@ local plugins = {
 	-- Tokyonight
 	["folke/tokyonight.nvim"] = {},
 	-- Oil
-	["stevearc/oil.nvim"] = {},
+	["stevearc/oil.nvim"] = {
+		lazy = true,
+	},
 	-- LSP + dependencies
 	["folke/neodev.nvim"] = {},
 	["neovim/nvim-lspconfig"] = {
