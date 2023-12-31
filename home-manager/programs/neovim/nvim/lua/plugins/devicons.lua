@@ -1,8 +1,10 @@
-return {
-	"nvim-tree/nvim-web-devicons",
-	lazy = false,
-	priority = 1000,
-	opts = {
+local M = {}
+
+function M.setup()
+	local plugin = require("nvim-web-devicons")
+	plugin.setup({
+		default = false,
+		color_icons = true,
 		override = {
 			rs = {
 				icon = " ",
@@ -50,8 +52,6 @@ return {
 				name = "Vue",
 			},
 		},
-		default = false,
-		color_icons = true,
 		default_icon = {
 			icon = "",
 			name = "Default",
@@ -64,8 +64,7 @@ return {
 				name = "Neorg",
 			},
 		},
-	},
-	config = function(_, opts) --(_, opts)
-		require("nvim-web-devicons").setup(opts)
-	end,
-}
+	})
+end
+
+return M

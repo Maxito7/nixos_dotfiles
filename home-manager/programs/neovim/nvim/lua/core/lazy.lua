@@ -12,7 +12,34 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("plugins", {
+local lazy = require("lazy")
+
+local plugins = {
+	-- Dev icons
+	{
+		"nvim-tree/nvim-web-devicons",
+		version = "*",
+		config = require("plugins.devicons").setup,
+	},
+	-- Lualine
+	{
+		"nvim-lualine/lualine.nvim",
+		version = "*",
+		event = "VimEnter",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = require("plugins.lualine").setup,
+	},
+	-- Oil
+	{
+		"stevearc/oil.nvim",
+		version = "*",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = require("plugins.oil").setup,
+		vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" }),
+	},
+}
+
+local options = {
 	defaults = {
 		lazy = false,
 		version = "*",
@@ -21,4 +48,7 @@ require("lazy").setup("plugins", {
 		path = "~/.local/share/nvim/nix",
 		fallback = false,
 	},
-})
+	lockfile = "~/.config/nvim/lazy-lock.json",
+}
+
+lazy.setup(plugins, options)
