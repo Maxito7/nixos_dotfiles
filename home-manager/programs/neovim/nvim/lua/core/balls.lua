@@ -39,7 +39,7 @@ _/        _/_/_/_/    _/_/      _/_/_/  _/_/_/  _/      _/  _/_/_/
 local plugins = {
 	-- Devicons
 	["nvim-tree/nvim-web-devicons"] = {
-		lazy = true,
+		--lazy = true,
 	},
 	-- Barbecue + dependencies
 	["SmiteshP/nvim-navic"] = {
@@ -142,8 +142,7 @@ end
 ]]
 
 -- Devicons
-vim.cmd.packadd("nvim-web-devicons")
-
+--vim.cmd.packadd("nvim-web-devicons")
 local devicons = require("nvim-web-devicons")
 
 devicons.setup({
@@ -153,7 +152,6 @@ devicons.setup({
 		lua = {
 			icon = "P",
 			color = "#7DCFFF",
-			name = "Lua",
 		},
 		--[[
 		rs = {
