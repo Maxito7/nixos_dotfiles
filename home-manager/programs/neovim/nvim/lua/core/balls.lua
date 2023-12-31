@@ -152,6 +152,7 @@ devicons.setup({
 		lua = {
 			icon = "P",
 			color = "#7DCFFF",
+			name = "Lua",
 		},
 		--[[
 		rs = {
