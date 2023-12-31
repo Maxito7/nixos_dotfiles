@@ -869,4 +869,5 @@ require("mini.animate").setup({
 })
 
 --require("plenary.reload").reload_module("nvim-web-devicons")
+print("THE ICON RECEIVED IS:")
 print(devicons.get_icon("lua"))
