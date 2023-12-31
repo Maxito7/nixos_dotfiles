@@ -245,7 +245,7 @@ lualine.setup({
 })
 
 -- Telescope
---vim.cmd.packadd("telescope.nvim")
+vim.cmd.packadd("telescope.nvim")
 local telescope = require("telescope")
 
 telescope.setup({
