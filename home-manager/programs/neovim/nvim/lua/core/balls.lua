@@ -24,7 +24,14 @@ end
 
 local Balls = require("balls")
 
--- Setting up the PLUGINS
+--[[                                                                         
+    _/_/_/    _/        _/    _/    _/_/_/  _/_/_/  _/      _/    _/_/_/   
+   _/    _/  _/        _/    _/  _/          _/    _/_/    _/  _/          
+  _/_/_/    _/        _/    _/  _/  _/_/    _/    _/  _/  _/    _/_/       
+ _/        _/        _/    _/  _/    _/    _/    _/    _/_/        _/      
+_/        _/_/_/_/    _/_/      _/_/_/  _/_/_/  _/      _/  _/_/_/         
+]]
+
 local plugins = {
 	-- Devicons
 	["nvim-tree/nvim-web-devicons"] = {
@@ -108,11 +115,25 @@ local plugins = {
 	["echasnovski/mini.nvim"] = {
 		event = { "BufReadPost", "BufNewFile" },
 	},
+	["stevearc/conform.nvim"] = {
+		event = "BufReadPre",
+	},
 }
 
 for url, opts in pairs(plugins) do
 	Balls:register("https://github.com/" .. url, opts)
 end
+
+--[[
+ ________  ________  ________   ________ ___  ________  ________      
+|\   ____\|\   __  \|\   ___  \|\  _____\\  \|\   ____\|\   ____\     
+\ \  \___|\ \  \|\  \ \  \\ \  \ \  \__/\ \  \ \  \___|\ \  \___|_    
+ \ \  \    \ \  \\\  \ \  \\ \  \ \   __\\ \  \ \  \  __\ \_____  \   
+  \ \  \____\ \  \\\  \ \  \\ \  \ \  \_| \ \  \ \  \|\  \|____|\  \  
+   \ \_______\ \_______\ \__\\ \__\ \__\   \ \__\ \_______\____\_\  \ 
+    \|_______|\|_______|\|__| \|__|\|__|    \|__|\|_______|\_________\
+                                                          \|_________|
+]]
 
 -- Tokyonight
 local tokyonight = require("tokyonight")
@@ -809,3 +830,33 @@ vim.api.nvim_create_autocmd("FileType", {
 
 -- Colorizer
 require("colorizer").setup({})
+
+-- Conform setup
+require("conform").setup({
+	formatters_by_ft = {
+		lua = { "stylua" },
+		-- Conform will run multiple formatters sequentially
+		python = { "ruff" },
+		go = { "gofumpt" },
+		-- Use a sub-list to run only the first available formatter
+		--javascript = { { "prettierd", "prettier" } },
+	},
+	format_on_save = {
+		-- These options will be passed to conform.format()
+		timeout_ms = 6000,
+		lsp_fallback = true,
+	},
+})
+
+-- mini.animate
+require("mini.animate").setup({
+	resize = {
+		enable = false,
+	},
+	open = {
+		enable = false,
+	},
+	close = {
+		enable = false,
+	},
+})
