@@ -182,7 +182,7 @@ lualine.setup({
 })
 
 -- Telescope
-vim.cmd.packadd("telescope")
+vim.cmd.packadd("telescope.nvim")
 local telescope = require("telescope")
 
 telescope.setup({
@@ -224,12 +224,12 @@ telescope.setup({
 telescope.load_extension("fzf")
 
 -- Barbecue
-vim.cmd.packadd("barbecue")
+vim.cmd.packadd("barbecue.nvim")
 local barbecue = require("barbecue")
 barbecue.setup({})
 
 -- Oil
-vim.cmd.packadd("oil")
+vim.cmd.packadd("oil.nvim")
 local oil = require("oil")
 oil.setup({
 		default_file_explorer = true,
