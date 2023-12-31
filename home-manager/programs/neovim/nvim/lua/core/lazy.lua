@@ -172,7 +172,7 @@ devicons.setup({
 })
 
 -- Lualine
-vim.cmd.packadd("lualine")
+vim.cmd.packadd("lualine.nvim")
 local lualine = require("lualine")
 
 lualine.setup({
