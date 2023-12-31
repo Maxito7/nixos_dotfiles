@@ -67,7 +67,10 @@ local plugins = {
 	["rafamadriz/friendly-snippets"] = {},
 	["onsails/lspkind.nvim"] = {},
 	["hrsh7th/nvim-cmp"] = {},
-	
+	-- Autopairs
+	["windwp/nvim-autopairs"] = {
+		event = "InsertEnter",
+	},
 }
 
 for url, opts in pairs(plugins) do
@@ -459,6 +462,11 @@ vim.diagnostic.config({
 	float = { border = "rounded" },
 })
 
+-- Autopairs
+local autopairs = require("nvim-autopairs")
+autopairs.setup({})
+
+-- CMP
 local cmp = require("cmp")
 local luasnip = require("luasnip")
 local lspkind = require("lspkind")
