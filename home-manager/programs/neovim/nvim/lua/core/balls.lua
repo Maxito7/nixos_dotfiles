@@ -38,7 +38,9 @@ _/        _/_/_/_/    _/_/      _/_/_/  _/_/_/  _/      _/  _/_/_/
 
 local plugins = {
 	-- Devicons
-	["nvim-tree/nvim-web-devicons"] = {},
+	["nvim-tree/nvim-web-devicons"] = {
+		lazy = true,
+	},
 	-- Barbecue + dependencies
 	["SmiteshP/nvim-navic"] = {},
 	["utilyre/barbecue.nvim"] = {},
@@ -133,6 +135,8 @@ end
 ]]
 
 -- Devicons
+vim.cmd.packadd("nvim-web-devicons")
+
 local devicons = require("nvim-web-devicons")
 
 devicons.setup({
