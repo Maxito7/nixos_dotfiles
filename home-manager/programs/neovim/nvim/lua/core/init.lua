@@ -1,4 +1,4 @@
 require("core.options")
-require("core.lazy")
+require("core.balls")
 require("core.ui")
 require("core.keymaps")
