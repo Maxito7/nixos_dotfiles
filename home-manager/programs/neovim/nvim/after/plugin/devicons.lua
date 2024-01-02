@@ -1,3 +1,5 @@
+print("I AM INSIDE OF TH AFTER-CALL")
+
 local devicons = require("nvim-web-devicons")
 
 devicons.setup({
