@@ -41,15 +41,15 @@ local plugins = {
 	["nvim-tree/nvim-web-devicons"] = {},
 	-- Barbecue + dependencies
 	["SmiteshP/nvim-navic"] = {
-		lazy = true,
+		--lazy = true,
 	},
 	["utilyre/barbecue.nvim"] = {
-		lazy = true,
+		--lazy = true,
 	},
 	-- Lualine
 	["nvim-lualine/lualine.nvim"] = {
 		--lazy = true,
-		opt = true,
+		--opt = true,
 	},
 	-- Telescope + dependencies
 	["nvim-telescope/telescope-fzf-native.nvim"] = {
@@ -313,8 +313,8 @@ telescope.setup({
 telescope.load_extension("fzf")
 
 -- Barbecue
-vim.cmd.packadd("nvim-navic")
-vim.cmd.packadd("barbecue.nvim")
+--vim.cmd.packadd("nvim-navic")
+--vim.cmd.packadd("barbecue.nvim")
 local barbecue = require("barbecue")
 barbecue.setup({})
 
