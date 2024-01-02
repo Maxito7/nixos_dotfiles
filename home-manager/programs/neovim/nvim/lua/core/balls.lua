@@ -51,6 +51,7 @@ local plugins = {
 	-- Lualine
 	["nvim-lualine/lualine.nvim"] = {
 		lazy = true,
+		opt = true,
 	},
 	-- Telescope + dependencies
 	["nvim-telescope/telescope-fzf-native.nvim"] = {
