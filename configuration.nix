@@ -223,7 +223,6 @@
 
     alsa-lib
     libgudev
-    pkgconfig
     udev
     alsaLib
     lutris
