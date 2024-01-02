@@ -221,6 +221,10 @@
 
     acpi
 
+    alsa-lib
+    udev
+    vulkan-loader
+
     # Qalculate
     qalculate-qt
     qalculate-gtk
