@@ -38,9 +38,7 @@ _/        _/_/_/_/    _/_/      _/_/_/  _/_/_/  _/      _/  _/_/_/
 
 local plugins = {
 	-- Devicons
-	--["nvim-tree/nvim-web-devicons"] = {
-	--	lazy = true,
-	--},
+	["nvim-tree/nvim-web-devicons"] = {},
 	-- Barbecue + dependencies
 	["SmiteshP/nvim-navic"] = {
 		lazy = true,
