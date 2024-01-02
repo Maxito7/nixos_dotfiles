@@ -222,9 +222,19 @@
     acpi
 
     alsa-lib
-    udev
     libgudev
+    pkgconfig
+    udev
+    alsaLib
+    lutris
+    x11
+    xorg.libXcursor
+    xorg.libXrandr
+    xorg.libXi
+    vulkan-tools
+    vulkan-headers
     vulkan-loader
+    vulkan-validation-layers
 
     # Qalculate
     qalculate-qt
