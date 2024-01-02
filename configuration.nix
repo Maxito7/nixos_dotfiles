@@ -223,6 +223,7 @@
 
     alsa-lib
     udev
+    libgudev
     vulkan-loader
 
     # Qalculate
