@@ -48,7 +48,7 @@ local plugins = {
 	},
 	-- Lualine
 	["nvim-lualine/lualine.nvim"] = {
-		lazy = true,
+		--lazy = true,
 		opt = true,
 	},
 	-- Telescope + dependencies
@@ -259,7 +259,7 @@ tokyonight.setup({
 vim.cmd("colorscheme tokyonight")
 
 -- Lualine
-vim.cmd.packadd("lualine.nvim")
+--vim.cmd.packadd("lualine.nvim")
 local lualine = require("lualine")
 
 lualine.setup({
