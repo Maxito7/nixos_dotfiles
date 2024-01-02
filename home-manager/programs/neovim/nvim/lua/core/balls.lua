@@ -38,9 +38,9 @@ _/        _/_/_/_/    _/_/      _/_/_/  _/_/_/  _/      _/  _/_/_/
 
 local plugins = {
 	-- Devicons
-	["nvim-tree/nvim-web-devicons"] = {
-		lazy = true,
-	},
+	--["nvim-tree/nvim-web-devicons"] = {
+	--	lazy = true,
+	--},
 	-- Barbecue + dependencies
 	["SmiteshP/nvim-navic"] = {
 		lazy = true,
@@ -175,6 +175,7 @@ end
 ]]
 
 -- Devicons
+--[[
 vim.cmd.packadd("nvim-web-devicons")
 local devicons = require("nvim-web-devicons")
 
@@ -187,7 +188,6 @@ devicons.setup({
 			color = "#7DCFFF",
 			name = "Lua",
 		},
-		--[[
 		rs = {
 			icon = " ",
 			color = "#ff9e64",
@@ -198,13 +198,11 @@ devicons.setup({
 			color = "#7bd88f",
 			name = "Python",
 		},
-		]]
 		go = {
 			icon = "",
 			color = "#7dcfff",
 			name = "Go",
 		},
-		--[[
 		cpp = {
 			icon = "",
 			color = "#7aa2f7",
@@ -230,9 +228,7 @@ devicons.setup({
 			color = "#7bd88f",
 			name = "Vue",
 		},
-		]]
 	},
-	--[[
 	override_by_extension = {
 		["norg"] = {
 			icon = "",
@@ -241,9 +237,8 @@ devicons.setup({
 			name = "Neorg",
 		},
 	},
-	]]
 })
-
+]]
 -- Tokyonight
 vim.cmd.packadd("tokyonight.nvim")
 local tokyonight = require("tokyonight")
