@@ -39,7 +39,6 @@ _/        _/_/_/_/    _/_/      _/_/_/  _/_/_/  _/      _/  _/_/_/
 local plugins = {
 	-- Devicons
 	["nvim-tree/nvim-web-devicons"] = {},
-	--[[
 	-- Barbecue + dependencies
 	["SmiteshP/nvim-navic"] = {
 		--lazy = true,
@@ -47,13 +46,11 @@ local plugins = {
 	["utilyre/barbecue.nvim"] = {
 		--lazy = true,
 	},
-	]]
 	-- Lualine
 	["nvim-lualine/lualine.nvim"] = {
 		lazy = true,
 		opt = true,
 	},
-	--[[
 	-- Telescope + dependencies
 	["nvim-telescope/telescope-fzf-native.nvim"] = {
 		on_sync = function(plugin)
@@ -158,7 +155,6 @@ local plugins = {
 		event = "BufReadPre",
 		lazy = true,
 	},
-	]]
 }
 
 for url, opts in pairs(plugins) do
@@ -177,7 +173,6 @@ end
 ]]
 
 -- Devicons
---[[
 vim.cmd.packadd("nvim-web-devicons")
 local devicons = require("nvim-web-devicons")
 
@@ -261,7 +256,6 @@ tokyonight.setup({
 })
 
 vim.cmd("colorscheme tokyonight")
-]]
 -- Lualine
 --vim.cmd.packadd("lualine.nvim")
 --[[
@@ -273,7 +267,6 @@ lualine.setup({
 	},
 })
 ]]
---[[
 -- Telescope
 vim.cmd.packadd("telescope-fzf-native.nvim")
 vim.cmd.packadd("plenary.nvim")
@@ -930,7 +923,7 @@ require("mini.animate").setup({
 		enable = false,
 	},
 })
-]]
+
 --require("plenary.reload").reload_module("nvim-web-devicons")
 --print("THE ICON RECEIVED IS:")
 --print(devicons.get_icon("go"))
