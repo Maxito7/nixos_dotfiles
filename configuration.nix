@@ -164,20 +164,22 @@
     gcc
     git
     unzip
-    cargo
-    rustc
-    rustfmt
+    #cargo
+    #rustc
+    #rustfmt
     clang-tools
     lxappearance
     tectonic
     texlive.combined.scheme-full
-    rust-analyzer
+    #rust-analyzer
     zathura
     kalker
     bottom
     gnumake
     nil
     onlyoffice-bin
+
+    rustup
 
     lua-language-server
     imagemagick

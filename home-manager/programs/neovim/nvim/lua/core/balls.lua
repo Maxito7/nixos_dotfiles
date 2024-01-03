@@ -73,7 +73,7 @@ local plugins = {
 	},
 	-- Oil
 	["stevearc/oil.nvim"] = {
-		lazy = true,
+		--lazy = true,
 	},
 	-- LSP + dependencies
 	["folke/neodev.nvim"] = {
@@ -260,6 +260,7 @@ vim.cmd("colorscheme tokyonight")
 
 -- Lualine
 --vim.cmd.packadd("lualine.nvim")
+--[[
 local lualine = require("lualine")
 
 lualine.setup({
@@ -267,6 +268,7 @@ lualine.setup({
 		icons_enabled = true,
 	},
 })
+]]
 
 -- Telescope
 vim.cmd.packadd("telescope-fzf-native.nvim")
@@ -319,7 +321,7 @@ local barbecue = require("barbecue")
 barbecue.setup({})
 
 -- Oil
-vim.cmd.packadd("oil.nvim")
+--vim.cmd.packadd("oil.nvim")
 local oil = require("oil")
 oil.setup({
 	default_file_explorer = true,
