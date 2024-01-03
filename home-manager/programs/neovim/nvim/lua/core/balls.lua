@@ -39,6 +39,7 @@ _/        _/_/_/_/    _/_/      _/_/_/  _/_/_/  _/      _/  _/_/_/
 local plugins = {
 	-- Devicons
 	["nvim-tree/nvim-web-devicons"] = {},
+	--[[
 	-- Barbecue + dependencies
 	["SmiteshP/nvim-navic"] = {
 		--lazy = true,
@@ -46,6 +47,7 @@ local plugins = {
 	["utilyre/barbecue.nvim"] = {
 		--lazy = true,
 	},
+	]]
 	-- Lualine
 	["nvim-lualine/lualine.nvim"] = {
 		--lazy = true,
