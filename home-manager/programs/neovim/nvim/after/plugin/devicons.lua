@@ -1,5 +1,3 @@
---print("I AM INSIDE OF TH AFTER-CALL")
-
 local devicons = require("nvim-web-devicons")
 
 devicons.setup({
@@ -57,19 +55,3 @@ devicons.setup({
 		},
 	},
 })
-
---print("THE ICON RECEIVED IS BEFORE CALLING LUALINE IS:")
---print(devicons.get_icon("go"))
-
-vim.cmd.packadd("lualine.nvim")
-
-local lualine = require("lualine")
-
-lualine.setup({
-	options = {
-		icons_enabled = true,
-	},
-})
-
---print("THE ICON RECEIVED IS AFTER CALLING LUALINE IS:")
---print(devicons.get_icon("go"))
