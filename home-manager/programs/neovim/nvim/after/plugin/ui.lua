@@ -1,3 +1,8 @@
+-- Indent colors
+vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", {
+	bg = vim.api.nvim_get_hl(0, { name = "IblScope" }).bg,
+	fg = vim.api.nvim_get_hl(0, { name = "Function" }).fg,
+})
 -- BORDER GROUPS AND COLORS
 vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = "#7AA2F7" })
 vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#5f74a1" })

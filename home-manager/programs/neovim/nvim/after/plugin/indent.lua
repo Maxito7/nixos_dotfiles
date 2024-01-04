@@ -25,11 +25,6 @@ require("mini.indentscope").setup({
 	},
 })
 
--- Indent colors
-vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", {
-	bg = vim.api.nvim_get_hl(0, { name = "IblScope" }).bg,
-	fg = vim.api.nvim_get_hl(0, { name = "Function" }).fg,
-})
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = {
 		"help",
