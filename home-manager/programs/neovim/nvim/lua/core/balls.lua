@@ -38,7 +38,65 @@ _/        _/_/_/_/    _/_/      _/_/_/  _/_/_/  _/      _/  _/_/_/
 
 local plugins = {
 	-- Devicons
-	["nvim-tree/nvim-web-devicons"] = {},
+	["nvim-tree/nvim-web-devicons"] = {
+		opts = {
+			override = {
+				lua = {
+					icon = "P",
+					color = "#7DCFFF",
+					name = "Lua",
+				},
+				rs = {
+					icon = " ",
+					color = "#ff9e64",
+					name = "Rust",
+				},
+				py = {
+					icon = "",
+					color = "#7bd88f",
+					name = "Python",
+				},
+				go = {
+					icon = "",
+					color = "#7dcfff",
+					name = "Go",
+				},
+				cpp = {
+					icon = "",
+					color = "#7aa2f7",
+					name = "CPP",
+				},
+				c = {
+					icon = "",
+					color = "#BB9AF7",
+					name = "C",
+				},
+				tex = {
+					icon = "",
+					color = "#9AA5CE",
+					name = "LaTeX",
+				},
+				vim = {
+					icon = "",
+					color = "#7BD88F",
+					name = "Vim",
+				},
+				vue = {
+					icon = "",
+					color = "#7bd88f",
+					name = "Vue",
+				},
+			},
+			override_by_extension = {
+				["norg"] = {
+					icon = "",
+					--color = "#4878BE",
+					color = "#7AA2F7",
+					name = "Neorg",
+				},
+			},
+		},
+	},
 	-- Barbecue + dependencies
 	["SmiteshP/nvim-navic"] = {
 		--lazy = true,
@@ -154,6 +212,17 @@ local plugins = {
 	["stevearc/conform.nvim"] = {
 		event = "BufReadPre",
 		lazy = true,
+	},
+	["HakonHarnes/img-clip.nvim"] = {
+		event = "BufEnter",
+		opts = {
+			-- add options here
+			-- or leave it empty to use the default settings
+		},
+		keys = {
+			-- suggested keymap
+			{ "<leader>p", "<cmd>PasteImage<cr>", desc = "Paste clipboard image" },
+		},
 	},
 }
 
@@ -924,6 +993,5 @@ require("mini.animate").setup({
 	},
 })
 
---require("plenary.reload").reload_module("nvim-web-devicons")
---print("THE ICON RECEIVED IS:")
---print(devicons.get_icon("go"))
+-- img-clip
+require("img-clip").setup({})
