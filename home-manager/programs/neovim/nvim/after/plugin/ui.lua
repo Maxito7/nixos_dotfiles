@@ -166,3 +166,18 @@ vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 local barbecue = require("barbecue")
 barbecue.setup({})
+
+-- Indent colors
+vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", {
+	bg = vim.api.nvim_get_hl(0, { name = "IblScope" }).bg,
+	fg = vim.api.nvim_get_hl(0, { name = "Function" }).fg,
+})
+-- BORDER GROUPS AND COLORS
+vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = "#7AA2F7" })
+vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#5f74a1" })
+vim.api.nvim_set_hl(0, "LineNr", { fg = "#86a1db" })
+vim.api.nvim_set_hl(0, "EndOfBuffer", { fg = "#3b4261" })
+vim.api.nvim_set_hl(0, "DiagnosticFloatingError", { bg = "", fg = "#f7768e" })
+vim.api.nvim_set_hl(0, "DiagnosticFloatingHint", { bg = "", fg = "#7bd88f" })
+vim.api.nvim_set_hl(0, "DiagnosticFloatingInfo", { bg = "", fg = "#7aa2f7" })
+vim.api.nvim_set_hl(0, "DiagnosticFloatingWarn", { bg = "", fg = "#ff9e64" })
