@@ -56,6 +56,8 @@ devicons.setup({
 	},
 })
 
+vim.cmd.packadd("lualine.nvim")
+
 local lualine = require("lualine")
 
 lualine.setup({

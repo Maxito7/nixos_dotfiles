@@ -30,70 +30,13 @@ local Balls = require("balls")
 
 local plugins = {
 	-- Devicons
-	["nvim-tree/nvim-web-devicons"] = {
-		opts = {
-			override = {
-				lua = {
-					icon = "P",
-					color = "#7DCFFF",
-					name = "Lua",
-				},
-				rs = {
-					icon = " ",
-					color = "#ff9e64",
-					name = "Rust",
-				},
-				py = {
-					icon = "",
-					color = "#7bd88f",
-					name = "Python",
-				},
-				go = {
-					icon = "",
-					color = "#7dcfff",
-					name = "Go",
-				},
-				cpp = {
-					icon = "",
-					color = "#7aa2f7",
-					name = "CPP",
-				},
-				c = {
-					icon = "",
-					color = "#BB9AF7",
-					name = "C",
-				},
-				tex = {
-					icon = "",
-					color = "#9AA5CE",
-					name = "LaTeX",
-				},
-				vim = {
-					icon = "",
-					color = "#7BD88F",
-					name = "Vim",
-				},
-				vue = {
-					icon = "",
-					color = "#7bd88f",
-					name = "Vue",
-				},
-			},
-			override_by_extension = {
-				["norg"] = {
-					icon = "",
-					--color = "#4878BE",
-					color = "#7AA2F7",
-					name = "Neorg",
-				},
-			},
-		},
-	},
+	["nvim-tree/nvim-web-devicons"] = {},
 	-- Barbecue + dependencies
 	["SmiteshP/nvim-navic"] = {},
 	["utilyre/barbecue.nvim"] = {},
 	-- Lualine
 	["nvim-lualine/lualine.nvim"] = {
+		lazy = true,
 		opt = true,
 	},
 	-- Telescope + dependencies
