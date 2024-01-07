@@ -116,6 +116,8 @@ local plugins = {
 		},
 	},
 	["3rd/image.nvim.git"] = {},
+	-- Harpoon
+	["ThePrimeagen/harpoon"] = { branch = "harpoon2" },
 }
 
 for url, opts in pairs(plugins) do
