@@ -3,12 +3,12 @@ local devicons = require("nvim-web-devicons")
 devicons.setup({
 	override_by_extension = {
 		lua = {
-			icon = "P",
+			icon = "󰢱",
 			color = "#7DCFFF",
 			name = "Lua",
 		},
 		rs = {
-			icon = " ",
+			icon = "",
 			color = "#ff9e64",
 			name = "Rust",
 		},
