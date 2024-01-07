@@ -1,3 +1,4 @@
+--[[
 local harpoon = require("harpoon")
 
 -- REQUIRED
@@ -31,7 +32,7 @@ end)
 vim.keymap.set("n", "<C-S-N>", function()
 	harpoon:list():next()
 end)
---[[
+
 -- basic telescope configuration
 local conf = require("telescope.config").values
 local function toggle_telescope(harpoon_files)
