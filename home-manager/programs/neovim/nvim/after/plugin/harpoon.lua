@@ -1,3 +1,4 @@
+--[[
 vim.cmd.packadd("harpoon")
 local harpoon = require("harpoon")
 
@@ -56,3 +57,4 @@ end
 vim.keymap.set("n", "<C-e>", function()
 	toggle_telescope(harpoon:list())
 end, { desc = "Open harpoon window" })
+]]
