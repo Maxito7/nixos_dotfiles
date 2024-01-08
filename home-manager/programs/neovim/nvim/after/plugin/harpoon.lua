@@ -1,5 +1,5 @@
 local harpoon = require("harpoon")
-local extensions = require("harpoon.extensions")
+--local extensions = require("harpoon.extensions")
 harpoon:setup({
 	--     settings = {
 	--         save_on_toggle = true,
