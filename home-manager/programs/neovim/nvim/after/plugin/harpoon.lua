@@ -1,3 +1,4 @@
+--[[
 local harpoon = require("harpoon")
 --local extensions = require("harpoon.extensions")
 harpoon:setup({
@@ -20,3 +21,4 @@ end)
 vim.keymap.set("n", "<C-n>", function()
 	harpoon:list():next()
 end)
+]]
