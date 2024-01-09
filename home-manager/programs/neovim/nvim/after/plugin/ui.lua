@@ -37,6 +37,11 @@ devicons.setup({
 			color = "#9AA5CE",
 			name = "LaTeX",
 		},
+		md = {
+			icon = "󰽛",
+			color = "#9AA5CE",
+			name = "Markdown",
+		},
 		vim = {
 			icon = "",
 			color = "#7BD88F",
