@@ -244,6 +244,9 @@
     virt-manager
     virt-manager-qt
 
+    # R
+    rstudio
+
     # WAYLAND ONLY
     grim
     slurp
