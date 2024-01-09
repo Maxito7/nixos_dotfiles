@@ -240,6 +240,10 @@
     qalculate-qt
     qalculate-gtk
 
+    # Virt-Manager
+    virt-manager
+    virt-manager-qt
+
     # WAYLAND ONLY
     grim
     slurp
