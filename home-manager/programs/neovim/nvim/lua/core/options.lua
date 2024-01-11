@@ -15,3 +15,6 @@ vim.opt.termguicolors = true
 vim.opt.mouse = "a"
 
 vim.opt.laststatus = 3
+
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "number"
