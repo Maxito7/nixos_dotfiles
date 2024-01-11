@@ -239,6 +239,7 @@
     vulkan-validation-layers
 
     cava
+    i3lock-fancy
 
     # Qalculate
     qalculate-qt
