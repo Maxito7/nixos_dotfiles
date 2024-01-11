@@ -70,6 +70,7 @@
         ];
       }))
       pyxdg
+      pulsectl-asyncio
     ];
   };
 
@@ -236,6 +237,8 @@
     vulkan-headers
     vulkan-loader
     vulkan-validation-layers
+
+    cava
 
     # Qalculate
     qalculate-qt
