@@ -252,6 +252,9 @@
     # R
     rstudio
 
+    # Spacedrive
+    spacedrive
+
     # WAYLAND ONLY
     grim
     slurp
