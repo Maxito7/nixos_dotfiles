@@ -183,6 +183,8 @@
 
     rustup
 
+    pkg-config
+
     lua-language-server
     imagemagick
     luajit
