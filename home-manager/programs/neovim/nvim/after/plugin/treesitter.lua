@@ -32,6 +32,8 @@ require("nvim-treesitter.configs").setup({
 		"vim",
 		"vimdoc",
 		"yaml",
+		"svelte",
+		"vue",
 	},
 	sync_install = false,
 	highlight = {
