@@ -213,7 +213,7 @@
     python3Packages.jedi-language-server
     python3Packages.iwlib
     python3Packages.pillow
-    pipx
+    #pipx
     brightnessctl
 
     # JetBrains
