@@ -65,7 +65,7 @@
     extraPackages = python3Packages: with python3Packages; [
       (qtile-extras.overridePythonAttrs (old: {
         disabledTestPaths = [
-          "test/widget/test_strava.py"
+          #"test/widget/test_strava.py"
           "test/widget/test_image.py"
         ];
       }))
