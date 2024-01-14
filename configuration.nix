@@ -250,6 +250,7 @@
     # Virt-Manager
     virt-manager
     virt-manager-qt
+    libvirt
 
     # R
     rstudio
