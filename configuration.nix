@@ -66,9 +66,10 @@
       (qtile-extras.overridePythonAttrs (old: {
         disabledTestPaths = [
           #"test/widget/test_strava.py"
-          "test/widget/test_image.py"
+          #"test/widget/test_image.py"
         ];
       }))
+      pydantic
       stravalib
       pyxdg
       pulsectl-asyncio
