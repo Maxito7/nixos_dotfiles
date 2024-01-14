@@ -69,7 +69,7 @@
           #"test/widget/test_image.py"
         ];
       }))
-      pydantic
+      pydantic-compat
       stravalib
       pyxdg
       pulsectl-asyncio
