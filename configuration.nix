@@ -62,18 +62,18 @@
 
   services.xserver.windowManager.qtile = {
     enable = true;
-    extraPackages = python3Packages: with python3Packages; [
-      (qtile-extras.overridePythonAttrs (old: {
-        disabledTestPaths = [
-          #"test/widget/test_strava.py"
-          #"test/widget/test_image.py"
-        ];
-      }))
-      pydantic-compat
-      stravalib
-      pyxdg
-      pulsectl-asyncio
-    ];
+    #extraPackages = python3Packages: with python3Packages; [
+    #  (qtile-extras.overridePythonAttrs (old: {
+    #    disabledTestPaths = [
+    #      #"test/widget/test_strava.py"
+    #      #"test/widget/test_image.py"
+    #    ];
+    #  }))
+    #  pydantic-compat
+    #  stravalib
+    #  pyxdg
+    #  pulsectl-asyncio
+    #];
   };
 
   services.picom.enable = true;
