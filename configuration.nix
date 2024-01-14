@@ -69,6 +69,7 @@
           "test/widget/test_image.py"
         ];
       }))
+      stravalib
       pyxdg
       pulsectl-asyncio
     ];
