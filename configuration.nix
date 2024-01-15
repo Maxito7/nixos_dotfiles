@@ -266,7 +266,7 @@
     wl-clipboard
     waybar
     swww
-    swaylock-fancy
+    swaylock
   ];
 
 
@@ -299,6 +299,12 @@
           exec Hyprland &> /dev/null
       fi
     '';
+  };
+
+  security.pam.services.swaylock = {
+    text = ''
+      			auth include login
+      		'';
   };
 
   system.stateVersion = "23.05";
