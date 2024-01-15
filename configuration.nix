@@ -266,7 +266,7 @@
     wl-clipboard
     waybar
     swww
-    swaylock
+    swaylock-effects
   ];
 
 
