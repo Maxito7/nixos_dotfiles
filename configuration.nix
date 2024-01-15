@@ -260,6 +260,10 @@
     # Spacedrive
     spacedrive
 
+    # Audio stuff
+    pamixer
+    pavucontrol
+
     # WAYLAND ONLY
     grim
     slurp
