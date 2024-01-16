@@ -57,11 +57,11 @@
   services.xserver.enable = true;
 
   # Enable the Cinnamon Desktop Environment.
-  services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.cinnamon.enable = true;
+  services.xserver.displayManager.lightdm.enable = false;
+  services.xserver.desktopManager.cinnamon.enable = false;
 
   services.xserver.windowManager.qtile = {
-    enable = true;
+    enable = false;
     #extraPackages = python3Packages: with python3Packages; [
     #  (qtile-extras.overridePythonAttrs (old: {
     #    disabledTestPaths = [
