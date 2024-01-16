@@ -54,7 +54,11 @@
   };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
+  services.xserver = {
+    enable = true;
+    displayManager.sddm.enable = true;
+    desktopManager.plasma5.enable = true;
+  };
 
   # Enable the Cinnamon Desktop Environment.
   services.xserver.displayManager.lightdm.enable = false;
