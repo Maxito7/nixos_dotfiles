@@ -95,8 +95,10 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
+  services.blueman.enable = true;
   sound.enable = true;
-  hardware.pulseaudio.enable = false;
+  hardware.pulseaudio.enable = true;
+  hardware.bluetooth.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -267,6 +269,7 @@
     # Audio stuff
     pamixer
     pavucontrol
+    blueman
 
     # WAYLAND ONLY
     grim
