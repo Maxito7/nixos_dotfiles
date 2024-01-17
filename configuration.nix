@@ -97,8 +97,8 @@
   # Enable sound with pipewire.
   services.blueman.enable = true;
   sound.enable = true;
-  hardware.pulseaudio.enable = true;
-  hardware.bluetooth.enable = false;
+  hardware.pulseaudio.enable = false;
+  hardware.bluetooth.enable = true;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
