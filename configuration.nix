@@ -278,6 +278,7 @@
     waybar
     swww
     swaylock-effects
+    wlogout
   ];
 
 
