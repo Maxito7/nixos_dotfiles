@@ -270,6 +270,7 @@
     pamixer
     pavucontrol
     blueman
+    playerctl
 
     # WAYLAND ONLY
     grim
