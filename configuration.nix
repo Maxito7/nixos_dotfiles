@@ -266,11 +266,12 @@
     # Spacedrive
     spacedrive
 
-    # Audio stuff
+    # Audio & Video
     pamixer
     pavucontrol
     blueman
     playerctl
+    obs-studio
 
     # WAYLAND ONLY
     grim
