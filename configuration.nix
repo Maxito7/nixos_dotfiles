@@ -121,6 +121,7 @@
     isNormalUser = true;
     description = "maxjacinto";
     extraGroups = [
+      "docker"
       "networkmanager"
       "wheel"
       "audio"
@@ -319,6 +320,10 @@
     text = ''
       			auth include login
       		'';
+  };
+
+  virtualisation.docker = {
+    enable = true;
   };
 
   system.stateVersion = "23.05";
