@@ -188,6 +188,8 @@
     bottom
     gnumake
     nil
+    nixpkgs-format
+    alejandra
     onlyoffice-bin
 
     rustup
