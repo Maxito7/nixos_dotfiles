@@ -188,7 +188,7 @@
     bottom
     gnumake
     nil
-    nixpkgs-format
+    nixpkgs-fmt
     alejandra
     onlyoffice-bin
 
