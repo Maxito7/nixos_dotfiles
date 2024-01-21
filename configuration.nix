@@ -274,6 +274,9 @@
     playerctl
     obs-studio
 
+    # Cosmic DE
+    cosmic-files
+
     # WAYLAND ONLY
     grim
     slurp
