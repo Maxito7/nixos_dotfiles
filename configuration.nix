@@ -125,6 +125,7 @@
       "networkmanager"
       "wheel"
       "audio"
+      "libvirtd"
     ];
     packages = with pkgs; [
       firefox
