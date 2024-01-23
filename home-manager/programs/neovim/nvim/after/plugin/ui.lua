@@ -181,9 +181,9 @@ vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", {
 })
 -- BORDER GROUPS AND COLORS
 vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = "#7AA2F7" })
-vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#3b4261" })
-vim.api.nvim_set_hl(0, "LineNr", { fg = "#3b4261" })
-vim.api.nvim_set_hl(0, "EndOfBuffer", { fg = "#3b4261" })
+vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#47517d" })
+vim.api.nvim_set_hl(0, "LineNr", { fg = "#47517d" })
+vim.api.nvim_set_hl(0, "EndOfBuffer", { fg = "#47517d" })
 vim.api.nvim_set_hl(0, "DiagnosticFloatingError", { bg = "", fg = "#f7768e" })
 vim.api.nvim_set_hl(0, "DiagnosticFloatingHint", { bg = "", fg = "#7bd88f" })
 vim.api.nvim_set_hl(0, "DiagnosticFloatingInfo", { bg = "", fg = "#7aa2f7" })
