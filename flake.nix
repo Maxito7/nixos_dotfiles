@@ -10,13 +10,16 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
+		ghostty = {
+      url = "git+ssh://git@github.com/mitchellh/ghostty";
+    };		
   };
 
   outputs = {
     self,
     nixpkgs,
     home-manager,
+		ghostty,
     #nixvim,
     ...
   } @ inputs: {
@@ -53,6 +56,12 @@
               users.lucky = import ./home-manager/home.nix;
             };
           }
+
+					{
+          environment.systemPackages = [
+            ghostty.packages.x86_64-linux.default
+          ];
+        }
         ];
       };
     };
