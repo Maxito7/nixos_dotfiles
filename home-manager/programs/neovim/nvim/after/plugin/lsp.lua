@@ -122,7 +122,15 @@ require("lspconfig").rnix.setup({
 	capabilities = capabilities,
 })
 
-require("lspconfig").rust_analyzer.setup({})
+require("lspconfig").rust_analyzer.setup({
+	settings = {
+		["rust-analyzer"] = {
+			checkOnSave = {
+				command = "clippy",
+			},
+		},
+	},
+})
 require("lspconfig").clangd.setup({})
 require("lspconfig").nil_ls.setup({})
 require("lspconfig").gopls.setup({
