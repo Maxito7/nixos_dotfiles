@@ -41,7 +41,7 @@ in
 
   programs.neovim = {
     enable = true;
-    package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
+    #package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
     extraLuaPackages = ps: [ ps.magick ];
 
     /*plugins = [
