@@ -117,10 +117,12 @@ require("lspconfig").jedi_language_server.setup({
 	},
 })
 
+--[[
 require("lspconfig").rnix.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
+]]
 
 require("lspconfig").rust_analyzer.setup({
 	--[[
