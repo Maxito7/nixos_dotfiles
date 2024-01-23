@@ -256,6 +256,8 @@
     cava
     i3lock-fancy
 
+		zellij
+
     # Qalculate
     qalculate-qt
     qalculate-gtk
