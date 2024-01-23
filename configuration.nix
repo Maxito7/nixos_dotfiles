@@ -1,20 +1,20 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
-
-{ config, pkgs, neovimUtils, wrapNeovimUnstable, ... }:
-
-{
-  imports =
-    [
-      # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+{ config
+, pkgs
+, neovimUtils
+, wrapNeovimUnstable
+, ...
+}: {
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
@@ -174,6 +174,7 @@
     flameshot
     gcc
     git
+    gh
     unzip
     #cargo
     #rustc
@@ -289,7 +290,6 @@
     wlogout
   ];
 
-
   # Nix experimental settings
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -323,8 +323,8 @@
 
   security.pam.services.swaylock = {
     text = ''
-      			auth include login
-      		'';
+      auth include login
+    '';
   };
 
   virtualisation.docker = {
@@ -332,4 +332,4 @@
   };
 
   system.stateVersion = "23.05";
-} 
+}
