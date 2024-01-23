@@ -123,6 +123,7 @@ require("lspconfig").rnix.setup({
 })
 
 require("lspconfig").rust_analyzer.setup({
+	--[[
 	settings = {
 		["rust-analyzer"] = {
 			check = {
@@ -130,6 +131,7 @@ require("lspconfig").rust_analyzer.setup({
 			},
 		},
 	},
+	]]
 })
 require("lspconfig").clangd.setup({})
 require("lspconfig").nil_ls.setup({})
