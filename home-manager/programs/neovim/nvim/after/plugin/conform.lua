@@ -12,7 +12,7 @@ require("conform").setup({
 		-- Conform will run multiple formatters sequentially
 		python = { "ruff_isort", "ruff_format" },
 		go = { "gofumpt" },
-		nix = { "alejandra", "nixpkgs_fmt" },
+		--nix = { "alejandra", "nixpkgs_fmt" },
 		-- Use a sub-list to run only the first available formatter
 		--javascript = { { "prettierd", "prettier" } },
 	},
