@@ -18,3 +18,5 @@ vim.opt.laststatus = 3
 
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = "number"
+
+vim.opt.swapfile = false
