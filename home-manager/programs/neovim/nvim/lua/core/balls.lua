@@ -3,7 +3,7 @@ function vim.system(cmd, opts, on_exit)
 		on_exit = opts
 		opts = nil
 	end
-	return require("vim._system").run(cmd, opts, on_exit)
+	return require("vim.n_system").run(cmd, opts, on_exit)
 end
 
 -- Gets process info from the `ps` command.
