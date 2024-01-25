@@ -1,5 +1,7 @@
-{ pkgs, inputs, ... }:
-{
+{ pkgs
+, inputs
+, ...
+}: {
   home.username = "lucky";
   home.homeDirectory = "/home/lucky";
   home.stateVersion = "22.05";
@@ -9,9 +11,16 @@
     enable = true;
     enableFishIntegration = true;
   };
+
+  gtk = {
+    cursorTheme = {
+      name = "WhiteSur-Cursors";
+      package = pkgs.whitesur-cursors;
+    };
+  };
+
   imports = [
     ./configs
     ./programs
   ];
 }
-
