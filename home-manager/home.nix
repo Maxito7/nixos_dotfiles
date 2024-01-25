@@ -14,7 +14,7 @@
 
   gtk = {
     cursorTheme = {
-      name = "WhiteSur-Cursors";
+      name = "whitesur-cursors";
       package = pkgs.whitesur-cursors;
     };
   };
