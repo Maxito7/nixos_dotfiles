@@ -193,6 +193,7 @@
     nixpkgs-fmt
     alejandra
     onlyoffice-bin
+    whitesur-cursors
 
     rustup
 
@@ -256,7 +257,7 @@
     cava
     i3lock-fancy
 
-		zellij
+    zellij
 
     # Qalculate
     qalculate-qt
