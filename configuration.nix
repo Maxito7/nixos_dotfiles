@@ -177,14 +177,10 @@
     git
     gh
     unzip
-    #cargo
-    #rustc
-    #rustfmt
     clang-tools
     lxappearance
     tectonic
     texlive.combined.scheme-full
-    #rust-analyzer
     zathura
     kalker
     bottom
@@ -207,7 +203,6 @@
     maturin
     zoom-us
     lutgen
-    #jdt-language-server
     gopls
     zls
     gofumpt
@@ -225,7 +220,6 @@
     python3Packages.jedi-language-server
     python3Packages.iwlib
     python3Packages.pillow
-    #pipx
     brightnessctl
 
     # JetBrains
@@ -269,9 +263,6 @@
     virt-manager-qt
     libvirt
 
-    # R
-    rstudio
-
     # Spacedrive
     spacedrive
 
@@ -281,9 +272,6 @@
     blueman
     playerctl
     obs-studio
-
-    # Cosmic DE
-    cosmic-files
 
     # WAYLAND ONLY
     grim
