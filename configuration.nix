@@ -258,6 +258,7 @@
     i3lock-fancy
 
     zellij
+    floorp
 
     # Qalculate
     qalculate-qt
