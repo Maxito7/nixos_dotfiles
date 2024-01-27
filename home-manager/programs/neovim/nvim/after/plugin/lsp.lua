@@ -123,15 +123,21 @@ require("lspconfig").rnix.setup({
 })
 
 require("lspconfig").rust_analyzer.setup({
-	--[[
+	on_attach = on_attach,
+	capabilities = capabilities,
 	settings = {
-		["rust-analyzer"] = {
+		["rust_analyzer"] = {
+			cargo = {
+				features = "all",
+			},
+			checkOnSave = true,
 			check = {
 				command = "clippy",
+				extraArgs = { "--tests" },
+				features = "all",
 			},
 		},
 	},
-	]]
 })
 require("lspconfig").clangd.setup({})
 require("lspconfig").nil_ls.setup({})
