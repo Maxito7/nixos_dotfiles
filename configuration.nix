@@ -272,6 +272,7 @@
     blueman
     playerctl
     obs-studio
+    peek
 
     # WAYLAND ONLY
     grim
