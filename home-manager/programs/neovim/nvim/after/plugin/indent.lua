@@ -39,16 +39,3 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.b.miniindentscope_disable = true
 	end,
 })
-
--- mini.animate
-require("mini.animate").setup({
-	resize = {
-		enable = false,
-	},
-	open = {
-		enable = false,
-	},
-	close = {
-		enable = false,
-	},
-})
