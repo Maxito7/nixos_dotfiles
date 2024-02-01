@@ -254,6 +254,11 @@
     zellij
     floorp
 
+    # Nix CLI tools
+    nh
+    nvd
+    nix-output-monitor
+
     # Qalculate
     qalculate-qt
     qalculate-gtk
