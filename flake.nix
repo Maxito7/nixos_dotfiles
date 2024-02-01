@@ -1,6 +1,7 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/a136def4f7256146b32e3625e53dcdf7464165f9";
+    #nixpkgs.url = "github:nixos/nixpkgs/a136def4f7256146b32e3625e53dcdf7464165f9";
+    nixpkgs.url = "github:nixos/nixpkgs/unstable";
     nixpkgs-f2k.url = "github:moni-dz/nixpkgs-f2k";
     nur.url = "github:nix-community/NUR";
     #nixvim.url = "github:nix-community/nixvim";
@@ -24,19 +25,19 @@
       ...
     } @ inputs: {
       /*
-      homeConfigurations =
-        let
-      overlays = [
-        inputs.neovim-nightly-overlay.overlay
-      ];
-        in {
-        #macbook-pro = inputs.home-manager.lib.homeManagerConfiguration {
-      configuration = { pkgs, ... }:
-        {
-          nixpkgs.overlays = overlays;
-        };
-        #};
+        homeConfigurations =
+      let
+        overlays = [
+      inputs.neovim-nightly-overlay.overlay
+        ];
+      in {
+      #macbook-pro = inputs.home-manager.lib.homeManagerConfiguration {
+        configuration = { pkgs, ... }:
+      {
+        nixpkgs.overlays = overlays;
       };
+      #};
+        };
       */
       nixosConfigurations = {
         lucky = nixpkgs.lib.nixosSystem {

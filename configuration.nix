@@ -226,7 +226,7 @@
     jetbrains.idea-ultimate
     jetbrains.jdk
     jetbrains.clion
-    #jetbrains.pycharm-professional
+    jetbrains.pycharm-professional
 
     zoxide
     eza
