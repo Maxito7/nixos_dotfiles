@@ -54,12 +54,12 @@ devicons.setup({
 		},
 		nix = {
 			icon = "",
-			color = "#608eff",
+			color = "#56aeff",
 			name = "Nix",
 		},
 		ts = {
 			icon = "󰛦",
-			color = "#3178C6",
+			color = "#7aa2f7",
 			name = "Typescript",
 		},
 		js = {
