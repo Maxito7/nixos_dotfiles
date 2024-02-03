@@ -54,7 +54,7 @@ devicons.setup({
 		},
 		nix = {
 			icon = "",
-			color = "#7aa2f7",
+			color = "#608eff",
 			name = "Nix",
 		},
 		ts = {
