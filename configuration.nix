@@ -237,18 +237,21 @@
 
     acpi
 
-    alsa-lib
-    libgudev
-    udev
-    alsaLib
-    lutris
-    xorg.libXcursor
-    xorg.libXrandr
-    xorg.libXi
-    vulkan-tools
-    vulkan-headers
-    vulkan-loader
-    vulkan-validation-layers
+    # Bevy stuff apparently lol
+    /*
+      alsa-lib
+      libgudev
+      udev
+      alsaLib
+      lutris
+      xorg.libXcursor
+      xorg.libXrandr
+      xorg.libXi
+      vulkan-tools
+      vulkan-headers
+      vulkan-loader
+      vulkan-validation-layers
+    */
 
     cava
 
