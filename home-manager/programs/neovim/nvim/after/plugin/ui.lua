@@ -59,7 +59,7 @@ devicons.setup({
 		},
 		ts = {
 			icon = "󰛦",
-			color = "#358EF1",
+			color = "#3178C6",
 			name = "Typescript",
 		},
 		js = {
