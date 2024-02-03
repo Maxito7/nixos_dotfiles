@@ -254,6 +254,7 @@
     */
 
     cava
+    krita
 
     zellij
     floorp

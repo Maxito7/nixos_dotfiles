@@ -35,7 +35,7 @@ devicons.setup({
 		tex = {
 			icon = "",
 			color = "#c0caf5",
-			name = "LatypescriptTeX",
+			name = "LaTeX",
 		},
 		md = {
 			icon = "󰽛",
@@ -59,7 +59,7 @@ devicons.setup({
 		},
 		ts = {
 			icon = "󰛦",
-			color = "#7dcfff",
+			color = "#358EF1",
 			name = "Typescript",
 		},
 		js = {
