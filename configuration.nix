@@ -260,8 +260,8 @@
 
     # Nix CLI tools
     nh
-    nvd
-    nix-output-monitor
+    #nvd
+    #nix-output-monitor
 
     # Qalculate
     qalculate-qt
