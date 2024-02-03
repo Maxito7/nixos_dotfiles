@@ -34,12 +34,12 @@ devicons.setup({
 		},
 		tex = {
 			icon = "",
-			color = "#9AA5CE",
-			name = "LaTeX",
+			color = "#c0caf5",
+			name = "LatypescriptTeX",
 		},
 		md = {
 			icon = "󰽛",
-			color = "#9AA5CE",
+			color = "#c0caf5",
 			name = "Markdown",
 		},
 		vim = {
@@ -49,13 +49,23 @@ devicons.setup({
 		},
 		vue = {
 			icon = "",
-			color = "#7bd88f",
+			color = "#249b73",
 			name = "Vue",
 		},
 		nix = {
 			icon = "",
 			color = "#7aa2f7",
 			name = "Nix",
+		},
+		ts = {
+			icon = "󰛦",
+			color = "#7dcfff",
+			name = "Typescript",
+		},
+		js = {
+			icon = "",
+			color = "#ffd12b",
+			name = "Javascript",
 		},
 		["norg"] = {
 			icon = "",
