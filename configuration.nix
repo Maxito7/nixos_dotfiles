@@ -249,7 +249,6 @@
     vulkan-validation-layers
 
     cava
-    i3lock-fancy
 
     zellij
     floorp
