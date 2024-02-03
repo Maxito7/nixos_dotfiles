@@ -52,6 +52,11 @@ devicons.setup({
 			color = "#7bd88f",
 			name = "Vue",
 		},
+		nix = {
+			icon = "",
+			color = "#7aa2f7",
+			name = "Nix",
+		},
 		["norg"] = {
 			icon = "",
 			--color = "#4878BE",
