@@ -25,19 +25,19 @@
       ...
     } @ inputs: {
       /*
-        homeConfigurations =
-      let
-        overlays = [
-      inputs.neovim-nightly-overlay.overlay
-        ];
-      in {
-      #macbook-pro = inputs.home-manager.lib.homeManagerConfiguration {
-        configuration = { pkgs, ... }:
-      {
-        nixpkgs.overlays = overlays;
-      };
-      #};
+      homeConfigurations =
+        let
+      overlays = [
+        inputs.neovim-nightly-overlay.overlay
+      ];
+        in {
+        #macbook-pro = inputs.home-manager.lib.homeManagerConfiguration {
+      configuration = { pkgs, ... }:
+        {
+      nixpkgs.overlays = overlays;
         };
+        #};
+      };
       */
       nixosConfigurations = {
         lucky = nixpkgs.lib.nixosSystem {
