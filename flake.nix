@@ -14,6 +14,10 @@
     ghostty = {
       url = "git+ssh://git@github.com/mitchellh/ghostty";
     };
+    iynaix = {
+      url = "github:iynaix/dotfiles";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -25,19 +29,19 @@
       ...
     } @ inputs: {
       /*
-      homeConfigurations =
-        let
-      overlays = [
-        inputs.neovim-nightly-overlay.overlay
-      ];
-        in {
-        #macbook-pro = inputs.home-manager.lib.homeManagerConfiguration {
-      configuration = { pkgs, ... }:
-        {
-      nixpkgs.overlays = overlays;
-        };
-        #};
+        homeConfigurations =
+      let
+        overlays = [
+      inputs.neovim-nightly-overlay.overlay
+        ];
+      in {
+      #macbook-pro = inputs.home-manager.lib.homeManagerConfiguration {
+        configuration = { pkgs, ... }:
+      {
+        nixpkgs.overlays = overlays;
       };
+      #};
+        };
       */
       nixosConfigurations = {
         lucky = nixpkgs.lib.nixosSystem {
@@ -61,6 +65,7 @@
             {
               environment.systemPackages = [
                 ghostty.packages.x86_64-linux.default
+                inputs.iynaix.packages.x86_64-linux.wfetch
               ];
             }
           ];

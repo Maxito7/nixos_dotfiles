@@ -9,7 +9,7 @@ tokyonight.setup({
 		colors.gitSigns = {
 			add = "#7bd88f",
 			change = "#7dcfff",
-			delte = "#f7768e",
+			delete = "#f7768e",
 		}
 	end,
 	styles = {
