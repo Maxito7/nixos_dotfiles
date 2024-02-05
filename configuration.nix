@@ -296,6 +296,7 @@
 
   environment.sessionVariables = {
     FLAKE = "/home/lucky/.config/nixfiles/";
+    LD_LIBRARY_PATH = "/run/opengl-driver/lib:/run/opengl-driver-32/lib";
   };
 
   # Nix experimental settings
@@ -343,4 +344,7 @@
   programs.virt-manager.enable = true;
 
   system.stateVersion = "23.05";
+
+  hardware.opengl.enable = true;
+  hardware.opengl.extraPackages = [ pkgs.mesa.drivers ];
 }
