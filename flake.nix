@@ -18,6 +18,9 @@
       url = "github:iynaix/dotfiles";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    zjstatus = {
+      url = "github:dj95/zjstatus";
+    };
   };
 
   outputs =
@@ -25,24 +28,10 @@
     , nixpkgs
     , home-manager
     , ghostty
+    , zjstatus
     , #nixvim,
       ...
     } @ inputs: {
-      /*
-        homeConfigurations =
-      let
-        overlays = [
-      inputs.neovim-nightly-overlay.overlay
-        ];
-      in {
-      #macbook-pro = inputs.home-manager.lib.homeManagerConfiguration {
-        configuration = { pkgs, ... }:
-      {
-        nixpkgs.overlays = overlays;
-      };
-      #};
-        };
-      */
       nixosConfigurations = {
         lucky = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
@@ -66,6 +55,7 @@
               environment.systemPackages = [
                 ghostty.packages.x86_64-linux.default
                 inputs.iynaix.packages.x86_64-linux.wfetch
+                zjstatus.packages.x86_64-linux.default
               ];
             }
           ];
