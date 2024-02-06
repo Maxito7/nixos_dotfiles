@@ -349,5 +349,5 @@
   hardware.opengl.extraPackages = [ pkgs.mesa.drivers ];
 
   services.thermald.enable = true;
-  services.tlp.enable = true;
+  #services.tlp.enable = true;
 }
