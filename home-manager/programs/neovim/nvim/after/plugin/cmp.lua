@@ -6,6 +6,10 @@ local max_items = 7
 -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
 require("luasnip.loaders.from_vscode").lazy_load()
 
+local ELLIPSIS_CHAR = "…"
+local MAX_LABEL_WIDTH = 20
+local MIN_LABEL_WIDTH = 20
+
 cmp.setup({
 	dependencies = {
 		cmp_path,
@@ -44,11 +48,22 @@ cmp.setup({
 	},
 	-- configure lspkind for vs-code like pictograms in completion menu
 	formatting = {
-		format = lspkind.cmp_format({
-			mode = "symbol",
-			maxwidth = 50,
-			ellipsis_char = "...",
-		}),
+		--format = lspkind.cmp_format({
+		--	mode = "symbol",
+		--	maxwidth = 50,
+		--	ellipsis_char = "...",
+		--}),
+		format = function(entry, vim_item)
+			local label = vim_item.abbr
+			local truncated_label = vim.fn.strcharpart(label, 0, MAX_LABEL_WIDTH)
+			if truncated_label ~= label then
+				vim_item.abbr = truncated_label .. ELLIPSIS_CHAR
+			elseif string.len(label) < MIN_LABEL_WIDTH then
+				local padding = string.rep(" ", MIN_LABEL_WIDTH - string.len(label))
+				vim_item.abbr = label .. padding
+			end
+			return vim_item
+		end,
 	},
 })
 
