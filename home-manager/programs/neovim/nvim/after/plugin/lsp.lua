@@ -172,6 +172,35 @@ require("lspconfig").volar.setup({
 		"vue",
 		"json",
 	},
+	init_options = {
+		typescript = {
+			tsdk = "/home/lucky/.bun/install/cache/typescript/5.3.3/lib",
+		},
+		preferences = {
+			disableSuggestions = true,
+		},
+		languageFeatures = {
+			implementation = true,
+			references = true,
+			definition = true,
+			typeDefinition = true,
+			callHierarchy = true,
+			hover = true,
+			rename = true,
+			renameFileRefactoring = true,
+			signatureHelp = true,
+			codeAction = true,
+			workspaceSymbol = true,
+			diagnostics = true,
+			semanticTokens = true,
+			completion = {
+				defaultTagNameCase = "both",
+				defaultAttrNameCase = "kebabCase",
+				getDocumentNameCasesRequest = false,
+				getDocumentSelectionRequest = false,
+			},
+		},
+	},
 	settings = {
 		volar = {
 			codeLens = {
