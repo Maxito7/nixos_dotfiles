@@ -14,8 +14,8 @@
     ghostty = {
       url = "git+ssh://git@github.com/mitchellh/ghostty";
     };
-    iynaix = {
-      url = "github:iynaix/dotfiles";
+    wfetch = {
+      url = "github:iynaix/wfetch";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     zjstatus = {
@@ -54,7 +54,7 @@
             {
               environment.systemPackages = [
                 ghostty.packages.x86_64-linux.default
-                inputs.iynaix.packages.x86_64-linux.wfetch
+                inputs.wfetch.packages.x86_64-linux.default
                 zjstatus.packages.x86_64-linux.default
               ];
             }
