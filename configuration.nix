@@ -247,6 +247,7 @@
     nodejs_20
     nodePackages_latest.volar
     typescript
+    nodePackages_latest.typescript-language-server
 
     # Nix CLI tools
     nh
