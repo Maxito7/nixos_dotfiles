@@ -165,7 +165,6 @@
   environment.systemPackages = with pkgs; [
     xclip
     wget
-    pfetch-rs
     wezterm
     starship
     kitty
@@ -237,32 +236,20 @@
 
     acpi
 
-    # Bevy stuff apparently lol
-    /*
-      alsa-lib
-      libgudev
-      udev
-      alsaLib
-      lutris
-      xorg.libXcursor
-      xorg.libXrandr
-      xorg.libXi
-      vulkan-tools
-      vulkan-headers
-      vulkan-loader
-      vulkan-validation-layers
-    */
-
     cava
     krita
 
     zellij
     floorp
 
+    # Webdev
+    bun
+    nodejs_20
+    nodePackages_latest.volar
+    typescript
+
     # Nix CLI tools
     nh
-    #nvd
-    #nix-output-monitor
 
     # Qalculate
     qalculate-qt
