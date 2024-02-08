@@ -161,7 +161,27 @@ require("lspconfig").zls.setup({})
 
 -- Web-dev
 require("lspconfig").svelte.setup({})
-require("lspconfig").volar.setup({})
+require("lspconfig").volar.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	filetypes = {
+		"typescript",
+		"javascript",
+		"javascriptreact",
+		"typescriptreact",
+		"vue",
+		"json",
+	},
+	settings = {
+		volar = {
+			codeLens = {
+				references = true,
+				pugTools = true,
+				scriptSetupTools = true,
+			},
+		},
+	},
+})
 require("lspconfig").tsserver.setup({})
 
 lsp.handlers["textDocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
