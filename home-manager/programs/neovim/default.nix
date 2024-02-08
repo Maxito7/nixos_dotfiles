@@ -36,14 +36,14 @@ in
     ripgrep
     fd
     lua-language-server
-    rust-analyzer-unwrapped
+    #rust-analyzer-unwrapped
     rnix-lsp
     fzf
   ];
 
   programs.neovim = {
     enable = true;
-    package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
+    #package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
     extraLuaPackages = ps: [ ps.magick ];
 
     /*
