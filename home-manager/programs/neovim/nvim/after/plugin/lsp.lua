@@ -162,6 +162,7 @@ require("lspconfig").zls.setup({})
 -- Web-dev
 require("lspconfig").svelte.setup({})
 require("lspconfig").volar.setup({})
+require("lspconfig").tsserver.setup({})
 
 lsp.handlers["textDocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
 	border = "rounded",

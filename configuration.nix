@@ -248,6 +248,7 @@
     nodePackages_latest.volar
     typescript
     nodePackages_latest.typescript-language-server
+    biome
 
     # Nix CLI tools
     nh
