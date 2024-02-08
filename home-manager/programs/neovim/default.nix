@@ -1,7 +1,9 @@
-{ inputs, pkgs, ... }:
+{ inputs
+, pkgs
+, ...
+}:
 let
-
-  treesitterWithGrammars = (pkgs.vimPlugins.nvim-treesitter.withPlugins (p: [
+  treesitterWithGrammars = pkgs.vimPlugins.nvim-treesitter.withPlugins (p: [
     p.bash
     p.comment
     p.css
@@ -27,7 +29,7 @@ let
     p.typescript
     p.vue
     p.yaml
-  ]));
+  ]);
 in
 {
   home.packages = with pkgs; [
@@ -41,12 +43,14 @@ in
 
   programs.neovim = {
     enable = true;
-    #package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
+    package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
     extraLuaPackages = ps: [ ps.magick ];
 
-    /*plugins = [
+    /*
+      plugins = [
       treesitterWithGrammars
-      ];*/
+      ];
+    */
 
     extraPackages = with pkgs; [
       fzf
@@ -65,9 +69,10 @@ in
 
   # Treesitter is configured as a locally developed module in lazy.nvim
   # we hardcode a symlink here so that we can refer to it in our lazy config
-  /*home.file."./.local/share/nvim/nix/nvim-treesitter/" = {
+  /*
+    home.file."./.local/share/nvim/nix/nvim-treesitter/" = {
     recursive = true;
     source = treesitterWithGrammars;
-    };*/
-
+    };
+  */
 }
