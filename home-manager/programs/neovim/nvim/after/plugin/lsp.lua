@@ -177,7 +177,7 @@ require("lspconfig").volar.setup({
 			tsdk = "/home/lucky/.bun/install/cache/typescript/5.3.3/lib",
 		},
 		preferences = {
-			disableSuggestions = true,
+			disableSuggestions = false,
 		},
 		languageFeatures = {
 			implementation = true,
