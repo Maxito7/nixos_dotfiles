@@ -73,6 +73,11 @@ devicons.setup({
 			color = "#7AA2F7",
 			name = "Neorg",
 		},
+		["nuxt.config.ts"] = {
+			icon = "󱄆",
+			color = "#249b73",
+			name = "Nuxt",
+		},
 	},
 })
 
