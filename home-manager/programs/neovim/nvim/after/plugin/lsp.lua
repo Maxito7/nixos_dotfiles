@@ -164,6 +164,7 @@ require("lspconfig").svelte.setup({})
 require("lspconfig").volar.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
+	--[[
 	filetypes = {
 		"typescript",
 		"javascript",
@@ -172,10 +173,12 @@ require("lspconfig").volar.setup({
 		"vue",
 		"json",
 	},
+	]]
 	init_options = {
 		typescript = {
 			tsdk = "/home/lucky/.bun/install/cache/typescript/5.3.3/lib",
 		},
+		--[[
 		preferences = {
 			disableSuggestions = false,
 		},
@@ -200,7 +203,9 @@ require("lspconfig").volar.setup({
 				getDocumentSelectionRequest = false,
 			},
 		},
+		]]
 	},
+	--[[
 	settings = {
 		volar = {
 			codeLens = {
@@ -210,8 +215,9 @@ require("lspconfig").volar.setup({
 			},
 		},
 	},
+	]]
 })
---require("lspconfig").tsserver.setup({})
+require("lspconfig").tsserver.setup({})
 
 lsp.handlers["textDocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
 	border = "rounded",
