@@ -214,7 +214,6 @@
     gccMultiStdenv
     ruff
     ruff-lsp
-    ripgrep
     fzf
     fd
     python3Packages.pip
@@ -229,8 +228,14 @@
     jetbrains.clion
     jetbrains.pycharm-professional
 
+    # Rust CLI tools
     zoxide
     eza
+    bat
+    fd
+    procs
+    ripgrep
+    tokei
 
     sdbus-cpp
 
