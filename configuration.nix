@@ -235,6 +235,7 @@
     fd
     procs
     ripgrep
+    ripgrep-all
     tokei
 
     sdbus-cpp
