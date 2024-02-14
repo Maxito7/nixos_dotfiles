@@ -181,7 +181,7 @@
     clang-tools
     lxappearance
     tectonic
-    texlive.combined.scheme-full
+    #texlive.combined.scheme-full
     zathura
     kalker
     bottom
@@ -204,9 +204,7 @@
     maturin
     zoom-us
     lutgen
-    gopls
-    zls
-    gofumpt
+
     stylua
     presenterm
     texlab
@@ -221,6 +219,15 @@
     python3Packages.iwlib
     python3Packages.pillow
     brightnessctl
+
+    # Go
+    go
+    gopls
+    gofumpt
+
+    # Zig
+    zig
+    zls
 
     # JetBrains
     jetbrains.idea-ultimate
