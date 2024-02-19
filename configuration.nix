@@ -170,7 +170,7 @@
     kitty
     qtile
     #picom-allusive
-    compfy
+    #compfy
     rofi
     firefox
     inxi
