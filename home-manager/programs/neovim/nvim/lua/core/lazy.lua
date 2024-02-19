@@ -51,16 +51,21 @@ require("lazy").setup({
 		event = { "BufReadPre", "BufNewFile" },
 	},
 	-- CMP + dependencies
-	"hrsh7th/cmp-path",
-	"hrsh7th/cmp-cmdline",
-	"L3MON4D3/LuaSnip",
-	"saadparwaiz1/cmp_luasnip",
-	"hrsh7th/cmp-nvim-lsp",
-	"rafamadriz/friendly-snippets",
-	"onsails/lspkind.nvim",
-	"hrsh7th/nvim-cmp",
+		{
+		"hrsh7th/nvim-cmp",
+		dependencies = {
+			"hrsh7th/cmp-path",
+			"hrsh7th/cmp-cmdline",
+			"L3MON4D3/LuaSnip",
+			"saadparwaiz1/cmp_luasnip",
+			"hrsh7th/cmp-nvim-lsp",
+			"rafamadriz/friendly-snippets",
+			"onsails/lspkind.nvim",
+		},
+	}
 	-- Autopairs
-	["windwp/nvim-autopairs"] = {
+	{
+		"windwp/nvim-autopairs",
 		event = "InsertEnter",
 	},
 	-- Treesitter + dependencies
