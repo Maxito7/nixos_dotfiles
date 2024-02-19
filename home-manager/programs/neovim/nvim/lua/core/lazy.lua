@@ -16,6 +16,8 @@ require("lazy").setup({
 	-- Barbecue + dependencies
 	{
 		"utilyre/barbecue.nvim",
+		name = "barbecue",
+		version = "*",
 		dependencies = {
 			"SmiteshP/nvim-navic",
 		},

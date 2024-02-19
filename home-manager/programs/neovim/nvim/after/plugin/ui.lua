@@ -81,6 +81,9 @@ devicons.setup({
 	},
 })
 
+local barbecue = require("barbecue")
+barbecue.setup({})
+
 local lualine = require("lualine")
 
 lualine.setup({
@@ -189,9 +192,6 @@ oil.setup({
 	},
 })
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
-
-local barbecue = require("barbecue")
-barbecue.setup({})
 
 -- Indent colors
 vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", {
