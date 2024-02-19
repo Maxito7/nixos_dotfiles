@@ -1,14 +1,4 @@
 -- LSP
-vim.cmd.packadd("neodev.nvim")
-vim.cmd.packadd("nvim-lspconfig")
-vim.cmd.packadd("cmp-path")
-vim.cmd.packadd("cmp-cmdline")
-vim.cmd.packadd("LuaSnip")
-vim.cmd.packadd("cmp_luasnip")
-vim.cmd.packadd("cmp-nvim-lsp")
-vim.cmd.packadd("friendly-snippets")
-vim.cmd.packadd("lspkind.nvim")
-vim.cmd.packadd("nvim-cmp")
 local lsp = vim.lsp
 
 local on_attach = function(_, bufnr)
