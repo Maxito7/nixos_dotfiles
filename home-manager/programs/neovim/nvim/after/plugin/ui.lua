@@ -70,7 +70,7 @@ devicons.setup({
 		["norg"] = {
 			icon = "",
 			--color = "#4878BE",
-			color = "#7AA2F7",
+			color = "#3692d5",
 			name = "Neorg",
 		},
 		["nuxt.config.ts"] = {
