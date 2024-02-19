@@ -1,4 +1,3 @@
-vim.cmd.packadd("tokyonight.nvim")
 local tokyonight = require("tokyonight")
 tokyonight.setup({
 	style = "night",
