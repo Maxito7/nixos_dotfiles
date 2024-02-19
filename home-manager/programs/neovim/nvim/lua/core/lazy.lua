@@ -45,10 +45,12 @@ require("lazy").setup({
 	-- Oil
 	"stevearc/oil.nvim",
 	-- LSP + dependencies
-	"folke/neodev.nvim",
 	{
 		"neovim/nvim-lspconfig",
 		event = { "BufReadPre", "BufNewFile" },
+		dependencies = {
+			"folke/neodev.nvim",
+		},
 	},
 	-- CMP + dependencies
 	{
