@@ -169,7 +169,8 @@
     starship
     kitty
     qtile
-    picom-allusive
+    #picom-allusive
+    compfy
     rofi
     firefox
     inxi
