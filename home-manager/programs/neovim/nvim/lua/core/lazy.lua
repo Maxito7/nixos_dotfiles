@@ -51,7 +51,7 @@ require("lazy").setup({
 		event = { "BufReadPre", "BufNewFile" },
 	},
 	-- CMP + dependencies
-		{
+	{
 		"hrsh7th/nvim-cmp",
 		dependencies = {
 			"hrsh7th/cmp-path",
@@ -62,7 +62,7 @@ require("lazy").setup({
 			"rafamadriz/friendly-snippets",
 			"onsails/lspkind.nvim",
 		},
-	}
+	},
 	-- Autopairs
 	{
 		"windwp/nvim-autopairs",
