@@ -42,6 +42,7 @@ local util = require("lspconfig/util")
 
 require("neodev").setup()
 require("lspconfig").lua_ls.setup({
+	event = { "BufReadPre", "BufNewFile" },
 	capabilities = capabilities,
 	on_attach = on_attach,
 	settings = {

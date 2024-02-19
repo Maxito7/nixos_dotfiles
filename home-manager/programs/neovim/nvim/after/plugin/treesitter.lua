@@ -1,5 +1,10 @@
 vim.cmd.packadd("nvim-treesitter")
 require("nvim-treesitter.configs").setup({
+	cmd = { "TSInstall", "TSUpdate" },
+	event = { "BufRead", "BufNewFile" },
+	build = function()
+		vim.cmd("TSUpdate")
+	end,
 	ensure_installed = {
 		"astro",
 		"bash",

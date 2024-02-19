@@ -5,6 +5,7 @@ vim.cmd.packadd("telescope.nvim")
 local telescope = require("telescope")
 
 telescope.setup({
+	cmd = "Telescope",
 	extensions = {
 		fzf = {
 			fuzzy = true, -- false will only do exact matching

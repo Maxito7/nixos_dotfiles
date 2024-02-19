@@ -86,6 +86,7 @@ vim.cmd.packadd("lualine.nvim")
 local lualine = require("lualine")
 
 lualine.setup({
+	opt = true,
 	options = {
 		icons_enabled = true,
 	},
