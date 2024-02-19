@@ -1,4 +1,3 @@
-vim.cmd.packadd("no-neck-pain.nvim")
 local NoNeckPain = require("no-neck-pain")
 require("no-neck-pain").setup({
 	width = 140,

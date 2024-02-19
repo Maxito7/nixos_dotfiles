@@ -1,4 +1,3 @@
-vim.cmd.packadd("conform.nvim")
 require("conform").setup({
 	formatters = {
 		ruff_isort = {

@@ -1,7 +1,4 @@
 -- Telescope
-vim.cmd.packadd("telescope-fzf-native.nvim")
-vim.cmd.packadd("plenary.nvim")
-vim.cmd.packadd("telescope.nvim")
 local telescope = require("telescope")
 
 telescope.setup({
