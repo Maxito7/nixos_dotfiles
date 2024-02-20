@@ -8,12 +8,11 @@ require("conform").setup({
 	},
 	formatters_by_ft = {
 		lua = { "stylua" },
-		-- Conform will run multiple formatters sequentially
 		python = { "ruff_isort", "ruff_format" },
 		go = { "gofumpt" },
 		nix = { "alejandra", "nixpkgs_fmt" },
-		-- Use a sub-list to run only the first available formatter
 		javascript = { "biome" },
+		typescript = { "biome" },
 	},
 	format_on_save = {
 		-- These options will be passed to conform.format()
