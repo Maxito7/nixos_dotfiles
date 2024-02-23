@@ -4,9 +4,6 @@
 , libs
 , ...
 }: {
-  home.packages = with pkgs; [
-    zjstatus
-  ];
   programs.zellij = {
     enable = true;
     enableFishIntegration = true;
