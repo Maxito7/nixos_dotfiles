@@ -32,13 +32,14 @@ in
         border_format   "#[fg=${yellow}]{char}"
         border_position "top"
 
-        hide_frame_for_single_pane "false"
+        hide_frame_for_single_pane "true"
 
+  			mode_normal "#[bg=${blue},fg=${black}] {name} "
         mode_tab "#[bg=${green},fg=${black}] {name} "
         mode_default_to_mode "normal"
 
         tab_normal   "#[fg=${blue}] {index} #[fg=${white}] {name} "
-        tab_active   "#[bg=${blue},fg=${black}] {index} #[bg=${brightBlack},fg=${white}] {name} "
+        tab_active   "#[bg=${blue},fg=${black}] {index} #[bg=${brightBlack},fg=${white},bold] {name} "
         tab_separator "  "
       }
     }
