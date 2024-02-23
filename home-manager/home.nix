@@ -1,7 +1,10 @@
 { pkgs
 , inputs
+, libs
+, lib
 , ...
 }: {
+  xdg.enable = true;
   home.username = "lucky";
   home.homeDirectory = "/home/lucky";
   home.stateVersion = "22.05";
