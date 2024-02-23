@@ -30,7 +30,7 @@ in
       plugin location="file:${inputs.zjstatus.packages.${pkgs.system}.default}/bin/zjstatus.wasm" {
         format_left  "{mode}"
   			format_center "{tabs}"
-  			format_right "#[bg=${cyan},fg=${black},bold] {session} "
+  			format_right "#[bg=${blue},fg=${black},bold] {session} "
         format_space ""
 
         border_enabled  "false"
@@ -47,8 +47,8 @@ in
   			mode_session "#[bg=${orange},fg=${black}] {name} "
         mode_default_to_mode "normal"
 
-        tab_normal   "#[fg=${blue}] {index} #[fg=${white}] {name} "
-        tab_active   "#[bg=${blue},fg=${black}] {index} #[bg=${brightBlack},fg=${white},bold] {name} "
+        tab_normal   "#[fg=${cyan}] {index} #[fg=${white}] {name} "
+        tab_active   "#[bg=${cyan},fg=${black}] {index} #[bg=${brightBlack},fg=${white},bold] {name} "
         tab_separator ""
       }
     }
