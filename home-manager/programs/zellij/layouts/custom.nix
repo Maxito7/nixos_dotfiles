@@ -28,8 +28,9 @@ in
 
     pane size=1 borderless=true {
       plugin location="file:${inputs.zjstatus.packages.${pkgs.system}.default}/bin/zjstatus.wasm" {
-        format_left  "{mode}{tabs}"
-  			format_right "{session}"
+        format_left  "{mode}"
+  			format_center "{tabs}"
+  			format_right "#[bg=${green},fg=${black},bold]{session}"
         format_space ""
 
         border_enabled  "false"
@@ -39,7 +40,8 @@ in
 
         hide_frame_for_single_pane "true"
 
-  			mode_normal "#[bg=${blue},fg=${black},bold] NORMAL "
+  			mode_normal "#[bg=${blue},fg=${black},bold] {name} "
+  			mode_locked "#[bg=${orange},fg=${black},bold] {name} "
         mode_tab "#[bg=${green},fg=${black}] {name} "
         mode_default_to_mode "normal"
 
