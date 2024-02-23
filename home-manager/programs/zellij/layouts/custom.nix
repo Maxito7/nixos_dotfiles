@@ -34,9 +34,8 @@ in
 
         hide_frame_for_single_pane "false"
 
-        mode_normal  ""
         mode_tab "#[bg=${green},fg=${black}] {name} "
-        mode_default_to_mode "tmux"
+        mode_default_to_mode "normal"
 
         tab_normal   "#[fg=${blue}] {index} #[fg=${white}] {name} "
         tab_active   "#[bg=${blue},fg=${black}] {index} #[bg=${brightBlack},fg=${white}] {name} "
