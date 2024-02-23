@@ -1,4 +1,5 @@
 { pkgs
+, inputs
 , lib
 , ...
 }:
@@ -26,7 +27,7 @@ in
     }
 
     pane size=1 borderless=true {
-      plugin location="file:${pkgs.zjstatus}/bin/zjstatus.wasm" {
+      plugin location="file:${inputs.zjstatus.packages.${pkgs.system}.default}/bin/zjstatus.wasm" {
         format_left  " {tabs}"
         format_right "{mode} {command_weather} {datetime}"
         format_space ""
