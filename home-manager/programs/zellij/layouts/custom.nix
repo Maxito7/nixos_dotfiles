@@ -12,6 +12,10 @@ let
   white = "#C0CAF5";
   brightWhite = "#FFFFFF";
 
+  magenta = "#bb9af7";
+  cyan = "#7dcfff";
+  orange = "#ff9e64";
+
   red = "#F7768E";
   blue = "#7AA2F7";
   green = "#7BD88F";
@@ -24,7 +28,8 @@ in
 
     pane size=1 borderless=true {
       plugin location="file:${inputs.zjstatus.packages.${pkgs.system}.default}/bin/zjstatus.wasm" {
-        format_left  "{mode} {tabs}"
+        format_left  "{mode}{tabs}"
+  			format_right "{session}"
         format_space ""
 
         border_enabled  "false"
@@ -34,13 +39,13 @@ in
 
         hide_frame_for_single_pane "true"
 
-  			mode_normal "#[bg=${blue},fg=${black}] {name} "
+  			mode_normal "#[bg=${blue},fg=${black},bold] NORMAL "
         mode_tab "#[bg=${green},fg=${black}] {name} "
         mode_default_to_mode "normal"
 
         tab_normal   "#[fg=${blue}] {index} #[fg=${white}] {name} "
         tab_active   "#[bg=${blue},fg=${black}] {index} #[bg=${brightBlack},fg=${white},bold] {name} "
-        tab_separator "  "
+        tab_separator ""
       }
     }
   }
