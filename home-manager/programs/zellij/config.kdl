@@ -20,8 +20,6 @@ keybinds {
     bind "Alt 8" { GoToTab 8; }
     bind "Alt 9" { GoToTab 9; }
 
-    #bind "Alt l" { NextSwapLayout; }
-
     bind "Alt f" { ToggleFocusFullscreen; }
   }
 }
