@@ -253,7 +253,6 @@
     cava
     krita
 
-    zellij
     floorp
 
     # Webdev
