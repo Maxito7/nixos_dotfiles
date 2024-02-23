@@ -3,13 +3,13 @@
     #nixpkgs.url = "github:nixos/nixpkgs/a136def4f7256146b32e3625e53dcdf7464165f9";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-f2k.url = "github:moni-dz/nixpkgs-f2k";
-    nur.url = "github:nix-community/NUR";
+    nur.url = "github:nix-community/nur";
     #nixvim.url = "github:nix-community/nixvim";
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
 
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
     ghostty = {
       url = "git+ssh://git@github.com/mitchellh/ghostty";
@@ -26,12 +26,15 @@
   outputs =
     { self
     , nixpkgs
-    , home-manager
+    , #, nixpkgs-unstable
+      home-manager
     , ghostty
     , zjstatus
-    , #nixvim,
-      ...
+    , ...
     } @ inputs: {
+      nixpkgsConfig = {
+        overlays = import ./overlays { inherit inputs; };
+      };
       nixosConfigurations = {
         lucky = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
