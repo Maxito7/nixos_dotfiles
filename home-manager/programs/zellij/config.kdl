@@ -1,0 +1,27 @@
+default_shell "fish"
+copy_on_select true
+
+default_layout "custom"
+
+keybinds {
+  shared {
+    bind "Alt t" { NewTab; }
+    bind "Alt q" { CloseTab; }
+    bind "Alt h" { GoToPreviousTab; }
+    bind "Alt l" { GoToNextTab; }
+
+    bind "Alt 1" { GoToTab 1; }
+    bind "Alt 2" { GoToTab 2; }
+    bind "Alt 3" { GoToTab 3; }
+    bind "Alt 4" { GoToTab 4; }
+    bind "Alt 5" { GoToTab 5; }
+    bind "Alt 6" { GoToTab 6; }
+    bind "Alt 7" { GoToTab 7; }
+    bind "Alt 8" { GoToTab 8; }
+    bind "Alt 9" { GoToTab 9; }
+
+    #bind "Alt l" { NextSwapLayout; }
+
+    bind "Alt f" { ToggleFocusFullscreen; }
+  }
+}
