@@ -5,20 +5,16 @@
 }:
 # More icons: https://www.nerdfonts.com/cheat-sheet
 let
-  black = "#282c34";
-  brightBlack = "#3f444a";
+  black = "#1D202F";
+  brightBlack = "#414868";
   yellow = "#ECBE7B";
 
-  white = "#dfdfdf";
-  brightWhite = "#bbc2cf";
+  white = "#C0CAF5";
+  brightWhite = "#FFFFFF";
 
-  red = "#ec867b";
-  blue = "#7ba9ec";
-  green = "#7BECBE";
-
-  weatherLocation = "Lisbon";
-  weatherFrequencySeconds = 30 * 60;
-  weatherCommand = "curl 'wttr.in/${weatherLocation}?format=%c%t%20${weatherLocation}' | sed 's/\+//g'";
+  red = "#F7768E";
+  blue = "#7AA2F7";
+  green = "#7BD88F";
 in
 ''
   layout {
@@ -28,8 +24,7 @@ in
 
     pane size=1 borderless=true {
       plugin location="file:${inputs.zjstatus.packages.${pkgs.system}.default}/bin/zjstatus.wasm" {
-        format_left  " {tabs}"
-        format_right "{mode} {command_weather} {datetime}"
+        format_left  "{mode} {tabs}"
         format_space ""
 
         border_enabled  "false"
@@ -43,18 +38,9 @@ in
         mode_tab "#[bg=${green},fg=${black}] {name} "
         mode_default_to_mode "tmux"
 
-        tab_normal   "#[fg=${yellow}] {index} #[fg=${brightWhite}] {name} "
-        tab_active   "#[bg=${yellow},fg=${black}] {index} #[bg=${brightBlack},fg=${white}] {name} "
+        tab_normal   "#[fg=${blue}] {index} #[fg=${white}] {name} "
+        tab_active   "#[bg=${blue},fg=${black}] {index} #[bg=${brightBlack},fg=${white}] {name} "
         tab_separator "  "
-
-        command_weather_command "bash -c \" ${weatherCommand}\""
-        command_weather_format "{stdout}"
-        command_weather_interval "${toString weatherFrequencySeconds}"
-        command_weather_rendermode  "static"
-
-        datetime        "#[bg=${blue},fg=${black}]  {format} "
-        datetime_format "%a %d %b %H:%M"
-        datetime_timezone "Europe/Lisbon"
       }
     }
   }
