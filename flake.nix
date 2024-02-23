@@ -9,7 +9,7 @@
 
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     ghostty = {
       url = "git+ssh://git@github.com/mitchellh/ghostty";
