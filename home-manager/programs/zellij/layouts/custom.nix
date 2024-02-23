@@ -26,6 +26,8 @@ in
         pane
     }
 
+  on_force_close "quit"
+
     pane size=1 borderless=true {
       plugin location="file:${inputs.zjstatus.packages.${pkgs.system}.default}/bin/zjstatus.wasm" {
         format_left  "{mode}"
