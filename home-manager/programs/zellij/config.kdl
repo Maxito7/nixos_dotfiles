@@ -2,9 +2,8 @@ default_shell "fish"
 copy_on_select true
 
 default_layout "custom"
-on_force_close "quit"
 
-keybinds {
+keybinds clear-defaults=true{
   shared {
     bind "Alt t" { NewTab; }
     bind "Alt q" { CloseTab; }
