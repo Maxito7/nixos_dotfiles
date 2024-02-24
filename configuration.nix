@@ -253,7 +253,7 @@
     cava
     krita
 
-    #floorp
+    floorp
 
     # Webdev
     bun
