@@ -3,7 +3,7 @@ copy_on_select true
 
 default_layout "custom"
 
-keybinds clear-defaults=true{
+keybinds{
   shared {
     bind "Alt t" { NewTab; }
     bind "Alt q" { CloseTab; }
