@@ -31,7 +31,7 @@ in
         format_left  "{mode}"
   			format_center "{tabs}"
   			format_right "#[bg=${blue},fg=${black},bold] {session} "
-        format_space ""
+        format_space "#[bg=${black}]"
 
         border_enabled  "false"
         border_char     "─"
@@ -47,10 +47,11 @@ in
   			mode_session "#[bg=${orange},fg=${black}] {name} "
         mode_default_to_mode "normal"
 
-        tab_normal   "#[fg=${cyan}] {index} #[fg=${white}] {name} "
+        tab_normal   "#[bg=${black},fg=${cyan}] {index} #[bg=${black},fg=${white}] {name} "
         tab_active   "#[bg=${cyan},fg=${black}] {index} #[bg=${brightBlack},fg=${white},bold] {name} "
         tab_separator ""
       }
     }
+  pane
   }
 ''
