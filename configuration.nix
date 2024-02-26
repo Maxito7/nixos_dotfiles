@@ -294,6 +294,9 @@
     swww
     swaylock-effects
     wlogout
+
+    # Docker
+    docker-compose
   ];
 
   environment.sessionVariables = {
