@@ -22,10 +22,6 @@ let
 in
 ''
   layout {
-    pane split_direction="vertical" {
-        pane
-    }
-
     pane size=1 borderless=true {
       plugin location="file:${inputs.zjstatus.packages.${pkgs.system}.default}/bin/zjstatus.wasm" {
         format_left  "{mode}"
@@ -52,6 +48,8 @@ in
         tab_separator ""
       }
     }
-  pane
+  pane split_direction="vertical" {
+        pane
+    }
   }
 ''
