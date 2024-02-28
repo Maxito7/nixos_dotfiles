@@ -142,6 +142,12 @@ require("lazy").setup({
 		event = { "UIEnter" },
 		config = function()
 			require("hlchunk").setup({
+				line_num = {
+					style = "#7AA2F7",
+				},
+				chunk = {
+					style = "#7AA2F7",
+				},
 				blank = {
 					enable = false,
 				},
