@@ -305,8 +305,15 @@
   };
 
   # Nix experimental settings
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
+  nix.settings = {
+    experimental-features = [ "nix-command" "flakes" ];
+    substituters = [
+      "https://ghostty.cachix.org"
+    ];
+    trusted-public-keys = [
+      "ghostty.cachix.org-1:QB389yTa6gTyneehvqG58y0WnHjQOqgnA+wBnpWWxns="
+    ];
+  };
   programs.direnv.enable = true;
 
   # Fish
