@@ -96,19 +96,12 @@ require("lazy").setup({
 	"shortcuts/no-neck-pain.nvim",
 	-- Colorizer
 	"NvChad/nvim-colorizer.lua",
-	-- Indent Blankline (indent-blankline + mini.indent)
-	{
-		"lukas-reineke/indent-blankline.nvim",
-		event = { "BufReadPost", "BufNewFile" },
-	},
-	{
-		"echasnovski/mini.nvim",
-		event = { "BufReadPost", "BufNewFile" },
-	},
+	-- Conform
 	{
 		"stevearc/conform.nvim",
 		event = "BufReadPre",
 	},
+	-- Img-clip
 	{
 		"HakonHarnes/img-clip.nvim",
 		event = "BufEnter",
@@ -139,6 +132,18 @@ require("lazy").setup({
 							},
 						},
 					},
+				},
+			})
+		end,
+	},
+	-- Indent
+	{
+		"shellRaining/hlchunk.nvim",
+		event = { "UIEnter" },
+		config = function()
+			require("hlchunk").setup({
+				blank = {
+					enable = false,
 				},
 			})
 		end,
