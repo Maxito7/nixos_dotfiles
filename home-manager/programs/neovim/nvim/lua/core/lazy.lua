@@ -143,6 +143,7 @@ require("lazy").setup({
 		config = function()
 			require("hlchunk").setup({
 				line_num = {
+					enable = false,
 					style = "#7AA2F7",
 				},
 				chunk = {
