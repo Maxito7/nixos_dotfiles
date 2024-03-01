@@ -292,9 +292,7 @@
     wl-clipboard
     waybar
     swww
-    swaylock-effects
     hyprlock
-    wlogout
 
     # Docker
     docker-compose
