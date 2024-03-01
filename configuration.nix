@@ -293,6 +293,7 @@
     waybar
     swww
     swaylock-effects
+    hyprlock
     wlogout
 
     # Docker
