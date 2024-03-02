@@ -208,6 +208,7 @@
 
     stylua
     presenterm
+    slides
     texlab
     lua51Packages.lua
     gccMultiStdenv
