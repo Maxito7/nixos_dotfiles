@@ -302,7 +302,7 @@
   environment.sessionVariables = {
     FLAKE = "/home/lucky/.config/nixfiles/";
     LD_LIBRARY_PATH = "/run/opengl-driver/lib:/run/opengl-driver-32/lib";
-    CARGO_BIN_PATH = "$HOME/.cargo/bin/";
+    CARGO_BIN_PATH = "$HOME/.cargo/bin/:PATH";
   };
 
   # Nix experimental settings
