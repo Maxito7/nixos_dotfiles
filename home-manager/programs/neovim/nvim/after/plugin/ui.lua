@@ -78,6 +78,11 @@ devicons.setup({
 			color = "#249b73",
 			name = "Nuxt",
 		},
+		["Cargo.toml"] = {
+			icon = "",
+			color = "#ff9e64",
+			name = "Cargo",
+		},
 	},
 })
 
