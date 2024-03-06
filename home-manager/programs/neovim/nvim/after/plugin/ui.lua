@@ -4,47 +4,55 @@ devicons.setup({
 	override_by_extension = {
 		lua = {
 			icon = "󰢱",
-			color = "#7DCFFF",
+			--color = "#7DCFFF",
+			color = "#0043CE",
 			name = "Lua",
 		},
 		rs = {
 			icon = "",
-			color = "#ff9e64",
+			--color = "#ff9e64",
+			color = "#ff832b",
 			name = "Rust",
 		},
 		py = {
 			icon = "",
-			color = "#7bd88f",
+			--color = "#7bd88f",
+			color = "#6fdc8c",
 			name = "Python",
 		},
 		go = {
 			icon = "",
-			color = "#7dcfff",
+			--color = "#7dcfff",
+			color = "#33b1ff",
 			name = "Go",
 		},
 		cpp = {
 			icon = "",
-			color = "#7aa2f7",
+			--color = "#7aa2f7",
+			color = "#4589ff",
 			name = "CPP",
 		},
 		c = {
 			icon = "",
-			color = "#BB9AF7",
+			--color = "#BB9AF7",
+			color = "#6929c4",
 			name = "C",
 		},
 		tex = {
 			icon = "",
-			color = "#c0caf5",
+			color = "#f2f4f8",
 			name = "LaTeX",
 		},
 		md = {
 			icon = "󰽛",
-			color = "#c0caf5",
+			--color = "#c0caf5",
+			color = "#f2f4f8",
 			name = "Markdown",
 		},
 		vim = {
 			icon = "",
-			color = "#7BD88F",
+			--color = "#7BD88F",
+			color = "#24a148",
 			name = "Vim",
 		},
 		vue = {
@@ -54,12 +62,12 @@ devicons.setup({
 		},
 		nix = {
 			icon = "",
-			color = "#56aeff",
+			color = "#33b1ff",
 			name = "Nix",
 		},
 		ts = {
 			icon = "󰛦",
-			color = "#7aa2f7",
+			color = "#4589ff",
 			name = "Typescript",
 		},
 		js = {
@@ -80,13 +88,11 @@ devicons.setup({
 		},
 		["Cargo.toml"] = {
 			icon = "",
-			color = "#ff9e64",
-			name = "Cargo",
+			color = "#ff832b",
+			name = "Cargo.toml",
 		},
 	},
 })
-
-vim.cmd("colorscheme carbonfox")
 
 local barbecue = require("barbecue")
 barbecue.setup({})
@@ -206,12 +212,13 @@ vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", {
 	fg = vim.api.nvim_get_hl(0, { name = "Function" }).fg,
 })
 -- BORDER GROUPS AND COLORS
-vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = "#7AA2F7" })
-vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#47517d" })
-vim.api.nvim_set_hl(0, "LineNr", { fg = "#47517d" })
-vim.api.nvim_set_hl(0, "EndOfBuffer", { fg = "#47517d" })
-vim.api.nvim_set_hl(0, "DiagnosticFloatingError", { bg = "", fg = "#f7768e" })
-vim.api.nvim_set_hl(0, "DiagnosticFloatingHint", { bg = "", fg = "#7bd88f" })
-vim.api.nvim_set_hl(0, "DiagnosticFloatingInfo", { bg = "", fg = "#7aa2f7" })
-vim.api.nvim_set_hl(0, "DiagnosticFloatingWarn", { bg = "", fg = "#ff9e64" })
-vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#7AA2F7" })
+vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = "#4589ff" })
+--vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#47517d" })
+vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#4d5358" })
+vim.api.nvim_set_hl(0, "LineNr", { fg = "#4d5358" })
+vim.api.nvim_set_hl(0, "EndOfBuffer", { fg = "#4d5358" })
+vim.api.nvim_set_hl(0, "DiagnosticFloatingError", { bg = "", fg = "#fa4d56" })
+vim.api.nvim_set_hl(0, "DiagnosticFloatingHint", { bg = "", fg = "#24a148" })
+vim.api.nvim_set_hl(0, "DiagnosticFloatingInfo", { bg = "", fg = "#4589ff" })
+vim.api.nvim_set_hl(0, "DiagnosticFloatingWarn", { bg = "", fg = "#ff832b" })
+vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#4589ff" })
