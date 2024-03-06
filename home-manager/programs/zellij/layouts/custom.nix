@@ -13,6 +13,7 @@ let
   brightWhite = "#FFFFFF";
 
   purple = "#8a3ffc";
+  light_purple = "#be95ff";
   cyan = "#82cfff";
   orange = "#ff832b";
 
@@ -43,8 +44,8 @@ in
   			mode_session "#[bg=${orange},fg=${black}] {name} "
         mode_default_to_mode "normal"
 
-        tab_normal   "#[bg=${black},fg=${cyan}] {index} #[bg=${black},fg=${white}] {name} "
-        tab_active   "#[bg=${cyan},fg=${black}] {index} #[bg=${brightBlack},fg=${white},bold] {name} "
+        tab_normal   "#[bg=${black},fg=${light_purple}] {index} #[bg=${black},fg=${white}] {name} "
+        tab_active   "#[bg=${purple},fg=${black}] {index} #[bg=${brightBlack},fg=${white},bold] {name} "
         tab_separator ""
       }
     }
