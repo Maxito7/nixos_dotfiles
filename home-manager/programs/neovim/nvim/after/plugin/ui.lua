@@ -86,6 +86,8 @@ devicons.setup({
 	},
 })
 
+vim.cmd("colorscheme carbonfox")
+
 local barbecue = require("barbecue")
 barbecue.setup({})
 
