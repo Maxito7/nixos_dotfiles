@@ -86,13 +86,6 @@ devicons.setup({
 	},
 })
 
-require("huez").setup({})
-
-local colorscheme = require("huez.api").get_colorscheme()
-vim.cmd("colorscheme " .. colorscheme)
-
-vim.keymap.set("n", "<leader>co", "<cmd>Huez<CR>", {})
-
 local barbecue = require("barbecue")
 barbecue.setup({})
 

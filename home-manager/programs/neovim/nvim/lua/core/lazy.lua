@@ -155,18 +155,6 @@ require("lazy").setup({
 			})
 		end,
 	},
-	-- huez
-	{
-		"vague2k/huez.nvim",
-		dependencies = {
-			-- You probably already have this installed.
-			-- reccomended, but optional dependency.
-			-- Will use vim.ui as a default unless specified otherwise, or a fallback.
-			-- Preview does not currently work in vim.ui.
-			-- If using vim.ui, it's also reccomended to use dressing.nvim.
-			"nvim-telescope/telescope.nvim",
-		},
-	},
 	-- Nightfox
 	{ "EdenEast/nightfox.nvim" },
 })
