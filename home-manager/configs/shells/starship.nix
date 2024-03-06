@@ -27,12 +27,12 @@
 
       git_branch = {
         symbol = "";
-        style = "bg:#30364a bold fg:#0f62fe";
+        style = "bg:#30364a bold fg:#4589ff";
         format = "([( $symbol $branch )]($style))";
       };
 
       git_status = {
-        style = "bg:#363c4f bold fg:#4589ff";
+        style = "bg:#363c4f bold fg:#78a9ff";
         format = "([( $all_status$ahead_behind )]($style))";
       };
 

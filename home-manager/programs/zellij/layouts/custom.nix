@@ -5,20 +5,20 @@
 }:
 # More icons: https://www.nerdfonts.com/cheat-sheet
 let
-  black = "#1D202F";
-  brightBlack = "#414868";
-  yellow = "#ECBE7B";
+  black = "#121619";
+  brightBlack = "#21272a";
+  yellow = "#f1c21b";
 
-  white = "#C0CAF5";
+  white = "#f2f4f8";
   brightWhite = "#FFFFFF";
 
-  purple = "#bb9af7";
-  cyan = "#7dcfff";
-  orange = "#ff9e64";
+  purple = "#8a3ffc";
+  cyan = "#82cfff";
+  orange = "#ff832b";
 
-  red = "#F7768E";
-  blue = "#7AA2F7";
-  green = "#7BD88F";
+  red = "#Fa4d56";
+  blue = "#4589ff";
+  green = "#42be65";
 in
 ''
   layout {
