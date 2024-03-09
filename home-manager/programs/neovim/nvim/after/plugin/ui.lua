@@ -71,7 +71,7 @@ devicons.setup({
 			name = "Typescript",
 		},
 		js = {
-			icon = "",
+			icon = "󰌞",
 			color = "#ffd12b",
 			name = "Javascript",
 		},
