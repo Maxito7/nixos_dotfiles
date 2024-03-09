@@ -236,6 +236,7 @@
     jetbrains.jdk
     jetbrains.clion
     jetbrains.pycharm-professional
+    jetbrains.rider
 
     # Rust CLI tools
     zoxide
