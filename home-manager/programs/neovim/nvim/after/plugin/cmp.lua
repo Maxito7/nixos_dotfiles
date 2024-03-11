@@ -53,6 +53,10 @@ cmp.setup({
 			maxwidth = 30,
 			ellipsis_char = "...",
 		}),
+		format2 = function(entry, vim_item)
+			vim_item.abbr = string.sub(vim_item.abbr, 1, 30)
+			return vim_item
+		end,
 	},
 })
 
