@@ -153,7 +153,9 @@ if vim.fn.isdirectory(location) == 1 then
 	-- Ensure @vue/typescript-plugin is installed
 	-- before setting up tsserver
 	require("lspconfig").tsserver.setup({
-		-- on_attach = on_attach,
+		on_attach = function(client)
+			client.server_capabilities.documentFormattingProvider = nil
+		end,
 		-- capabilities = capabilities,
 		root_dir = require("lspconfig.util").root_pattern("src/App.vue", "nuxt.config.ts", "nuxt.config.js"),
 		filetypes = { "vue", "typescript", "javascript", "json" },
