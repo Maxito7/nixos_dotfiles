@@ -163,8 +163,9 @@ require("lspconfig").tsserver.setup({
 		"vue",
 	},
 })
+require("lspconfig").volar.setup({})
+--[[
 require("lspconfig").volar.setup({
-	--[[
 	on_attach = on_attach,
 	capabilities = capabilities,
 	filetypes = {
@@ -214,8 +215,8 @@ require("lspconfig").volar.setup({
 			},
 		},
 	},
-	]]
 })
+]]
 
 lsp.handlers["textDocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
 	border = "rounded",
