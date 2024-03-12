@@ -147,7 +147,24 @@ require("lspconfig").zls.setup({})
 
 -- Web-dev
 require("lspconfig").svelte.setup({})
+require("lspconfig").tsserver.setup({
+	init_options = {
+		plugins = {
+			{
+				name = "@vue/typescript-plugin",
+				location = "/home/lucky/.cache/.bun/install/cache/@vue/typescript-plugin/",
+				languages = { "javascript", "typescript", "vue" },
+			},
+		},
+	},
+	filetypes = {
+		"javascript",
+		"typescript",
+		"vue",
+	},
+})
 require("lspconfig").volar.setup({
+	--[[
 	on_attach = on_attach,
 	capabilities = capabilities,
 	filetypes = {
@@ -187,9 +204,7 @@ require("lspconfig").volar.setup({
 				getDocumentSelectionRequest = false,
 			},
 		},
-		]]
 	},
-	--[[
 	settings = {
 		volar = {
 			codeLens = {
@@ -200,22 +215,6 @@ require("lspconfig").volar.setup({
 		},
 	},
 	]]
-})
-require("lspconfig").tsserver.setup({
-	init_options = {
-		plugins = {
-			{
-				name = "@vue/typescript-plugin",
-				location = "/home/lucky/.cache/.bun/install/cache/@vue/typescript-plugin/",
-				languages = { "javascript", "typescript", "vue" },
-			},
-		},
-	},
-	filetypes = {
-		"javascript",
-		"typescript",
-		"vue",
-	},
 })
 
 lsp.handlers["textDocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
