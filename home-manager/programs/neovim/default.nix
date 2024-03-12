@@ -55,7 +55,7 @@ in
     extraPackages = with pkgs; [
       fzf
       lua-language-server
-      rnix-lsp
+      #rnix-lsp
 
       xclip
       wl-clipboard
