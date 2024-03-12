@@ -152,7 +152,7 @@ require("lspconfig").tsserver.setup({
 		plugins = {
 			{
 				name = "@vue/typescript-plugin",
-				location = "/home/lucky/.cache/.bun/install/cache/@vue/typescript-plugin/",
+				location = "/home/lucky/.cache/.bun/install/cache/@vue/typescript-plugin",
 				languages = { "javascript", "typescript", "vue" },
 			},
 		},
