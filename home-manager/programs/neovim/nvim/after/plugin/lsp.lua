@@ -149,11 +149,6 @@ require("lspconfig").zls.setup({})
 require("lspconfig").svelte.setup({})
 local result = vim.fn.systemlist("npm ls -g --depth=0")
 local location = string.format("%s/node_modules/@vue/typescript-plugin", result[1])
-
--- if using mason, uncomment lines below
--- local is_mason = pcall(require, "mason")
--- location = is_mason and vim.fn.stdpath("data") .. "/mason/packages/vue-language-server/node_modules/@vue/typescript-plugin"
-
 if vim.fn.isdirectory(location) == 1 then
 	-- Ensure @vue/typescript-plugin is installed
 	-- before setting up tsserver
