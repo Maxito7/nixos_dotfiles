@@ -37,7 +37,7 @@ in
     fd
     lua-language-server
     #rust-analyzer-unwrapped
-    rnix-lsp
+    #rnix-lsp
     fzf
   ];
 
