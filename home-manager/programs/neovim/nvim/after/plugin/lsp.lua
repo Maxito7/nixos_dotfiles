@@ -150,12 +150,11 @@ require("lspconfig").svelte.setup({})
 require("lspconfig").volar.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
-	--[[
 	filetypes = {
-		"typescript",
-		"javascript",
-		"javascriptreact",
-		"typescriptreact",
+		--"typescript",
+		--"javascript",
+		--"javascriptreact",
+		--"typescriptreact",
 		"vue",
 		"json",
 	},
@@ -163,6 +162,7 @@ require("lspconfig").volar.setup({
 		typescript = {
 			tsdk = "/home/lucky/.bun/install/cache/typescript/5.3.3/lib",
 		},
+		--[[
 		preferences = {
 			disableSuggestions = false,
 		},
@@ -187,8 +187,8 @@ require("lspconfig").volar.setup({
 				getDocumentSelectionRequest = false,
 			},
 		},
+		]]
 	},
-	]]
 	--[[
 	settings = {
 		volar = {
