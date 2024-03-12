@@ -108,11 +108,6 @@ require("lspconfig").jedi_language_server.setup({
 	},
 })
 
-require("lspconfig").rnix.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
-
 require("lspconfig").rust_analyzer.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
@@ -206,7 +201,7 @@ require("lspconfig").volar.setup({
 	},
 	]]
 })
---require("lspconfig").tsserver.setup({})
+require("lspconfig").tsserver.setup({})
 
 lsp.handlers["textDocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
 	border = "rounded",
