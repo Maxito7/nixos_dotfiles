@@ -264,7 +264,6 @@
     typescript
     nodePackages_latest.typescript-language-server
     biome
-    nodePackages_latest."@vue/typescript-plugin"
 
     # Nix CLI tools
     nh
