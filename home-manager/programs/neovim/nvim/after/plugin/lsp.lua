@@ -147,6 +147,37 @@ require("lspconfig").zls.setup({})
 
 -- Web-dev
 require("lspconfig").svelte.setup({})
+local result = vim.fn.systemlist("npm ls -g --depth=0")
+local location = string.format("%s/node_modules/@vue/typescript-plugin", result[1])
+
+-- if using mason, uncomment lines below
+-- local is_mason = pcall(require, "mason")
+-- location = is_mason and vim.fn.stdpath("data") .. "/mason/packages/vue-language-server/node_modules/@vue/typescript-plugin"
+
+if vim.fn.isdirectory(location) == 1 then
+	-- Ensure @vue/typescript-plugin is installed
+	-- before setting up tsserver
+	require("lspconfig").tsserver.setup({
+		-- on_attach = on_attach,
+		-- capabilities = capabilities,
+		root_dir = require("lspconfig.util").root_pattern("src/App.vue", "nuxt.config.ts", "nuxt.config.js"),
+		filetypes = { "vue", "typescript", "javascript", "json" },
+		init_options = {
+			plugins = {
+				{
+					name = "@vue/typescript-plugin",
+					location = location,
+					languages = { "vue" },
+				},
+			},
+		},
+	})
+else
+	vim.api.nvim_err_writeln(
+		"@vue/typescript-plugin is required, install globally via `npm install -g @vue/typescript-plugin`"
+	)
+end
+--[[
 require("lspconfig").tsserver.setup({
 	init_options = {
 		plugins = {
@@ -164,6 +195,7 @@ require("lspconfig").tsserver.setup({
 	},
 })
 require("lspconfig").volar.setup({})
+]]
 --[[
 require("lspconfig").volar.setup({
 	on_attach = on_attach,
