@@ -157,4 +157,14 @@ require("lazy").setup({
 	},
 	-- Nightfox
 	{ "EdenEast/nightfox.nvim" },
+	-- Killer-queen
+	{
+		"askfiy/killer-queen",
+		priority = 100,
+		config = function()
+			require("killer-queen").setup({
+				transparent = true,
+			})
+		end,
+	},
 })
