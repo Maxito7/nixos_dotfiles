@@ -174,84 +174,12 @@ else
 		"@vue/typescript-plugin is required, install globally via `npm install -g @vue/typescript-plugin`"
 	)
 end
---[[
-require("lspconfig").tsserver.setup({
-	init_options = {
-		plugins = {
-			{
-				name = "@vue/typescript-plugin",
-				location = "/home/lucky/.cache/.bun/install/cache/@vue/typescript-plugin",
-				languages = { "javascript", "typescript", "vue" },
-			},
-		},
-	},
-	filetypes = {
-		"javascript",
-		"typescript",
-		"vue",
-	},
-})
-require("lspconfig").volar.setup({})
-]]
---[[
-require("lspconfig").volar.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-	filetypes = {
-		--"typescript",
-		--"javascript",
-		--"javascriptreact",
-		--"typescriptreact",
-		"vue",
-		"json",
-	},
-	init_options = {
-		typescript = {
-			tsdk = "/home/lucky/.bun/install/cache/typescript/5.3.3/lib",
-		},
-		--[[
-		preferences = {
-			disableSuggestions = false,
-		},
-		languageFeatures = {
-			implementation = true,
-			references = true,
-			definition = true,
-			typeDefinition = true,
-			callHierarchy = true,
-			hover = true,
-			rename = true,
-			renameFileRefactoring = true,
-			signatureHelp = true,
-			codeAction = true,
-			workspaceSymbol = true,
-			diagnostics = true,
-			semanticTokens = true,
-			completion = {
-				defaultTagNameCase = "both",
-				defaultAttrNameCase = "kebabCase",
-				getDocumentNameCasesRequest = false,
-				getDocumentSelectionRequest = false,
-			},
-		},
-	},
-	settings = {
-		volar = {
-			codeLens = {
-				references = true,
-				pugTools = true,
-				scriptSetupTools = true,
-			},
-		},
-	},
-})
-]]
 
-lsp.handlers["textDocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
+lsp.handlers["textdocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
 	border = "rounded",
 })
 
--- Bordered LSP Diagnostics
+-- bordered lsp diagnostics
 vim.diagnostic.config({
 	float = { border = "rounded" },
 })
