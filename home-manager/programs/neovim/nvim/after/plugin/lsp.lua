@@ -174,6 +174,7 @@ else
 		"@vue/typescript-plugin is required, install globally via `npm install -g @vue/typescript-plugin`"
 	)
 end
+require("lspconfig").volar.setup({})
 
 lsp.handlers["textdocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
 	border = "rounded",
