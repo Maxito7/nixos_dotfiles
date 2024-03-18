@@ -7,7 +7,7 @@
 let
   black = "#1a1b26";
   brightBlack = "#24283b";
-  yellow = "#f0ca41";
+  yellow = "#ffda54";
 
   white = "#c0caf5";
   brightWhite = "#c0caf5";

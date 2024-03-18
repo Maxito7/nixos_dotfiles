@@ -144,10 +144,10 @@ require("lazy").setup({
 			require("hlchunk").setup({
 				line_num = {
 					enable = false,
-					style = "#4589FF",
+					style = "#5e99FF",
 				},
 				chunk = {
-					style = "#4589FF",
+					style = "#5e99ff",
 				},
 				blank = {
 					enable = false,
