@@ -206,6 +206,8 @@ oil.setup({
 })
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
+vim.cmd("colorscheme poimandres")
+
 -- Indent colors
 vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", {
 	bg = vim.api.nvim_get_hl(0, { name = "IblScope" }).bg,
