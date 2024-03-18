@@ -180,4 +180,11 @@ require("lazy").setup({
 			})
 		end,
 	},
+	-- Solarized-Osaka
+	{
+		"craftzdog/solarized-osaka.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+	},
 })
