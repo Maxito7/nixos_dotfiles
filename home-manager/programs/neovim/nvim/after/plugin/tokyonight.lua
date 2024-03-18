@@ -6,7 +6,7 @@ tokyonight.setup({
 		colors.green = "#62d196"
 		colors.comment = "#86a1db"
 		colors.gitSigns = {
-			add = "#7bd88f",
+			add = "#62d196",
 			change = "#7dcfff",
 			delete = "#f7768e",
 		}
