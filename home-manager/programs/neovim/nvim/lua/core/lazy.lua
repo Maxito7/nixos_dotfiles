@@ -187,4 +187,11 @@ require("lazy").setup({
 		priority = 1000,
 		opts = {},
 	},
+	-- Kanagawa
+	{
+		"rebelot/kanagawa.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+	},
 })
