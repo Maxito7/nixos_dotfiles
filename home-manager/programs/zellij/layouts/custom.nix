@@ -12,7 +12,7 @@ let
   white = "#c0caf5";
   brightWhite = "#c0caf5";
 
-  purple = "#8a3ffc";
+  purple = "#a675ff";
   light_purple = "#be95ff";
   cyan = "#7dcfff";
   orange = "#ff9e64";
