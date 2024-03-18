@@ -194,4 +194,11 @@ require("lazy").setup({
 		priority = 1000,
 		opts = {},
 	},
+	-- Oxocarbon
+	{
+		"nyoom-engineering/oxocarbon.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+	},
 })

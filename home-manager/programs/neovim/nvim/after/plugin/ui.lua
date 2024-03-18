@@ -206,7 +206,7 @@ oil.setup({
 })
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
-vim.cmd("colorscheme kanagawa")
+vim.cmd("colorscheme oxocarbon")
 
 -- Indent colors
 vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", {
