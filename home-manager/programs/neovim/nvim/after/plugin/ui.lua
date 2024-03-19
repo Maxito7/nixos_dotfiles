@@ -4,8 +4,8 @@ devicons.setup({
 	override_by_extension = {
 		lua = {
 			icon = "󰢱",
-			--color = "#7DCFFF",
-			color = "#003ab8",
+			color = "#5e99ff",
+			--color = "#003ab8",
 			name = "Lua",
 		},
 		rs = {
@@ -31,8 +31,8 @@ devicons.setup({
 		},
 		c = {
 			icon = "",
-			color = "#BB9AF7",
-			--color = "#6929c4",
+			--color = "#BB9AF7",
+			color = "#6929c4",
 			name = "C",
 		},
 		tex = {
