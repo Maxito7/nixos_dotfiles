@@ -293,6 +293,7 @@
     slurp
     wl-clipboard
     waybar
+    wireplumber
     swww
     hyprlock
 
