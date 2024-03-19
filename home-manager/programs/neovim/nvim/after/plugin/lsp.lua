@@ -175,6 +175,11 @@ else
 	)
 end
 require("lspconfig").volar.setup({
+	init_options = {
+		typescript = {
+			tsdk = "/nix/store/nyj8q03sd2lyr6zn8qqaw43c7fhc8lcn-typescript-5.4.2/lib/node_modules/typescript/lib/",
+		},
+	},
 	filetypes = { "vue", "json" },
 })
 
