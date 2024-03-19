@@ -298,6 +298,9 @@
 
     # Docker
     docker-compose
+
+    # Modelling & Databases
+    staruml
   ];
 
   environment.sessionVariables = {
