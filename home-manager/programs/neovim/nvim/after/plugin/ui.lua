@@ -31,8 +31,8 @@ devicons.setup({
 		},
 		c = {
 			icon = "",
-			--color = "#BB9AF7",
-			color = "#6929c4",
+			color = "#BB9AF7",
+			--color = "#6929c4",
 			name = "C",
 		},
 		tex = {
