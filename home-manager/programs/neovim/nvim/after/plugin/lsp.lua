@@ -147,6 +147,12 @@ require("lspconfig").zls.setup({})
 
 -- Web-dev
 require("lspconfig").svelte.setup({})
+require("lspconfig").tsserver.setup({
+	on_attach = function(client)
+		client.server_capabilities.documentFormattingProvider = nil
+	end,
+})
+--[[
 local result = vim.fn.systemlist("npm ls -g --depth=0")
 local location = string.format("%s/node_modules/@vue/typescript-plugin", result[1])
 if vim.fn.isdirectory(location) == 1 then
@@ -182,6 +188,7 @@ require("lspconfig").volar.setup({
 	},
 	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
 })
+]]
 
 lsp.handlers["textdocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
 	border = "rounded",
