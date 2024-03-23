@@ -261,7 +261,7 @@
     bun
     nodejs_20
     nodePackages_latest.volar
-    nodePackages_latest.svelte-language-sever
+    nodePackages_latest.svelte-language-server
     typescript
     nodePackages_latest.typescript-language-server
     biome
