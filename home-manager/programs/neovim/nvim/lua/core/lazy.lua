@@ -49,7 +49,7 @@ require("lazy").setup({
 	-- LSP + dependencies
 	{
 		"neovim/nvim-lspconfig",
-		event = { "BufReadPre", "BufNewFile" },
+		event = { "BufReadPre", "BufNewFile", "VeryLazy" },
 		dependencies = {
 			"folke/neodev.nvim",
 		},
