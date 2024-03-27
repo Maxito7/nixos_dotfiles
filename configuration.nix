@@ -193,7 +193,10 @@
     onlyoffice-bin
     whitesur-cursors
 
+    # Rust & Crate Dependencies
     rustup
+    fontconfig
+    freetype
 
     pkg-config
 
