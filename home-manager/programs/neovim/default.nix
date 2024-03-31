@@ -11,6 +11,7 @@ let
     p.fish
     p.gitattributes
     p.gitignore
+    p.gleam
     p.go
     p.gomod
     p.gowork
