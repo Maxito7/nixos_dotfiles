@@ -49,11 +49,11 @@
         "nixpkgs-stable": "nixpkgs-stable_2"
       },
       "locked": {
-        "lastModified": 1711762142,
-        "narHash": "sha256-J/kwKuoyTrMZ/BkgbYScGUH9YtUU4Z5tun5WEfoZhmg=",
+        "lastModified": 1711849715,
+        "narHash": "sha256-eyajQTcI+46/DLa+96GU3ICdsJQv+mJ2XvtFGEf0BWQ=",
         "owner": "nix-community",
         "repo": "emacs-overlay",
-        "rev": "082f1fc8593b304c201439d700c4d89bf08d9a03",
+        "rev": "40c0f10c423a5031eccac9cf61410cc7c266de29",
         "type": "github"
       },
       "original": {
@@ -335,11 +335,11 @@
         "zls": "zls"
       },
       "locked": {
-        "lastModified": 1711816469,
-        "narHash": "sha256-4quburd+HRkLGS3NolUShDiyI17JoZ0VQS+tA05GeiE=",
+        "lastModified": 1711902968,
+        "narHash": "sha256-/XBMcEcfTgaIreQ1gcFHkOGu4VXqiuNKZ8hM2umqjHk=",
         "ref": "refs/heads/main",
-        "rev": "9e4af4b599d779a179484055c8ebd76517718f6a",
-        "revCount": 5763,
+        "rev": "b793228ed4669806742bafc1463d0fee94e3b241",
+        "revCount": 5766,
         "type": "git",
         "url": "ssh://git@github.com/mitchellh/ghostty"
       },
@@ -422,11 +422,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1711625603,
-        "narHash": "sha256-W+9dfqA9bqUIBV5u7jaIARAzMe3kTq/Hp2SpSVXKRQw=",
+        "lastModified": 1711915616,
+        "narHash": "sha256-co6LoFA+j6BZEeJNSR8nZ4oOort5qYPskjrDHBaJgmo=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "c0ef0dab55611c676ad7539bf4e41b3ec6fa87d2",
+        "rev": "820be197ccf3adaad9a8856ef255c13b6cc561a6",
         "type": "github"
       },
       "original": {
@@ -473,11 +473,11 @@
       },
       "locked": {
         "dir": "contrib",
-        "lastModified": 1711756269,
-        "narHash": "sha256-3e0j/bvXCI1eOxt6x/ENGkhlDRD3nxLhDU0Q8JViiw0=",
+        "lastModified": 1711806068,
+        "narHash": "sha256-NbLeH+sP0EHsYpio8Jc5AnKlX30oK6emhkGlMmum96I=",
         "owner": "neovim",
         "repo": "neovim",
-        "rev": "2424c3e6967ef953222cf48564629ffe5812d415",
+        "rev": "12240600f5d2c992aa77bc4592edc16814abfafd",
         "type": "github"
       },
       "original": {
@@ -496,11 +496,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1711757045,
-        "narHash": "sha256-+85QI5/ABsk3ObUS2/uPkShQQuHbaq4bgzVBE5zAY94=",
+        "lastModified": 1711843759,
+        "narHash": "sha256-wf4L9CRmKlJmgnejiWokF+DBt+QSZZ/Km42o4Fv9Jx8=",
         "owner": "nix-community",
         "repo": "neovim-nightly-overlay",
-        "rev": "8c9dcf6816db1b976046e491dfb61eef8c15a202",
+        "rev": "65211de770b76f4ea25a89c7ee20bcef1d37a0e6",
         "type": "github"
       },
       "original": {
@@ -558,11 +558,11 @@
         "parts": "parts"
       },
       "locked": {
-        "lastModified": 1711765258,
-        "narHash": "sha256-oNzoGlHKeEaAuE166hRI6tLxyUZ7XscBEQrArV+2aDg=",
+        "lastModified": 1711852014,
+        "narHash": "sha256-yZSwQMnq4ocmTE+JiTjgV1r2vdL5TB0A7CYfFq9gFFs=",
         "owner": "moni-dz",
         "repo": "nixpkgs-f2k",
-        "rev": "3313bac8daf19bcbaddf64714a73383f2d3ac1e8",
+        "rev": "a9709033557f50654fba78197d625db01676831b",
         "type": "github"
       },
       "original": {
@@ -742,11 +742,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1711764105,
-        "narHash": "sha256-grdYzQHmOJeerXYT+ILeMRV+7S8ov2Nm8nMv55HiSy0=",
+        "lastModified": 1711848282,
+        "narHash": "sha256-F2FU3NOdYZmJYOU26NBQtUw09jBXh2WNfAxTnc9Xn/o=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d5766175de1b5b0e09f7d25c0d552fe4ee617a91",
+        "rev": "37bcb7c95c7a82b298163e63318d71740830588e",
         "type": "github"
       },
       "original": {
@@ -790,11 +790,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1711828914,
-        "narHash": "sha256-AVNXWWyTKmN+zCNzjD/4YciwL4bVkPHH/mGC4+w2w04=",
+        "lastModified": 1711914285,
+        "narHash": "sha256-n7Bm62/s+t/S3xiZz33gp4HWgKfSOgYG5JzmT0gJoQ8=",
         "owner": "nix-community",
         "repo": "nur",
-        "rev": "f15e597505c1d6a0c3d6560067ecfda57ee511d6",
+        "rev": "327169ed2b4766f8112d4fb144bc8f8a7cebf8bd",
         "type": "github"
       },
       "original": {
