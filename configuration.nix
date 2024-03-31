@@ -236,8 +236,9 @@
     zig
     zls
 
-    # Gleam
+    # BEAM
     gleam
+    erlang
 
     # JetBrains
     jetbrains.idea-ultimate
