@@ -85,6 +85,11 @@ devicons.setup({
 			color = "#ff9e64",
 			name = "Cargo.toml",
 		},
+		["gleam"] = {
+			icon = "",
+			color = "#ff96f3",
+			name = "Gleam",
+		},
 	},
 })
 
