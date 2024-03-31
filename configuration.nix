@@ -236,6 +236,9 @@
     zig
     zls
 
+    # Gleam
+    gleam
+
     # JetBrains
     jetbrains.idea-ultimate
     jetbrains.jdk
