@@ -198,7 +198,7 @@
     # Rust
     rustup
     wasm-pack
-    openssl
+    cargo-generate
 
     # Random dependencies
     fontconfig
