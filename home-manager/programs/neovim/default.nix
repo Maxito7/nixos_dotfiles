@@ -8,6 +8,8 @@ let
     p.comment
     p.css
     p.dockerfile
+    p.elixir
+    p.erlang
     p.fish
     p.gitattributes
     p.gitignore

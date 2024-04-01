@@ -145,6 +145,8 @@ require("lspconfig").gopls.setup({
 })
 require("lspconfig").zls.setup({})
 require("lspconfig").gleam.setup({})
+require("lspconfig").erlangls.setup({})
+require("lspconfig").elixirls.setup({})
 
 -- Web-dev
 require("lspconfig").svelte.setup({})

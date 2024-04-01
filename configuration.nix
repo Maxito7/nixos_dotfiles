@@ -239,8 +239,10 @@
     # BEAM
     gleam
     erlang
+    erlang-ls
     rebar3
     elixir
+    elixir-ls
 
     # JetBrains
     jetbrains.idea-ultimate
