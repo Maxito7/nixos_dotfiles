@@ -198,6 +198,7 @@
     # Rust
     rustup
     wasm-pack
+    openssl
 
     # Random dependencies
     fontconfig
