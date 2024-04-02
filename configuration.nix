@@ -242,6 +242,7 @@
 
     # BEAM
     gleam
+    glas
     erlang
     erlang-ls
     rebar3
