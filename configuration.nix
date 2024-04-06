@@ -84,14 +84,14 @@
 
   # Configure keymap in X11
   services.xserver = {
-    #xkb.layout = "latam";
-    xkb.layout = "us";
+    xkb.layout = "latam";
+    #xkb.layout = "us";
     xkb.variant = "";
   };
 
   # Configure console keymap
-  #console.keyMap = "la-latin1";
-  console.keyMap = "us";
+  console.keyMap = "la-latin1";
+  #console.keyMap = "us";
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
