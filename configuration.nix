@@ -274,7 +274,7 @@
     cava
     krita
 
-    #floorp
+    mysql-workbench
 
     # Webdev
     bun
