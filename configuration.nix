@@ -174,6 +174,7 @@
     #picom-allusive
     #compfy
     rofi
+    rofi-wayland
     firefox
     inxi
     flameshot
