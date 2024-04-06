@@ -155,29 +155,8 @@ require("lazy").setup({
 			})
 		end,
 	},
-	-- Nightfox
-	{ "EdenEast/nightfox.nvim" },
-	-- Killer-queen
 	{
-		"askfiy/killer-queen",
-		priority = 100,
-		config = function()
-			require("killer-queen").setup({
-				transparent = true,
-			})
-		end,
-	},
-	-- Poimandres
-	{
-		"olivercederborg/poimandres.nvim",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			require("poimandres").setup({
-				-- leave this setup function empty for default config
-				-- or refer to the configuration section
-				-- for configuration options
-			})
-		end,
+		"lervag/vimtex",
+		init = function() end,
 	},
 })
