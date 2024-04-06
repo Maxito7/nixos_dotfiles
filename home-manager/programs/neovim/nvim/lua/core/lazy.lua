@@ -114,6 +114,7 @@ require("lazy").setup({
 	-- Arrow.nvim
 	"otavioschwanck/arrow.nvim",
 	-- Neorg.nvim
+	--[[
 	{
 		"nvim-neorg/neorg",
 		build = ":Neorg sync-parsers",
@@ -136,6 +137,7 @@ require("lazy").setup({
 			})
 		end,
 	},
+	]]
 	-- Indent
 	{
 		"shellRaining/hlchunk.nvim",
