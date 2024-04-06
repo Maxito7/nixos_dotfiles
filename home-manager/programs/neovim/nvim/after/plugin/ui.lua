@@ -47,7 +47,7 @@ devicons.setup({
 		},
 		vim = {
 			icon = "",
-			color = "#289c5e",
+			color = "#6fdc8c",
 			name = "Vim",
 		},
 		vue = {
