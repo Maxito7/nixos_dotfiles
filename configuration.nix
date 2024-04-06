@@ -173,7 +173,7 @@
     qtile
     #picom-allusive
     #compfy
-    rofi
+    #rofi
     rofi-wayland
     firefox
     inxi
