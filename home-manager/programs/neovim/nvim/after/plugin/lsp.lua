@@ -113,14 +113,30 @@ require("lspconfig").rust_analyzer.setup({
 	capabilities = capabilities,
 	settings = {
 		["rust_analyzer"] = {
+			imports = {
+				granularity = {
+					group = "module",
+				},
+				prefix = "self",
+			},
 			cargo = {
 				features = "all",
+				buildScripts = {
+					enable = true,
+				},
+			},
+			procMacro = {
+				enable = true,
 			},
 			checkOnSave = true,
 			check = {
 				command = "clippy",
-				extraArgs = { "--tests" },
 				features = "all",
+				invocationLocation = "workspace",
+				extraArgs = { "--tests" },
+			},
+			files = {
+				excludeDirs = { ".direnv" },
 			},
 		},
 	},
