@@ -133,7 +133,7 @@ require("lspconfig").rust_analyzer.setup({
 				command = "clippy",
 				features = "all",
 				invocationLocation = "workspace",
-				extraArgs = { "--tests" },
+				extraArgs = { "--tests", "--fix", "--bin" },
 			},
 			files = {
 				excludeDirs = { ".direnv" },
