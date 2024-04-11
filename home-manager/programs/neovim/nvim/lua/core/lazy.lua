@@ -157,8 +157,15 @@ require("lazy").setup({
 			})
 		end,
 	},
+	-- Vimtex
 	{
 		"lervag/vimtex",
 		init = function() end,
+	},
+	-- Rustacean
+	{
+		"mrcjkb/rustaceanvim",
+		version = "^4", -- Recommended
+		ft = { "rust" },
 	},
 })

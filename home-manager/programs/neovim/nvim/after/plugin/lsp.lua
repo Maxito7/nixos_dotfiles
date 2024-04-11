@@ -107,7 +107,7 @@ require("lspconfig").jedi_language_server.setup({
 		},
 	},
 })
-
+--[[
 require("lspconfig").rust_analyzer.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
@@ -149,6 +149,8 @@ require("lspconfig").rust_analyzer.setup({
 		},
 	},
 })
+]]
+
 require("lspconfig").clangd.setup({})
 require("lspconfig").nil_ls.setup({})
 require("lspconfig").gopls.setup({
