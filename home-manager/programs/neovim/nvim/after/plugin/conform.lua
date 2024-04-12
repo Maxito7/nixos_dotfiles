@@ -13,6 +13,7 @@ require("conform").setup({
 		nix = { "alejandra", "nixpkgs_fmt" },
 		javascript = { "biome" },
 		typescript = { "biome" },
+		typst = { "typstyle" },
 	},
 	format_on_save = {
 		-- These options will be passed to conform.format()
