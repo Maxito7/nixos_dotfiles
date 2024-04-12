@@ -279,8 +279,6 @@
     cava
     krita
 
-    mysql-workbench
-
     # Webdev
     bun
     nodejs_20
@@ -326,7 +324,8 @@
     docker-compose
 
     # Modelling & Databases
-    staruml
+    #staruml
+    #mysql-workbench
   ];
 
   environment.sessionVariables = {
