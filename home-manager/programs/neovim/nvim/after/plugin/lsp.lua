@@ -177,6 +177,12 @@ require("lspconfig").erlangls.setup({})
 require("lspconfig").elixirls.setup({
 	cmd = { "/nix/store/0bjsn9ypl449pnjlksxfykipkv1qp7yl-elixir-ls-0.20.0/lib/language_server.sh" },
 })
+-- Typst
+require("lspconfig").typst_lsp.setup({
+	settings = {
+		exportPdf = "onSave",
+	},
+})
 
 -- Web-dev
 require("lspconfig").svelte.setup({})

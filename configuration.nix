@@ -201,6 +201,11 @@
     wasm-pack
     cargo-generate
 
+    # Typst
+    typst
+    typstyle
+    typst-lsp
+
     # Random dependencies
     fontconfig
     freetype
