@@ -32,6 +32,7 @@ let
     p.typescript
     p.vue
     p.yaml
+    p.typst
   ]);
 in
 {
