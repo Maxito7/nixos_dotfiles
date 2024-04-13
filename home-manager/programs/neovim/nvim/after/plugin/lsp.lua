@@ -186,48 +186,25 @@ require("lspconfig").typst_lsp.setup({
 
 -- Web-dev
 require("lspconfig").svelte.setup({})
-require("lspconfig").tsserver.setup({
+local vue_language_server_path = "~/.npm.packages/lib/node_modules/@vue/language-server/"
+local lspconfig = require("lspconfig")
+lspconfig.tsserver.setup({
 	on_attach = function(client)
 		client.server_capabilities.documentFormattingProvider = nil
 	end,
-})
---[[
-local result = vim.fn.systemlist("npm ls -g --depth=0")
-local location = string.format("%s/node_modules/@vue/typescript-plugin", result[1])
-if vim.fn.isdirectory(location) == 1 then
-	-- Ensure @vue/typescript-plugin is installed
-	-- before setting up tsserver
-	require("lspconfig").tsserver.setup({
-		on_attach = function(client)
-			client.server_capabilities.documentFormattingProvider = nil
-		end,
-		-- capabilities = capabilities,
-		root_dir = require("lspconfig.util").root_pattern("src/App.vue", "nuxt.config.ts", "nuxt.config.js"),
-		filetypes = { "vue", "typescript", "javascript", "json" },
-		init_options = {
-			plugins = {
-				{
-					name = "@vue/typescript-plugin",
-					location = location,
-					languages = { "vue" },
-				},
+
+	init_options = {
+		plugins = {
+			{
+				name = "@vue/typescript-plugin",
+				location = vue_language_server_path,
+				languages = { "vue" },
 			},
 		},
-	})
-else
-	vim.api.nvim_err_writeln(
-		"@vue/typescript-plugin is required, install globally via `npm install -g @vue/typescript-plugin`"
-	)
-end
-require("lspconfig").volar.setup({
-	init_options = {
-		typescript = {
-			tsdk = "/nix/store/nyj8q03sd2lyr6zn8qqaw43c7fhc8lcn-typescript-5.4.2/lib/node_modules/typescript/lib/",
-		},
 	},
-	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
+	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
 })
-]]
+lspconfig.volar.setup({})
 
 lsp.handlers["textdocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
 	border = "rounded",
