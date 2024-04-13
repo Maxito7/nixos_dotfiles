@@ -168,4 +168,9 @@ require("lazy").setup({
 		version = "^4", -- Recommended
 		ft = { "rust" },
 	},
+	{
+		"kaarmu/typst.vim",
+		ft = "typst",
+		lazy = false,
+	},
 })
