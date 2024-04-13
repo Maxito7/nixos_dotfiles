@@ -186,6 +186,7 @@ require("lspconfig").typst_lsp.setup({
 
 -- Web-dev
 require("lspconfig").svelte.setup({})
+-- Volar
 local vue_language_server_path = "~/.npm.packages/lib/node_modules/@vue/language-server/"
 local lspconfig = require("lspconfig")
 lspconfig.tsserver.setup({
@@ -202,9 +203,15 @@ lspconfig.tsserver.setup({
 			},
 		},
 	},
-	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+	--filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
 })
-lspconfig.volar.setup({})
+lspconfig.volar.setup({
+	init_options = {
+		vue = {
+			hybridMode = false,
+		},
+	},
+})
 
 lsp.handlers["textdocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
 	border = "rounded",
