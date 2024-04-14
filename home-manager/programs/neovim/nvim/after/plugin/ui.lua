@@ -90,6 +90,11 @@ devicons.setup({
 			color = "#ff96f3",
 			name = "Gleam",
 		},
+		["typ"] = {
+			icon = "󰊄",
+			color = "#6fdcbb",
+			name = "Typst",
+		},
 	},
 })
 
