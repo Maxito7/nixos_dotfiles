@@ -258,9 +258,9 @@
     # JetBrains
     jetbrains.idea-ultimate
     jetbrains.jdk
-    jetbrains.clion
+    #jetbrains.clion
     jetbrains.pycharm-professional
-    jetbrains.rider
+    #jetbrains.rider
 
     # Rust CLI tools
     zoxide
