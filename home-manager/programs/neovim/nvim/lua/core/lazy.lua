@@ -168,9 +168,13 @@ require("lazy").setup({
 		version = "^4", -- Recommended
 		ft = { "rust" },
 	},
+	-- Typst
 	{
 		"kaarmu/typst.vim",
 		ft = "typst",
 		lazy = false,
+	},
+	{
+		"MrPicklePinosaur/typst-conceal.vim",
 	},
 })
