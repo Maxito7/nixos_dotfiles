@@ -173,8 +173,9 @@ require("lazy").setup({
 		"kaarmu/typst.vim",
 		ft = "typst",
 		lazy = false,
-	},
-	{
-		"MrPicklePinosaur/typst-conceal.vim",
+		init = function()
+			vim.opt.conceallevel = 2
+			vim.g.typst_conceal = 1
+		end,
 	},
 })
