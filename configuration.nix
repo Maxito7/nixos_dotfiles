@@ -282,6 +282,7 @@
     # Webdev
     bun
     nodejs_20
+    nodePackages_latest.pnpm
     nodePackages_latest.volar
     nodePackages_latest.svelte-language-server
     typescript
