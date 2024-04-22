@@ -5,7 +5,7 @@
     settings = {
       add_newline = true;
       format = ''
-        $directory $nodejs $rust $golang $php $c $python $kotlin $java $zig $nix_shell $git_branch $git_status
+        $directory$nodejs$rust$golang$php$c$python$kotlin$java$zig$nix_shell$git_branch$git_status
         $character
       '';
       fill = {
