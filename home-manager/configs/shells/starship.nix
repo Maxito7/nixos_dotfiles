@@ -5,14 +5,14 @@
     settings = {
       add_newline = true;
       format = ''
-        $directory$nodejs$rust$golang$php$c$python$kotlin$java$zig$nix_shell$git_branch$git_status
+        $directory $nodejs$rust$golang$php$c$python$kotlin$java$zig$nix_shell$git_branch$git_status
         $character
       '';
       fill = {
         symbol = " ";
       };
       directory = {
-        format = "([( $path )]($style))";
+        format = "([($path)]($style))";
         style = "bold fg:#5e99ff";
 
         truncation_length = 1;
