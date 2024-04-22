@@ -5,7 +5,7 @@
     settings = {
       add_newline = true;
       format = ''
-        [ 󰠖 ](bold fg:#62d196)$directory[ ]$nodejs$rust$golang$php$c$python$kotlin$java$zig[ ]$nix_shell[ ]$git_branch[ ]$git_status
+        [ 󰠖 ](bold fg:#62d196)$directory$nodejs$rust$golang$php$c$python$kotlin$java$zig$nix_shell$git_branch$git_status
         $character
       '';
       fill = {
