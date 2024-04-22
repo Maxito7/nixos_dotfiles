@@ -5,7 +5,7 @@
     settings = {
       add_newline = true;
       format = ''
-        $directory $nodejs$rust$golang$php$c$python$kotlin$java$zig$nix_shell$git_branch$git_status
+        $directory $nodejs $rust $golang $php $c $python $kotlin $java $zig $nix_shell $git_branch $git_status
         $character
       '';
       fill = {
@@ -28,12 +28,12 @@
       git_branch = {
         symbol = "";
         style = "bold fg:#5e99ff";
-        format = "([( $symbol $branch )]($style))";
+        format = "([($symbol $branch)]($style))";
       };
 
       git_status = {
         style = "bold fg:#7aa2f7";
-        format = "([( $all_status$ahead_behind )]($style))";
+        format = "([($all_status$ahead_behind)]($style))";
       };
 
       nodejs = {
@@ -45,54 +45,54 @@
       rust = {
         symbol = "";
         style = "bold fg:#FF9e64";
-        format = "([( $symbol ($version) )]($style))";
+        format = "([($symbol ($version))]($style))";
       };
 
       golang = {
         symbol = "󰟓";
         style = "bold fg:#7dcfff";
-        format = "([( $symbol ($version) )]($style))";
+        format = "([($symbol ($version))]($style))";
       };
 
       php = {
         symbol = "";
         style = "bold fg:#769ff0";
-        format = "([( $symbol ($version) )]($style))";
+        format = "([($symbol ($version))]($style))";
       };
 
       c = {
         symbol = "";
         style = "bold fg:#BB8AF7";
-        format = "([( $symbol ($version) )]($style))";
+        format = "([($symbol ($version))]($style))";
       };
 
       python = {
         symbol = "󰌠";
         style = "bold fg:#6fdc8c";
-        format = "([( $symbol ($version) )]($style))";
+        format = "([($symbol ($version))]($style))";
       };
 
       kotlin = {
         symbol = "";
         style = "bold fg:#bb9af7";
-        format = "([( $symbol ($version) )]($style))";
+        format = "([($symbol ($version))]($style))";
       };
 
       java = {
         symbol = "";
         style = "bold fg:#ff9e64";
-        format = "([( $symbol ($version) )]($style))";
+        format = "([($symbol ($version))]($style))";
       };
 
       zig = {
         symbol = "";
         style = "bold fg:#ff9e64";
-        format = "([( $symbol ($version) )]($style))";
+        format = "([($symbol ($version))]($style))";
       };
 
       nix_shell = {
-        impure_msg = "[  Impure ](bold fg:#8a3ffc)";
-        pure_msg = "[  Pure ](bold fg:#33b1ff)";
+        impure_msg = "[ Impure](bold fg:#8a3ffc)";
+        pure_msg = "[ Pure](bold fg:#33b1ff)";
         format = "$state";
       };
     };
