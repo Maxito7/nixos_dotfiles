@@ -15,7 +15,7 @@
         format = "([($path)]($style))";
         style = "bold fg:#5e99ff";
 
-        truncation_length = 3;
+        truncation_length = 2;
         truncation_symbol = " /";
       };
 
