@@ -39,7 +39,7 @@
       nodejs = {
         symbol = "";
         style = "bold fg:#62d196";
-        format = "([( $symbol ($version) )]($style))";
+        format = "([($symbol ($version))]($style))";
       };
 
       rust = {
