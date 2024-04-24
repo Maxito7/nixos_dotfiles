@@ -203,14 +203,16 @@ lspconfig.tsserver.setup({
 			},
 		},
 	},
-	--filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
 })
 lspconfig.volar.setup({
+	--[[
 	init_options = {
 		vue = {
 			hybridMode = false,
 		},
 	},
+	]]
 })
 
 lsp.handlers["textdocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
