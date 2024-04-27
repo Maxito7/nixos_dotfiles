@@ -327,6 +327,8 @@
     # Modelling & Databases
     #staruml
     #mysql-workbench
+
+    charm-freeze
   ];
 
   environment.sessionVariables = {
