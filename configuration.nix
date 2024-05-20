@@ -273,6 +273,7 @@
     ripgrep
     ripgrep-all
     tokei
+    gitui
 
     sdbus-cpp
 
