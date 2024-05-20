@@ -327,6 +327,7 @@
     # Modelling & Databases
     #staruml
     #mysql-workbench
+    tableplus
 
     charm-freeze
   ];
