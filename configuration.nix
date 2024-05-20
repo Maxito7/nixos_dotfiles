@@ -327,7 +327,6 @@
     # Modelling & Databases
     #staruml
     #mysql-workbench
-    tableplus
 
     charm-freeze
   ];
@@ -397,5 +396,5 @@
 
   services.thermald.enable = true;
   services.power-profiles-daemon.enable = true;
-  nixpkgs.config.allowUnsupportedSystem = true;
+  #nixpkgs.config.allowUnsupportedSystem = true;
 }
