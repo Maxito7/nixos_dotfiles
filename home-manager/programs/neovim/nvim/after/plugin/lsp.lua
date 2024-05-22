@@ -177,9 +177,14 @@ require("lspconfig").gopls.setup({
 	},
 })
 vim.filetype.add({ extension = { templ = "templ" } })
-require("lspconfig").templ({
+require("lspconfig").templ.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
+})
+require("lspconfig").htmx.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	filetypes = { "html", "templ" },
 })
 require("lspconfig").zls.setup({})
 require("lspconfig").gleam.setup({

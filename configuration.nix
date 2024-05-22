@@ -243,6 +243,7 @@
     gofumpt
     gotools
     templ
+    htmx-lsp
 
     # Zig
     zig
