@@ -176,6 +176,17 @@ require("lspconfig").gopls.setup({
 		},
 	},
 })
+require("lspconfig").templ({
+	on_attach = on_attach,
+	capabilities = {
+		workspace = {
+			didChangeWatchedFiles = {
+				dynamicRegistration = true,
+			},
+			workspaceFolders = true,
+		},
+	},
+})
 require("lspconfig").zls.setup({})
 require("lspconfig").gleam.setup({
 	cmd = { "glas", "--stdio" },
