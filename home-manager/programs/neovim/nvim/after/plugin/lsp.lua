@@ -176,16 +176,10 @@ require("lspconfig").gopls.setup({
 		},
 	},
 })
+vim.filetype.add({ extension = { templ = "templ" } })
 require("lspconfig").templ({
 	on_attach = on_attach,
-	capabilities = {
-		workspace = {
-			didChangeWatchedFiles = {
-				dynamicRegistration = true,
-			},
-			workspaceFolders = true,
-		},
-	},
+	capabilities = capabilities,
 })
 require("lspconfig").zls.setup({})
 require("lspconfig").gleam.setup({
