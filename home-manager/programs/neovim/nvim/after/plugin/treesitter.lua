@@ -30,6 +30,7 @@ require("nvim-treesitter.configs").setup({
 		"rust",
 		"sql",
 		--"ssh_config",
+		"templ",
 		"toml",
 		"tsx",
 		"typescript",

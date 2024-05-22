@@ -28,6 +28,7 @@ let
     p.nix
     p.python
     p.rust
+    p.templ
     p.toml
     p.typescript
     p.vue
