@@ -242,6 +242,7 @@
     gopls
     gofumpt
     gotools
+    templ
 
     # Zig
     zig
