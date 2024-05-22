@@ -241,6 +241,7 @@
     go
     gopls
     gofumpt
+    gotools
 
     # Zig
     zig

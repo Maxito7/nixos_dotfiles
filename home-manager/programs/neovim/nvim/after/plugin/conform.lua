@@ -9,7 +9,7 @@ require("conform").setup({
 	formatters_by_ft = {
 		lua = { "stylua" },
 		python = { "ruff_isort", "ruff_format" },
-		go = { "gofumpt" },
+		go = { "gofumpt", "goimports" },
 		nix = { "alejandra", "nixpkgs_fmt" },
 		javascript = { "biome" },
 		typescript = { "biome" },

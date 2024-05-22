@@ -155,7 +155,14 @@ require("lspconfig").clangd.setup({})
 require("lspconfig").nil_ls.setup({})
 require("lspconfig").gopls.setup({
 	on_attach = on_attach,
-	capabilities = capabilities,
+	capabilities = {
+		workspace = {
+			didChangeWatchedFiles = {
+				dynamicRegistration = true,
+			},
+			workspaceFolders = true,
+		},
+	},
 	cmd = { "gopls" },
 	filetypes = { "go", "gomod", "gowork", "gotmpl" },
 	root_dir = util.root_pattern("go.work", "go.mod", ".git"),
