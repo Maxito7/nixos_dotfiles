@@ -303,8 +303,8 @@
     qalculate-gtk
 
     # Virt-Manager
-    virt-manager
-    virt-manager-qt
+    #virt-manager
+    #virt-manager-qt
     libvirt
 
     # Spacedrive
@@ -393,7 +393,7 @@
   };
 
   virtualisation.libvirtd.enable = true;
-  programs.virt-manager.enable = true;
+  #programs.virt-manager.enable = true;
 
   system.stateVersion = "23.05";
 
