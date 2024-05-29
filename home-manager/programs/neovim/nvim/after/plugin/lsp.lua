@@ -190,7 +190,7 @@ require("lspconfig").zls.setup({})
 require("lspconfig").gleam.setup({
 	cmd = { "glas", "--stdio" },
 })
-require("lspconfig").ruby_lsp.setup({})
+require("lspconfig").rubocop.setup({})
 --[[
 require("lspconfig").erlangls.setup({})
 require("lspconfig").elixirls.setup({
