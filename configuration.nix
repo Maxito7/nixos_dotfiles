@@ -338,6 +338,11 @@
     charm-freeze
 
     libpcap
+
+    # Ruby
+    ruby
+    ruby-lsp
+    rubocop
   ];
 
   environment.sessionVariables = {
