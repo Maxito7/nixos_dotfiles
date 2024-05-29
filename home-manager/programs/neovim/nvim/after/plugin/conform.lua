@@ -12,6 +12,7 @@ require("conform").setup({
 		go = { "gofumpt", "goimports" },
 		nix = { "alejandra", "nixpkgs_fmt" },
 		javascript = { "biome" },
+		ruby = { "rubocop" },
 		typescript = { "biome" },
 		typst = { "typstyle" },
 	},

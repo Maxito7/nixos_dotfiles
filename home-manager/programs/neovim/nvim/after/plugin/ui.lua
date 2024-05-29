@@ -14,6 +14,10 @@ devicons.setup({
 			--color = "#ff832b",
 			name = "Rust",
 		},
+		rb = {
+			color = "#f7768e",
+			name = "Ruby",
+		},
 		py = {
 			icon = "",
 			color = "#6fdc8c",

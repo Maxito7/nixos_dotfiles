@@ -5,7 +5,7 @@
     settings = {
       add_newline = true;
       format = ''
-        $directory$nodejs$rust$golang$php$c$python$kotlin$java$zig$nix_shell$git_branch$git_status
+        $directory$nodejs$rust$golang$php$c$python$kotlin$java$zig$ruby$gleam$nix_shell$git_branch$git_status
         $character
       '';
       fill = {
@@ -87,6 +87,18 @@
       zig = {
         symbol = "";
         style = "bold fg:#ff9e64";
+        format = "([( $symbol ($version))]($style))";
+      };
+
+      ruby = {
+        symbol = "";
+        style = "bold fg:#f7768e";
+        format = "([( $symbol ($version))]($style))";
+      };
+
+      gleam = {
+        symbol = "";
+        style = "bold fg:#ff96f3";
         format = "([( $symbol ($version))]($style))";
       };
 

@@ -27,6 +27,7 @@ let
     p.markdown
     p.nix
     p.python
+    p.ruby
     p.rust
     p.templ
     p.toml
