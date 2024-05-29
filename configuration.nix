@@ -266,6 +266,7 @@
     #jetbrains.clion
     jetbrains.pycharm-professional
     #jetbrains.rider
+    jetbrains.datagrip
 
     # Rust CLI tools
     zoxide
@@ -335,6 +336,8 @@
     #mysql-workbench
 
     charm-freeze
+
+    libpcap
   ];
 
   environment.sessionVariables = {
