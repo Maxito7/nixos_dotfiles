@@ -349,6 +349,7 @@
     FLAKE = "/home/lucky/.config/nixfiles/";
     LD_LIBRARY_PATH = "/run/opengl-driver/lib:/run/opengl-driver-32/lib";
     CARGO_BIN_PATH = "$HOME/.cargo/bin/:PATH";
+    GEM_PATH = "$HOME/.local/share/gem/ruby/3.1.0/bin/";
   };
 
   # Nix experimental settings
