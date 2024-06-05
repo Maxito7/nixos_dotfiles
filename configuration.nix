@@ -200,6 +200,7 @@
     rustup
     wasm-pack
     cargo-generate
+    slint-lsp
 
     # Typst
     typst

@@ -29,6 +29,7 @@ let
     p.python
     p.ruby
     p.rust
+    p.slint
     p.templ
     p.toml
     p.typescript

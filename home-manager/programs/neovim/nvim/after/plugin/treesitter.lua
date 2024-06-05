@@ -29,6 +29,7 @@ require("nvim-treesitter.configs").setup({
 		"regex",
 		"ruby",
 		"rust",
+		"slint",
 		"sql",
 		--"ssh_config",
 		"templ",
