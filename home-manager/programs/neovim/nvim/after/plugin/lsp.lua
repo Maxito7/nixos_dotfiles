@@ -107,7 +107,9 @@ require("lspconfig").jedi_language_server.setup({
 		},
 	},
 })
-require("lspconfig").slint_lsp.setup({})
+require("lspconfig").slint_lsp.setup({
+	filetypes = { "slint" },
+})
 --[[
 require("lspconfig").rust_analyzer.setup({
 	on_attach = on_attach,
