@@ -100,6 +100,11 @@ devicons.setup({
 			color = "#6fdcbb",
 			name = "Typst",
 		},
+		["slint"] = {
+			icon = "󱐌",
+			color = "#5e99ff",
+			name = "Slint",
+		},
 	},
 })
 
