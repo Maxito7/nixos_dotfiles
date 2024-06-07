@@ -174,4 +174,9 @@ require("lazy").setup({
 		ft = "typst",
 		lazy = false,
 	},
+	-- Slint
+	{
+		"slint-ui/vim-slint",
+		ft = "slint",
+	},
 })
