@@ -5,7 +5,7 @@
     settings = {
       add_newline = true;
       format = ''
-        $directory$nodejs$rust$golang$php$c$python$kotlin$java$zig$ruby$gleam$nix_shell$git_branch$git_status
+        $directory$nodejs$rust$typst$golang$php$c$python$kotlin$java$zig$ruby$gleam$nix_shell$git_branch$git_status
         $character
       '';
       fill = {
@@ -99,6 +99,12 @@
       gleam = {
         symbol = "";
         style = "bold fg:#ff96f3";
+        format = "([( $symbol ($version))]($style))";
+      };
+
+      typst = {
+        symbol = "󰴓";
+        style = "bold fg:#6fdcbb";
         format = "([( $symbol ($version))]($style))";
       };
 
