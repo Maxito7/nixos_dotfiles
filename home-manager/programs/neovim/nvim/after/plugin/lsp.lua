@@ -214,7 +214,9 @@ require("lspconfig").tsserver.setup({
 		client.server_capabilities.documentFormattingProvider = nil
 	end,
 })
-require("lspconfig").vuels.setup({})
+require("lspconfig").vuels.setup({
+	cmd = { "~/.npm.packages/bin/vls" },
+})
 
 lsp.handlers["textdocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
 	border = "rounded",
