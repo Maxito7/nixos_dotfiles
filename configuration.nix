@@ -238,6 +238,9 @@
     python3Packages.pillow
     brightnessctl
 
+    # Python
+    uv
+
     # Go
     go
     gopls
