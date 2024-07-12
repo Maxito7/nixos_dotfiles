@@ -5,7 +5,7 @@
     settings = {
       add_newline = true;
       format = ''
-        $directory$nodejs$rust$typst$golang$php$c$python$kotlin$java$zig$ruby$gleam$nix_shell$git_branch$git_status
+        $directory$nodejs$rust$typst$golang$php$c$python$kotlin$java$zig$ruby$gleam$kubernetes$nix_shell$git_branch$git_status
         $character
       '';
       fill = {
@@ -112,6 +112,11 @@
         impure_msg = "[  Impure](bold fg:#8a3ffc)";
         pure_msg = "[  Pure](bold fg:#33b1ff)";
         format = "$state";
+      };
+      kubernetes = {
+        format = "[󱃾 ($user on )($cluster in )$context \($namespace\)](bold fg: #5e99ff) ";
+        disabled = false;
+        detect_files = [ "k8s" ];
       };
     };
   };
