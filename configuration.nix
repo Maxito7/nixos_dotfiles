@@ -282,6 +282,8 @@
     ripgrep-all
     tokei
     gitui
+    iwd
+    impala
 
     sdbus-cpp
 
@@ -334,10 +336,6 @@
 
     # Docker
     docker-compose
-
-    # Modelling & Databases
-    #staruml
-    #mysql-workbench
 
     charm-freeze
 
