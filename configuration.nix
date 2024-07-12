@@ -33,7 +33,9 @@
   };
 
   # Enable networking
-  networking.networkmanager.enable = true;
+  networking.networkmanager.enable = false;
+  networking.wireless.iwd.enable = true;
+  networking.networkmanager.wifi.backend = "iwd";
 
   # Set your time zone.
   time.timeZone = "America/Lima";
@@ -418,6 +420,4 @@
   # DB stuff
   services.mysql.enable = true;
   services.mysql.package = pkgs.mysql80;
-
-  networking.wireless.iwd.enable = true;
 }
