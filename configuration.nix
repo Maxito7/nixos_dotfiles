@@ -170,7 +170,7 @@
     wezterm
     starship
     kitty
-    qtile
+    #qtile
     #picom-allusive
     #compfy
     #rofi
