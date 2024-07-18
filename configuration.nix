@@ -327,6 +327,9 @@
     obs-studio
     peek
 
+    # Discord
+    discord
+
     # WAYLAND ONLY
     grim
     slurp
