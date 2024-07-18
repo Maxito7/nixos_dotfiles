@@ -286,6 +286,7 @@
     gitui
     iwd
     impala
+    gitui
 
     sdbus-cpp
 
