@@ -14,7 +14,7 @@ require("conform").setup({
 		javascript = { "biome" },
 		ruby = { "rubocop" },
 		typescript = { "biome" },
-		--typst = { "typstyle" },
+		zig = { "zig fmt" },
 	},
 	format_on_save = {
 		-- These options will be passed to conform.format()
