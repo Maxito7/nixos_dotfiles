@@ -29,6 +29,16 @@ devicons.setup({
 			color = "#7dcfff",
 			name = "Go",
 		},
+		["go.mod"] = {
+			icon = "",
+			color = "#6fdc8c",
+			name = "GoMod",
+		},
+		["go.sum"] = {
+			icon = "",
+			color = "#f7768c",
+			name = "GoSum",
+		},
 		cpp = {
 			icon = "",
 			color = "#5e99ff",
