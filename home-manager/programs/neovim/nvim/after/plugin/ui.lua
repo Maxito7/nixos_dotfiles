@@ -75,6 +75,11 @@ devicons.setup({
 			color = "#ffd12b",
 			name = "Javascript",
 		},
+		["tsx"] = {
+			icon = "󰜈",
+			color = "#6fb8fc",
+			name = "Tsx",
+		},
 		["norg"] = {
 			icon = "",
 			color = "#3692d5",
