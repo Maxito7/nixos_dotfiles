@@ -347,6 +347,8 @@
 
     libpcap
 
+    floorp
+
     # Ruby
     ruby
     ruby-lsp
