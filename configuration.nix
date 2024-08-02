@@ -250,6 +250,7 @@
     gotools
     templ
     htmx-lsp
+    sqlite
 
     # Zig
     zig
