@@ -429,11 +429,11 @@
         "rev": "2f373bb44343c1bc5feadb8b3bd3a0bbe2da6e91",
         "revCount": 6766,
         "type": "git",
-        "url": "ssh://git@github.com/mitchellh/ghostty"
+        "url": "ssh://git@github.com/ghostty-org/ghostty"
       },
       "original": {
         "type": "git",
-        "url": "ssh://git@github.com/mitchellh/ghostty"
+        "url": "ssh://git@github.com/ghostty-org/ghostty"
       }
     },
     "git-hooks": {
@@ -559,11 +559,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1722462338,
-        "narHash": "sha256-ss0G8t8RJVDewA3MyqgAlV951cWRK6EtVhVKEZ7J5LU=",
+        "lastModified": 1722630065,
+        "narHash": "sha256-QfM/9BMRkCmgWzrPDK+KbgJOUlSJnfX4OvsUupEUZvA=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "6e090576c4824b16e8759ebca3958c5b09659ee8",
+        "rev": "afc892db74d65042031a093adb6010c4c3378422",
         "type": "github"
       },
       "original": {
@@ -976,11 +976,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1722617047,
-        "narHash": "sha256-pR27oxlnzGffQH5+djQFmY8JcgRNSOa+J1BajtipABU=",
+        "lastModified": 1722631088,
+        "narHash": "sha256-8z1yD7vW6+xoCJEaIbypy7QFNiyOuyuF3pHIzLxnz9U=",
         "owner": "nix-community",
         "repo": "nur",
-        "rev": "c84d6fd7b6d560e6bf1f52cc70ae2861a8633a83",
+        "rev": "a87130c250a7803900f248ff080188a018c6d9b8",
         "type": "github"
       },
       "original": {
