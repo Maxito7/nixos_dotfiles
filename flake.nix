@@ -2,6 +2,8 @@
   inputs = {
     #nixpkgs.url = "github:nixos/nixpkgs/a136def4f7256146b32e3625e53dcdf7464165f9";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-f2k.url = "github:moni-dz/nixpkgs-f2k";
     nur.url = "github:nix-community/nur";
     #nixvim.url = "github:nix-community/nixvim";
@@ -13,7 +15,8 @@
     };
     ghostty = {
       url = "git+ssh://git@github.com/ghostty-org/ghostty";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs-stable.follows = "nixpkgs-unstable";
+      inputs.nixpkgs-unstable.follows = "nixpkgs-unstable";
     };
     wfetch = {
       url = "github:iynaix/wfetch";
