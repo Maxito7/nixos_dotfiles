@@ -330,7 +330,7 @@
     peek
 
     # Discord
-    discord
+    #discord
 
     # WAYLAND ONLY
     grim
