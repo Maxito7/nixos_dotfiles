@@ -334,6 +334,10 @@
 
     # Yazi
     yazi
+    poppler
+    jq
+    ffmpegthumbnailer
+    p7zip
 
     # WAYLAND ONLY
     grim
