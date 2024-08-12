@@ -332,6 +332,9 @@
     # Discord
     #discord
 
+    # Yazi
+    yazi
+
     # WAYLAND ONLY
     grim
     slurp
