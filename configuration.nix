@@ -241,6 +241,7 @@
     brightnessctl
 
     # Python
+    python3
     uv
 
     # Go
