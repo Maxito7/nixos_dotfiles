@@ -207,7 +207,7 @@
     # Typst
     typst
     typstyle
-    typst-lsp
+    #typst-lsp
 
     # Random dependencies
     fontconfig
