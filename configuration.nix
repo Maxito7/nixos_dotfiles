@@ -352,7 +352,9 @@
     # Docker
     docker-compose
 
+    # Charm
     charm-freeze
+    glow
 
     libpcap
 
