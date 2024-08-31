@@ -331,7 +331,7 @@
     peek
 
     # Discord
-    #discord
+    discord
 
     # Yazi
     yazi
