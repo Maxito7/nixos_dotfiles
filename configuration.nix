@@ -33,9 +33,9 @@
   };
 
   # Enable networking
-  networking.networkmanager.enable = false;
-  networking.wireless.iwd.enable = true;
-  networking.networkmanager.wifi.backend = "iwd";
+  networking.networkmanager.enable = true;
+  #networking.wireless.iwd.enable = true;
+  #networking.networkmanager.wifi.backend = "iwd";
 
   # Set your time zone.
   time.timeZone = "America/Lima";
@@ -287,7 +287,7 @@
     tokei
     gitui
     iwd
-    impala
+    #impala
     gitui
 
     sdbus-cpp
