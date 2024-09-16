@@ -20,7 +20,7 @@
       };
 
       character = {
-        success_symbol = "[](bold fg:#33b1ff)";
+        success_symbol = "[](bold fg:#5e99ff)";
         error_symbol = "[](bold red)";
         vimcmd_symbol = "[](bold green)";
       };
@@ -109,8 +109,8 @@
       };
 
       nix_shell = {
-        impure_msg = "[  Impure](bold fg:#8a3ffc)";
-        pure_msg = "[  Pure](bold fg:#33b1ff)";
+        impure_msg = "[  Impure](bold fg:#a675ff)";
+        pure_msg = "[  Pure](bold fg:#5e99ff)";
         format = "$state";
       };
       kubernetes = {
