@@ -197,6 +197,7 @@
     alejandra
     onlyoffice-bin
     whitesur-cursors
+    whitesur-kde
 
     # Rust
     rustup
