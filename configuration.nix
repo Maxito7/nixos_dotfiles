@@ -198,6 +198,8 @@
     onlyoffice-bin
     whitesur-cursors
     whitesur-kde
+    whitesur-gtk-theme
+    whitesur-icon-theme
 
     # Rust
     rustup
