@@ -190,6 +190,37 @@ require("lazy").setup({
 	{
 		"folke/todo-comments.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
+		event = { "BufNewFile", "BufReadPost" },
+		keys = {
+			{
+				"[t",
+				function()
+					require("todo-comments").jump_prev()
+				end,
+				desc = "Previous todo comment (Todo)",
+			},
+			{
+				"]t",
+				function()
+					require("todo-comments").jump_next()
+				end,
+				desc = "Next todo comment (Todo)",
+			},
+			{
+				"<leader>xt",
+				function()
+					vim.cmd.Trouble("todo toggle focus=true filter = {tag = {FIX,TODO,HACK,WARN}}")
+				end,
+				desc = "Todo actionable comments (Trouble)",
+			},
+			{
+				"<leader>xT",
+				function()
+					vim.cmd.Trouble("todo toggle focus=true")
+				end,
+				desc = "Todo all comments (Trouble)",
+			},
+		},
 		opts = {
 			-- your configuration comes here
 			-- or leave it empty to use the default settings
