@@ -291,7 +291,8 @@
     gitui
     iwd
     #impala
-    gitui
+    macchina
+    lazygit
 
     sdbus-cpp
 
