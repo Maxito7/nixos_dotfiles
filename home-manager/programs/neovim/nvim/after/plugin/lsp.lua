@@ -200,9 +200,10 @@ require("lspconfig").elixirls.setup({
 })
 ]]
 -- Typst
-require("lspconfig").typst_lsp.setup({
+require("lspconfig").tinymist.setup({
 	settings = {
 		exportPdf = "onSave",
+		systemFonts = true,
 	},
 })
 
