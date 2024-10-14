@@ -210,7 +210,7 @@
     # Typst
     typst
     typstyle
-    typst-lsp
+    tinymist
 
     # Random dependencies
     fontconfig
