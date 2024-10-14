@@ -209,7 +209,7 @@ require("lspconfig").typst_lsp.setup({
 -- Web-dev
 require("lspconfig").svelte.setup({})
 -- Volar
-require("lspconfig").tsserver.setup({
+require("lspconfig").ts_ls.setup({
 	on_attach = function(client)
 		client.server_capabilities.documentFormattingProvider = nil
 	end,
