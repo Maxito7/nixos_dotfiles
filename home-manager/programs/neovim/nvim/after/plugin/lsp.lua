@@ -200,17 +200,21 @@ require("lspconfig").elixirls.setup({
 })
 ]]
 -- Typst
+--[[
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
 	pattern = { "*.typ" },
 	callback = function()
 		vim.opt.filetype = "typst"
 	end,
 })
+]]
+vim.filetype.add({ extension = { typ = "typst" } })
 require("lspconfig").tinymist.setup({
-	on_attach = on_attach,
+	capabilities = capabilities,
 	settings = {
 		exportPdf = "onSave",
 		systemFonts = true,
+		formatterMode = "typstyle",
 	},
 })
 
