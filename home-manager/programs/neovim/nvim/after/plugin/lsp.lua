@@ -215,6 +215,9 @@ require("lspconfig").tinymist.setup({
 		exportPdf = "onSave",
 		systemFonts = true,
 		formatterMode = "typstyle",
+		root_dir = function(filename, bufnr)
+			return vim.fn.getcwd()
+		end,
 	},
 })
 
