@@ -211,13 +211,13 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
 vim.filetype.add({ extension = { typ = "typst" } })
 require("lspconfig").tinymist.setup({
 	capabilities = capabilities,
+	root_dir = function(filename, bufnr)
+		return vim.fn.getcwd()
+	end,
 	settings = {
 		exportPdf = "onSave",
 		systemFonts = true,
 		formatterMode = "typstyle",
-		root_dir = function(filename, bufnr)
-			return vim.fn.getcwd()
-		end,
 	},
 })
 
