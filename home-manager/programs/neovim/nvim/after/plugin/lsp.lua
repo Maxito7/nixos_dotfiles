@@ -195,30 +195,21 @@ require("lspconfig").gleam.setup({
 })
 
 vim.filetype.add({ extension = { typ = "typst" } })
---[[require("lspconfig").tinymist.setup({
+require("lspconfig").tinymist.setup({
 	capabilities = capabilities,
 	root_dir = function(filename, bufnr)
 		return vim.fn.getcwd()
 	end,
+	-- pin the main file
+	vim.lsp.buf.execute_command({ command = "tinymist.pinMain", arguments = { vim.api.nvim_buf_get_name(0) } }),
+	-- unpin the main file
+	vim.lsp.buf.execute_command({ command = "tinymist.pinMain", arguments = { nil } }),
 	settings = {
 		exportPdf = "onSave",
 		systemFonts = true,
 		formatterMode = "typstyle",
 	},
 })
-]]
-require("lspconfig").typst_lsp.setup({
-	capabilities = capabilities,
-	settings = {
-		exportPdf = "onSave",
-		systemFonts = true,
-		formatterMode = "typstyle",
-	},
-})
--- pin the main file
--- vim.lsp.buf.execute_command({ command = "tinymist.pinMain", arguments = { vim.api.nvim_buf_get_name(0) } })
--- unpin the main file
--- vim.lsp.buf.execute_command({ command = "tinymist.pinMain", arguments = { nil } })
 
 -- Web-dev
 require("lspconfig").svelte.setup({})
