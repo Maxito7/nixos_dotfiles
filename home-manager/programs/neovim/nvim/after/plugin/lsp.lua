@@ -201,9 +201,9 @@ require("lspconfig").tinymist.setup({
 		return vim.fn.getcwd()
 	end,
 	-- pin the main file
-	vim.lsp.buf.execute_command({ command = "tinymist.pinMain", arguments = { vim.api.nvim_buf_get_name(0) } }),
+	--	vim.lsp.buf.execute_command({ command = "tinymist.pinMain", arguments = { vim.api.nvim_buf_get_name(0) } }),
 	-- unpin the main file
-	vim.lsp.buf.execute_command({ command = "tinymist.pinMain", arguments = { nil } }),
+	--vim.lsp.buf.execute_command({ command = "tinymist.pinMain", arguments = { nil } }),
 	settings = {
 		exportPdf = "onSave",
 		systemFonts = true,
