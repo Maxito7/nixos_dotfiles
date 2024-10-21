@@ -220,6 +220,10 @@ require("lspconfig").tinymist.setup({
 		formatterMode = "typstyle",
 	},
 })
+-- pin the main file
+vim.lsp.buf.execute_command({ command = "tinymist.pinMain", arguments = { vim.api.nvim_buf_get_name(0) } })
+-- unpin the main file
+vim.lsp.buf.execute_command({ command = "tinymist.pinMain", arguments = { nil } })
 
 -- Web-dev
 require("lspconfig").svelte.setup({})
