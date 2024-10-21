@@ -195,6 +195,7 @@ require("lspconfig").gleam.setup({
 })
 
 vim.filetype.add({ extension = { typ = "typst" } })
+--[[
 require("lspconfig").tinymist.setup({
 	capabilities = capabilities,
 	root_dir = function(filename, bufnr)
@@ -210,6 +211,7 @@ require("lspconfig").tinymist.setup({
 		formatterMode = "typstyle",
 	},
 })
+]]
 
 -- Web-dev
 require("lspconfig").svelte.setup({})
