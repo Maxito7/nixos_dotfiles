@@ -267,7 +267,7 @@ require("lazy").setup({
 		-- lazygit.nvim
 		{
 			"kdheepak/lazygit.nvim",
-			-- lazy = true,
+			lazy = true,
 			cmd = {
 				"LazyGit",
 				"LazyGitConfig",
@@ -290,7 +290,7 @@ require("lazy").setup({
 	---@type LazySpec
 	{
 		"mikavilpas/yazi.nvim",
-		-- event = "VeryLazy",
+		event = "VeryLazy",
 		keys = {
 			-- 👇 in this section, choose your own keymappings!
 			{
