@@ -241,7 +241,8 @@ vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", {
 	fg = vim.api.nvim_get_hl(0, { name = "Function" }).fg,
 })
 
-require("lazygit").setup({
+local lazygit = require("lazygit")
+lazygit.setup({
 	lazy = true,
 	cmd = {
 		"LazyGit",
