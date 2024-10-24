@@ -1422,11 +1422,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1728141581,
-        "narHash": "sha256-+wg0Avbw/MC2x3CQK4LyJHCPf+oPllJZzU2p+S/B7MU=",
+        "lastModified": 1729787185,
+        "narHash": "sha256-kMsMV17xkUVmpumB9bFGIVNDZ5rgaevJhXuMkzn+5Aw=",
         "owner": "dj95",
         "repo": "zjstatus",
-        "rev": "6d13e481aceacd3efe583fb6c442f30e8909f555",
+        "rev": "fec107e94b8c1924e4b0bd0c612687c64a7cc95f",
         "type": "github"
       },
       "original": {

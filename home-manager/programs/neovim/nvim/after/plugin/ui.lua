@@ -241,27 +241,7 @@ vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", {
 	fg = vim.api.nvim_get_hl(0, { name = "Function" }).fg,
 })
 
-local lazygit = require("lazygit")
-lazygit.setup({
-	lazy = true,
-	cmd = {
-		"LazyGit",
-		"LazyGitConfig",
-		"LazyGitCurrentFile",
-		"LazyGitFilter",
-		"LazyGitFilterCurrentFile",
-	},
-	-- optional for floating window border decoration
-	dependencies = {
-		"nvim-lua/plenary.nvim",
-	},
-	-- setting the keybinding for LazyGit with 'keys' is recommended in
-	-- order to load the plugin when the command is run for the first time
-	keys = {
-		{ "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
-	},
-})
-
+---@type LazySpec
 require("yazi.nvim").setup({
 	event = "VeryLazy",
 	keys = {
