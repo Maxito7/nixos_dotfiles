@@ -268,7 +268,7 @@ require("lazy").setup({
 	-- lazygit.nvim
 	{
 		"kdheepak/lazygit.nvim",
-		lazy = true,
+		lazy = false,
 		cmd = {
 			"LazyGit",
 			"LazyGitConfig",
