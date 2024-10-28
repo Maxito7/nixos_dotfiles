@@ -223,9 +223,11 @@ require("lspconfig").ts_ls.setup({
 })
 
 -- Haskell
+--[[
 require("lspconfig").hls.setup({
 	filetypes = { "haskell", "lhaskell", "cabal" },
 })
+]]
 
 lsp.handlers["textdocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
 	border = "rounded",
