@@ -15,6 +15,7 @@ require("conform").setup({
 		ruby = { "rubocop" },
 		typescript = { "biome" },
 		zig = { "zig fmt" },
+		haskell = { "fourmolu" },
 	},
 	format_on_save = {
 		-- These options will be passed to conform.format()

@@ -374,6 +374,7 @@
     haskellPackages.lsp
     haskellPackages.cabal-install
     haskell-language-server
+    haskellPackages.fourmolu
   ];
 
   environment.sessionVariables = {

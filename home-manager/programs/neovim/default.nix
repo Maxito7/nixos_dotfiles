@@ -18,6 +18,7 @@ let
     p.gomod
     p.gowork
     p.hcl
+    p.haskell
     p.javascript
     p.jq
     p.json5
