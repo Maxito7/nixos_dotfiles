@@ -373,6 +373,7 @@
     ghc
     haskellPackages.lsp
     haskellPackages.cabal-install
+    haskell-language-server
   ];
 
   environment.sessionVariables = {
