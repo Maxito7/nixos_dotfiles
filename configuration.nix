@@ -267,10 +267,9 @@
     erlang
     erlang-ls
     rebar3
-    /*
-      elixir
-      elixir-ls
-    */
+
+    elixir
+    elixir-ls
 
     # JetBrains
     jetbrains.idea-ultimate
@@ -369,6 +368,10 @@
     ruby
     ruby-lsp
     rubocop
+
+    # Haskell
+    ghc
+    haskellPackahes.lsp
   ];
 
   environment.sessionVariables = {
