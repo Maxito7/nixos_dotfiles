@@ -371,7 +371,7 @@
 
     # Haskell
     ghc
-    haskellPackahes.lsp
+    haskellPackages.lsp
   ];
 
   environment.sessionVariables = {
