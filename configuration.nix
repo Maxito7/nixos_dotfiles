@@ -292,6 +292,7 @@
     iwd
     #impala
     macchina
+    onefetch
     lazygit
 
     sdbus-cpp
