@@ -25,6 +25,8 @@
     zjstatus = {
       url = "github:dj95/zjstatus";
     };
+
+    zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
   outputs =
