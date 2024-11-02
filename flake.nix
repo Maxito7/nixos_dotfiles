@@ -63,8 +63,11 @@
             {
               environment.systemPackages = [
                 ghostty.packages.x86_64-linux.default
-                inputs.wfetch.packages.x86_64-linux.default
+                /*
+              inputs.wfetch.packages.x86_64-linux.default
+                */
                 zjstatus.packages.x86_64-linux.default
+                inputs.zen-browser.packages.x86_64-linux.generic
               ];
             }
           ];

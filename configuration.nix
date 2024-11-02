@@ -377,8 +377,6 @@
     haskellPackages.cabal-install
     haskell-language-server
     haskellPackages.fourmolu
-
-    inputs.zen-browser.packages."${system}".generic
   ];
 
   environment.sessionVariables = {
