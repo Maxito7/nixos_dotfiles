@@ -19,4 +19,4 @@ vim.opt.cursorlineopt = "number"
 
 vim.opt.swapfile = false
 
-vim.opt.cmdheight = 0
+--vim.opt.cmdheight = 0
