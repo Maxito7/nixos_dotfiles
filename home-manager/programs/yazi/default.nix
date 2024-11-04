@@ -9,7 +9,9 @@
     enable = true;
     enableFishIntegration = true;
     package = pkgs.yazi.override {
-      _7zz = pkgs._7zz.override { useUasm = true; };
+      _7zz = pkgs._7zz.overrideAttrs (o: {
+        makeFlags = (o.makeFlags or [ ]) ++ [ "USE_ASM=" ];
+      });
     };
   };
   xdg.configFile = {
