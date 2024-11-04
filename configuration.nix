@@ -340,7 +340,7 @@
     discord
 
     # Yazi
-    yazi
+    # yazi
     poppler
     jq
     ffmpegthumbnailer
