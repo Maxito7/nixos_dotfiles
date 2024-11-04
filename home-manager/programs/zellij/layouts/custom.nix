@@ -47,6 +47,8 @@ in
         tab_normal   "#[bg=${black},fg=${light_purple}] {index} #[bg=${black},fg=${white}] {name} "
         tab_active   "#[bg=${purple},fg=${black}] {index} #[bg=${brightBlack},fg=${white},bold] {name} "
         tab_separator ""
+
+  		rounded_corners true
       }
     }
   pane split_direction="vertical" {
