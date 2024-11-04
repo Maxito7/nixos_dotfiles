@@ -344,7 +344,7 @@
     poppler
     jq
     ffmpegthumbnailer
-    #p7zip
+    p7zip
 
     # WAYLAND ONLY
     grim
