@@ -8,6 +8,9 @@
   programs.yazi = {
     enable = true;
     enableFishIntegration = true;
+    package = pkgs.yazi.override {
+      _7zz = pkgs._7zz.override { useUasm = true; };
+    };
   };
   xdg.configFile = {
     "yazi/yazi.toml".source = ./yazi.toml;
