@@ -42,8 +42,9 @@
     carapace.enable = true;
     carapace.enableNushellIntegration = true;
 
-    starship = {
+    zoxide = {
       enable = true;
+      enableNushellIntegration = true;
     };
   };
 }
