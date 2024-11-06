@@ -1,11 +1,10 @@
-{
-  config,
-  pkgs,
-  ...
+{ config
+, pkgs
+, ...
 }: {
   imports = [
     ./starship.nix
     ./fish.nix
-		#./zsh.nix
+    ./nushell.nix
   ];
 }
