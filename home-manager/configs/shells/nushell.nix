@@ -36,7 +36,9 @@
         )
       '';
       shellAliases = {
-        ls = "eza";
+        eza = "eza -l --icons=always --hyperlink -a";
+        flake_update = "cd ~/.config/nixfiles ; nix flake update ; nh os switch --hostname lucky";
+        project_devenv = "nix flake init --template github:cachix/devenv && direnv allow";
       };
     };
     carapace.enable = true;

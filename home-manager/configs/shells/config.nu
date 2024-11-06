@@ -896,3 +896,14 @@ $env.config = {
         }
     ]
 }
+
+def icon-grid [] {
+	sort-by type name -i | grid --color --icons -w 100
+}
+def l [] {
+	ls | icon-grid
+}
+def ll [] {
+	ls --all | icon-grid
+}
+alias lll = ls --all --long
