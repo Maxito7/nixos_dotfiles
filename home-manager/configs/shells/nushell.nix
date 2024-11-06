@@ -36,7 +36,7 @@
         )
       '';
       shellAliases = {
-        eza = "ls";
+        ls = "eza";
       };
     };
     carapace.enable = true;
