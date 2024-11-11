@@ -140,30 +140,42 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  /*
-    nixpkgs.overlays = [
+  nixpkgs.overlays = [
     (
-    final: prev: {
-    wezterm = prev.wezterm.overrideAttrs (o: rec {
-    src = pkgs.fetchFromGitHub {
-    owner = "wez";
-    repo = "wezterm";
-    rev = "e3cd2e93d0ee5f3af7f3fe0af86ffad0cf8c7ea8";
-    fetchSubmodules = true;
-    sha256 = "sha256-sj3S1fWC6j9Q/Yc+4IpLbKC3lttUWFk65ROyCdQt+Zc=";
-    };
+      final: prev: {
+        /*
+        wezterm = prev.wezterm.overrideAttrs (o: rec {
+          src = pkgs.fetchFromGitHub {
+            owner = "wez";
+            repo = "wezterm";
+            rev = "e3cd2e93d0ee5f3af7f3fe0af86ffad0cf8c7ea8";
+            fetchSubmodules = true;
+            sha256 = "sha256-sj3S1fWC6j9Q/Yc+4IpLbKC3lttUWFk65ROyCdQt+Zc=";
+          };
 
-    # creating an overlay for buildRustPackage overlay
-    # https://discourse.nixos.org/t/is-it-possible-to-override-cargosha256-in-buildrustpackage/4393/3
-    cargoDeps = prev.rustPlatform.importCargoLock {
-    lockFile = src + "/Cargo.lock";
-    allowBuiltinFetchGit = true;
-    };
-    });
-    }
+          # creating an overlay for buildRustPackage overlay
+          # https://discourse.nixos.org/t/is-it-possible-to-override-cargosha256-in-buildrustpackage/4393/3
+          cargoDeps = prev.rustPlatform.importCargoLock {
+            lockFile = src + "/Cargo.lock";
+            allowBuiltinFetchGit = true;
+          };
+        });
+        */
+        zoom-us = pkgs.zoom-us.overrideAttrs (attrs: {
+          nativeBuildInputs = (attrs.nativeBuildInputs or [ ]) ++ [ pkgs.bbe ];
+          postFixup =
+            ''
+              cp $out/opt/zoom/zoom .
+              bbe -e 's/\0manjaro\0/\0nixos\0\0\0/' < zoom > $out/opt/zoom/zoom
+            ''
+            + (attrs.postFixup or "")
+            + ''
+              sed -i 's|Exec=|Exec=env XDG_CURRENT_DESKTOP="gnome" |' $out/share/applications/Zoom.desktop
+            '';
+        });
+      }
     )
-    ];
-  */
+  ];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
