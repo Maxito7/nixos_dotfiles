@@ -161,7 +161,7 @@
           };
         });
         */
-        zoom-us = pkgs.zoom-us.overrideAttrs (attrs: {
+        zoom-us = prev.zoom-us.overrideAttrs (attrs: {
           nativeBuildInputs = (attrs.nativeBuildInputs or [ ]) ++ [ pkgs.bbe ];
           postFixup =
             ''
