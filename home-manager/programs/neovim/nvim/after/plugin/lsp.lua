@@ -52,7 +52,7 @@ require("lspconfig").lua_ls.setup({
 		},
 	},
 })
-require("lspconfig").ruff_lsp.setup({
+require("lspconfig").ruff.setup({
 	on_attach = on_attach,
 	init_options = {
 		settings = {
