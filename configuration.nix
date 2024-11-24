@@ -312,7 +312,7 @@
 
     acpi
 
-    cava
+    #cava
     krita
 
     # Webdev
@@ -377,7 +377,7 @@
 
     libpcap
 
-    floorp
+    #floorp
 
     # Ruby
     ruby
