@@ -324,6 +324,7 @@
     typescript
     nodePackages_latest.typescript-language-server
     biome
+    k6
 
     # Nix CLI tools
     nh
