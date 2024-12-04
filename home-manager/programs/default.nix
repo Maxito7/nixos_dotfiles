@@ -6,6 +6,6 @@
     ./neovim
     ./zellij
     ./yazi
-    ./git
+    #./git
   ];
 }
