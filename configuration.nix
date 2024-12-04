@@ -390,6 +390,9 @@
     haskellPackages.cabal-install
     haskell-language-server
     haskellPackages.fourmolu
+
+    # Fonts
+    nerd-fonts.jetbrains-mono
   ];
 
   environment.sessionVariables = {
@@ -419,7 +422,7 @@
     fontconfig.enable = true;
     fontDir.enable = true;
     packages = with pkgs; [
-      (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+      #(nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
       inter
     ];
   };
