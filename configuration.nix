@@ -380,9 +380,9 @@
     #floorp
 
     # Ruby
-    ruby
-    ruby-lsp
-    rubocop
+    #ruby
+    #ruby-lsp
+    #rubocop
 
     # Haskell
     ghc
