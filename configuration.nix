@@ -221,6 +221,7 @@
     slint-lsp
     lld
     clang
+    openssl
 
     # Typst
     typst
