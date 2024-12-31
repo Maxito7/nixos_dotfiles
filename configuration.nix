@@ -220,6 +220,7 @@
     cargo-generate
     slint-lsp
     lld
+    clang
 
     # Typst
     typst
