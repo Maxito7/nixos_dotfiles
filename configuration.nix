@@ -222,6 +222,7 @@
     lld
     clang
     openssl
+    openssl.dev
 
     # Typst
     typst
