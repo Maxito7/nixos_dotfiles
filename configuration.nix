@@ -219,6 +219,7 @@
     wasm-pack
     cargo-generate
     slint-lsp
+    lld
 
     # Typst
     typst
