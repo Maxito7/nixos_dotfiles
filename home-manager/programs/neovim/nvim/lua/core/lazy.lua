@@ -27,6 +27,14 @@ require("lazy").setup({
 		"nvim-lualine/lualine.nvim",
 		lazy = true,
 		opt = true,
+		config = function()
+			require("lualine").setup({
+				sections = {
+					-- Or, added to the default lualine_b config from here: https://github.com/nvim-lualine/lualine.nvim?tab=readme-ov-file#default-configuration
+					lualine_b = { "branch", "diff", "diagnostics", "spelunk" },
+				},
+			})
+		end,
 	},
 	-- Telescope + dependencies
 	{
