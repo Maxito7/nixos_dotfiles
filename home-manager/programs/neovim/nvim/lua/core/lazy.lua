@@ -345,6 +345,7 @@ require("lazy").setup({
 		config = function()
 			require("spelunk").setup({
 				enable_persist = true,
+				statusline_prefix = "󰃃",
 			})
 		end,
 	},
