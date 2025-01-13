@@ -329,6 +329,7 @@
     nodePackages_latest.typescript-language-server
     biome
     k6
+    vue-language-server
 
     # Nix CLI tools
     nh
