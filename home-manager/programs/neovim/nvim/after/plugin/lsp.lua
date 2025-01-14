@@ -208,7 +208,7 @@ require("lspconfig").tinymist.setup({
 	settings = {
 		exportPdf = "onSave",
 		systemFonts = true,
-		formatterMode = "typstyle",
+		--formatterMode = "typstyle",
 	},
 })
 
