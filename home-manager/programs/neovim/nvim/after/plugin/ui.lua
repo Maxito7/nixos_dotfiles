@@ -111,8 +111,8 @@ devicons.setup({
 			name = "Gleam",
 		},
 		["typ"] = {
-			icon = "󰊄",
-			color = "#6fdcbb",
+			icon = "",
+			color = "#6fdcbb ",
 			name = "Typst",
 		},
 		["slint"] = {

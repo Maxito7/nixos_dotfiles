@@ -104,7 +104,7 @@
       };
 
       typst = {
-        symbol = "󰴓";
+        symbol = "";
         style = "bold fg:#6fdcbb";
         format = "([( $symbol ($version))]($style))";
       };
