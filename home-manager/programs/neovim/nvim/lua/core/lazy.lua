@@ -346,6 +346,7 @@ require("lazy").setup({
 			require("spelunk").setup({
 				enable_persist = true,
 				statusline_prefix = "󰃃",
+				orientation = "horizontal",
 			})
 		end,
 	},
