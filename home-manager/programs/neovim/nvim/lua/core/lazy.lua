@@ -126,7 +126,7 @@ require("lazy").setup({
 				},
 				["typ"] = {
 					icon = "",
-					color = "#6fdcbb ",
+					color = "#6fdcbb",
 					name = "Typst",
 				},
 				["slint"] = {
