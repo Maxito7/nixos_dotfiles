@@ -1,3 +1,4 @@
+--[[
 local devicons = require("nvim-web-devicons")
 
 devicons.setup({
@@ -122,6 +123,7 @@ devicons.setup({
 		},
 	},
 })
+]]
 
 local barbecue = require("barbecue")
 barbecue.setup({})

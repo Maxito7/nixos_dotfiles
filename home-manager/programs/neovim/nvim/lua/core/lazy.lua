@@ -12,7 +12,131 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	-- Devicons
-	"nvim-tree/nvim-web-devicons",
+	{
+		"nvim-tree/nvim-web-devicons",
+		opts = {
+			override_by_extension = {
+				lua = {
+					icon = "󰢱",
+					color = "#5e99ff",
+					--color = "#003ab8",
+					name = "Lua",
+				},
+				rs = {
+					icon = "",
+					color = "#ff9e64",
+					--color = "#ff832b",
+					name = "Rust",
+				},
+				rb = {
+					icon = "",
+					color = "#f7768e",
+					name = "Ruby",
+				},
+				py = {
+					icon = "",
+					color = "#6fdc8c",
+					name = "Python",
+				},
+				go = {
+					icon = "",
+					color = "#7dcfff",
+					name = "Go",
+				},
+				["go.mod"] = {
+					icon = "",
+					color = "#6fdc8c",
+					name = "GoMod",
+				},
+				["go.sum"] = {
+					icon = "",
+					color = "#f7768c",
+					name = "GoSum",
+				},
+				cpp = {
+					icon = "",
+					color = "#5e99ff",
+					name = "CPP",
+				},
+				c = {
+					icon = "",
+					color = "#BB9AF7",
+					--color = "#6929c4",
+					name = "C",
+				},
+				tex = {
+					icon = "",
+					color = "#c0caf5",
+					name = "LaTeX",
+				},
+				md = {
+					icon = "󰽛",
+					color = "#c0caf5",
+					name = "Markdown",
+				},
+				vim = {
+					icon = "",
+					color = "#6fdc8c",
+					name = "Vim",
+				},
+				vue = {
+					icon = "",
+					color = "#289c5e",
+					name = "Vue",
+				},
+				nix = {
+					icon = "",
+					color = "#33b1ff",
+					name = "Nix",
+				},
+				ts = {
+					icon = "󰛦",
+					color = "#5e99ff",
+					name = "Typescript",
+				},
+				js = {
+					icon = "󰌞",
+					color = "#ffd12b",
+					name = "Javascript",
+				},
+				["tsx"] = {
+					icon = "󰜈",
+					color = "#6fb8fc",
+					name = "Tsx",
+				},
+				["norg"] = {
+					icon = "",
+					color = "#3692d5",
+					name = "Neorg",
+				},
+				["nuxt.config.ts"] = {
+					icon = "󱄆",
+					color = "#289c5e",
+					name = "Nuxt",
+				},
+				["Cargo.toml"] = {
+					icon = "",
+					color = "#ff9e64",
+					name = "Cargo.toml",
+				},
+				["gleam"] = {
+					icon = "",
+					color = "#ff96f3",
+					name = "Gleam",
+				},
+				["typ"] = {
+					icon = "",
+					color = "#6fdcbb ",
+					name = "Typst",
+				},
+				["slint"] = {
+					icon = "󱐌",
+					color = "#5e99ff",
+					name = "Slint",
+				},
+			},
+		},
+	},
 	-- Barbecue + dependencies
 	{
 		"utilyre/barbecue.nvim",
