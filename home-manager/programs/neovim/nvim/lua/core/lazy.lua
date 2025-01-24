@@ -137,6 +137,25 @@ require("lazy").setup({
 			},
 		},
 	},
+	-- Tokyonight
+	{
+		"folke/tokyonight.nvim",
+		style = "night",
+		transparent = true,
+		on_colors = function(colors)
+			colors.green = "#62d196"
+			colors.comment = "#86a1db"
+			colors.gitSigns = {
+				add = "#62d196",
+				change = "#7dcfff",
+				delete = "#f7768e",
+			}
+		end,
+		styles = {
+			floats = "transparent",
+			sidebars = "transparent",
+		},
+	},
 	-- Barbecue + dependencies
 	{
 		"utilyre/barbecue.nvim",
@@ -174,8 +193,6 @@ require("lazy").setup({
 		"nvim-telescope/telescope.nvim",
 		cmd = "Telescope",
 	},
-	-- Tokyonight
-	"folke/tokyonight.nvim",
 	-- Oil
 	"stevearc/oil.nvim",
 	-- LSP + dependencies

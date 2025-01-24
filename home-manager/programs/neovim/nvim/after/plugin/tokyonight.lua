@@ -1,3 +1,4 @@
+--[[
 local tokyonight = require("tokyonight")
 tokyonight.setup({
 	style = "night",
@@ -21,3 +22,4 @@ tokyonight.setup({
 })
 
 vim.cmd("colorscheme tokyonight")
+]]
