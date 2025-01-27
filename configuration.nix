@@ -373,6 +373,7 @@
     #wireplumber
     swww
     hyprlock
+    hyprsome
 
     # Docker
     docker-compose
