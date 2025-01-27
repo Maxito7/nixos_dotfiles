@@ -228,7 +228,6 @@
     typst
     typstyle
     tinymist
-    typst-lsp
 
     # Random dependencies
     fontconfig
