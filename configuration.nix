@@ -223,6 +223,7 @@
     clang
     openssl
     openssl.dev
+    sqlx-cli
 
     # Typst
     typst
