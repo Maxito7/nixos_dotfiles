@@ -51,13 +51,14 @@ in
        }
      }
    pane split_direction="vertical" {
-         pane borderless=true
+         pane
      }
    }
 
   ui {
     	pane_frames {
   			rounded_corners true
+  		borderless true
   		}
   }
 ''
