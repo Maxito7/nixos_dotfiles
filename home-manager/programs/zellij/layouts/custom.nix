@@ -51,7 +51,7 @@ in
        }
      }
    pane split_direction="vertical" {
-         pane
+         pane borderless=true
      }
    }
 
