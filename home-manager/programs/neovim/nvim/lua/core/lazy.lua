@@ -81,7 +81,7 @@ require("lazy").setup({
 				},
 				vue = {
 					icon = "",
-					color = "#289c5e",
+					color = "#62d196", --#289c5e
 					name = "Vue",
 				},
 				nix = {
