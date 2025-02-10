@@ -400,6 +400,9 @@
 
     # Fonts
     nerd-fonts.jetbrains-mono
+
+    # DBs
+    postgresql
   ];
 
   environment.sessionVariables = {
@@ -473,4 +476,6 @@
   # DB stuff
   services.mysql.enable = true;
   services.mysql.package = pkgs.mysql84;
+  services.postgresql.enable = true;
+  services.postgresql.package = pkgs.postgresql_16;
 }
