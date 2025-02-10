@@ -353,7 +353,7 @@
     playerctl
     obs-studio
     peek
-    termusic
+    #termusic
 
     # Discord
     discord
