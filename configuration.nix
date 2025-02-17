@@ -161,6 +161,7 @@
           };
         });
         */
+        /*
         zoom-us = prev.zoom-us.overrideAttrs (attrs: {
           nativeBuildInputs = (attrs.nativeBuildInputs or [ ]) ++ [ pkgs.bbe ];
           postFixup =
@@ -173,6 +174,7 @@
               sed -i 's|Exec=|Exec=env XDG_CURRENT_DESKTOP="gnome" |' $out/share/applications/Zoom.desktop
             '';
         });
+        */
       }
     )
   ];
@@ -289,7 +291,7 @@
     elixir-ls
 
     # JetBrains
-    jetbrains.idea-ultimate
+    #jetbrains.idea-ultimate
     jetbrains.jdk
     #jetbrains.clion
     jetbrains.pycharm-professional
