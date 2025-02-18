@@ -319,6 +319,11 @@ require("lazy").setup({
 		version = "^4", -- Recommended
 		ft = { "rust" },
 	},
+	-- Rustowl
+	{
+		"cordx56/rustowl",
+		dependencies = { "neovim/nvim-lspconfig" },
+	},
 	-- Typst
 	{
 		"kaarmu/typst.vim",
