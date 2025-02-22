@@ -90,12 +90,12 @@ require("lazy").setup({
 					name = "Nix",
 				},
 				ts = {
-					icon = "󰛦",
-					color = "#5e99ff",
+					icon = "",
+					color = "#6bb8ff", --5e99ff
 					name = "Typescript",
 				},
 				js = {
-					icon = "󰌞",
+					icon = "",
 					color = "#ffd12b",
 					name = "Javascript",
 				},
@@ -318,11 +318,6 @@ require("lazy").setup({
 		"mrcjkb/rustaceanvim",
 		version = "^4", -- Recommended
 		ft = { "rust" },
-	},
-	-- Rustowl
-	{
-		"cordx56/rustowl",
-		dependencies = { "neovim/nvim-lspconfig" },
 	},
 	-- Typst
 	{
