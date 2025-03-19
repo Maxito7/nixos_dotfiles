@@ -291,7 +291,7 @@
     elixir-ls
 
     # JetBrains
-    #jetbrains.idea-ultimate
+    jetbrains.idea-ultimate
     jetbrains.jdk
     #jetbrains.clion
     jetbrains.pycharm-professional
