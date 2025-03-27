@@ -402,6 +402,7 @@
 
     # Fonts
     nerd-fonts.jetbrains-mono
+    nerd-fonts.lilex
 
     # DBs
     postgresql
