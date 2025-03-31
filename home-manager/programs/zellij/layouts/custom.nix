@@ -57,8 +57,8 @@ in
 
   ui {
     	pane_frames {
-  			rounded_corners true
-  		borderless true
+  			rounded_corners false
+  			borderless true
   		}
   }
 ''
