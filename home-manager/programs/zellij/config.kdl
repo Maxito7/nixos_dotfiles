@@ -1,5 +1,6 @@
 default_shell "fish"
 copy_on_select true
+pane_frames false
 
 default_layout "custom"
 
