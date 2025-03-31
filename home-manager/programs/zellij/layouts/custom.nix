@@ -22,44 +22,50 @@ let
   green = "#62d196";
 in
 ''
-  layout {
-    pane size=1 borderless=true {
-      plugin location="file:${inputs.zjstatus.packages.${pkgs.system}.default}/bin/zjstatus.wasm" {
-        format_left  "{mode}"
-  			format_center "{tabs}"
-  			format_right "#[bg=${blue},fg=${black},bold] {session} "
-        format_space "#[bg=${black}]"
+    layout {
+      pane size=1 borderless=true {
+        plugin location="file:${inputs.zjstatus.packages.${pkgs.system}.default}/bin/zjstatus.wasm" {
+          format_left  "{mode}"
+    			format_center "{tabs}"
+    			format_right "#[bg=${blue},fg=${black},bold] {session} "
+          format_space "#[bg=${black}]"
 
-        border_enabled  "false"
-        border_char     "─"
-        border_format   "#[fg=${yellow}]{char}"
-        border_position "top"
+          border_enabled  "false"
+          border_char     "─"
+          border_format   "#[fg=${yellow}]{char}"
+          border_position "top"
 
-      	hide_frame_for_single_pane "false"
+        	hide_frame_for_single_pane "false"
 
-  			mode_normal "#[bg=${blue},fg=${black},bold] {name} "
-  			mode_locked "#[bg=${red},fg=${black},bold] {name} "
-        mode_tab "#[bg=${green},fg=${black}] {name} "
-  			mode_pane "#[bg=${purple},fg=${black}] {name} "
-  			mode_session "#[bg=${orange},fg=${black}] {name} "
-        mode_default_to_mode "normal"
+    			mode_normal "#[bg=${blue},fg=${black},bold] {name} "
+    			mode_locked "#[bg=${red},fg=${black},bold] {name} "
+          mode_tab "#[bg=${green},fg=${black}] {name} "
+    			mode_pane "#[bg=${purple},fg=${black}] {name} "
+    			mode_session "#[bg=${orange},fg=${black}] {name} "
+          mode_default_to_mode "normal"
 
-        tab_normal   "#[bg=${black},fg=${light_purple}] {index} #[bg=${black},fg=${white}] {name} "
-        tab_active   "#[bg=${purple},fg=${black}] {index} #[bg=${brightBlack},fg=${white},bold] {name} "
-        tab_separator ""
+          tab_normal   "#[bg=${black},fg=${light_purple}] {index} #[bg=${black},fg=${white}] {name} "
+          tab_active   "#[bg=${purple},fg=${black}] {index} #[bg=${brightBlack},fg=${white},bold] {name} "
+          tab_separator ""
 
+        }
+      }
+    pane split_direction="vertical" {
+          pane
       }
     }
-  pane split_direction="vertical" {
-        pane
+  ui {
+    	pane_frames {
+    			rounded_corners true
+    			borderless true
+    		}
     }
-  }
 ''
 /*
   ui {
-  	pane_frames {
-  			rounded_corners false
-  			borderless true
+   	pane_frames {
+   			rounded_corners false
+   			borderless true
   		}
   }
 */
