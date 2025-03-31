@@ -35,7 +35,7 @@ in
         border_format   "#[fg=${yellow}]{char}"
         border_position "top"
 
-        hide_frame_for_single_pane "true"
+      	hide_frame_for_single_pane "false"
 
   			mode_normal "#[bg=${blue},fg=${black},bold] {name} "
   			mode_locked "#[bg=${red},fg=${black},bold] {name} "
@@ -57,9 +57,9 @@ in
 ''
 /*
   ui {
-   	pane_frames {
-   			rounded_corners false
-   			borderless true
+  	pane_frames {
+  			rounded_corners false
+  			borderless true
   		}
   }
 */
