@@ -406,6 +406,8 @@
 
     # DBs
     postgresql
+
+    pandoc
   ];
 
   environment.sessionVariables = {
