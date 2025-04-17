@@ -231,6 +231,7 @@
     typst
     typstyle
     tinymist
+    pandoc
 
     # Random dependencies
     fontconfig
@@ -407,7 +408,7 @@
     # DBs
     postgresql
 
-    pandoc
+    element-desktop
   ];
 
   environment.sessionVariables = {
