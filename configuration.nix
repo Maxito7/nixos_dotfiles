@@ -407,6 +407,7 @@
 
     # DBs
     postgresql
+    sqlite
 
     element-desktop
   ];
