@@ -255,7 +255,7 @@
     lua51Packages.lua
     gccMultiStdenv
     ruff
-    ruff-lsp
+    #ruff-lsp
     fzf
     fd
     python3Packages.pip
