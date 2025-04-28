@@ -313,7 +313,10 @@
     #impala
     macchina
     onefetch
+
+    # Git TUI tools
     lazygit
+    gh-dash
 
     sdbus-cpp
 
@@ -404,6 +407,7 @@
     # Fonts
     nerd-fonts.jetbrains-mono
     nerd-fonts.lilex
+    ibm-plex
 
     # DBs
     postgresql
