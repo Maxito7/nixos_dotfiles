@@ -23,7 +23,10 @@ let
 in
 ''
     layout {
-      pane size=1 borderless=true {
+    	pane split_direction="vertical" {
+          pane
+      }
+  	pane size=1 borderless=true {
         plugin location="file:${inputs.zjstatus.packages.${pkgs.system}.default}/bin/zjstatus.wasm" {
           format_left  "{mode}"
     			format_center "{tabs}"
@@ -50,9 +53,6 @@ in
 
         }
       }
-    pane split_direction="vertical" {
-          pane
-      }
     }
   ui {
     	pane_frames {
@@ -63,9 +63,9 @@ in
 ''
 /*
   ui {
-   	pane_frames {
-   			rounded_corners false
-   			borderless true
+  	pane_frames {
+  			rounded_corners false
+  			borderless true
   		}
   }
 */
