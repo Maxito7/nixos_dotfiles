@@ -166,6 +166,7 @@ require("lazy").setup({
 		dependencies = {
 			"SmiteshP/nvim-navic",
 		},
+		opts = {},
 	},
 	-- Lualine
 	{
