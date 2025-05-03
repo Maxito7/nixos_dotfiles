@@ -125,8 +125,8 @@ devicons.setup({
 })
 ]]
 
-local barbecue = require("barbecue")
-barbecue.setup({})
+--local barbecue = require("barbecue")
+--barbecue.setup({})
 
 local lualine = require("lualine")
 
