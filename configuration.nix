@@ -408,7 +408,7 @@
     nerd-fonts.jetbrains-mono
     nerd-fonts.lilex
     ibm-plex
-    corefonts
+    #corefonts
 
     # DBs
     postgresql
