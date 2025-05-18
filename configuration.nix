@@ -391,6 +391,7 @@
     libpcap
 
     #floorp
+    google-chrome
 
     # Ruby
     #ruby
